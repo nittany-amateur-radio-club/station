@@ -7,7 +7,9 @@ This chapter describes the suite of tests that we use to make sure that our stat
 ## Monthly
 
 W3TM tries and usually succeeds in running these steps on both NARC1 and NARC2 once a month.
-The results of the tests are captured in a Google doc.
+The results of the tests are captured in a Google doc located [here](https://docs.google.com/document/d/1yz_meW9ClsBc88PyoOBWdVERrryEH91LUFfP03dS5sA/edit?usp=sharing).
+When software versions change, these get updated in [this](https://docs.google.com/spreadsheets/d/1NqblEGvrP0aiqWkBTs1G_hA3oWTKcxh_-Kb_m7E4G70/edit?usp=sharing) Google sheet.
+Data from the Google sheet are imported when this site is updated.
 
 ### Power-up
 
@@ -29,6 +31,7 @@ The results of the tests are captured in a Google doc.
 
 - Check <https://www.n3fjp.com/> to determine latest version of software.
 - Download and install if there is an update.
+- Record the new version [here](https://docs.google.com/spreadsheets/d/1NqblEGvrP0aiqWkBTs1G_hA3oWTKcxh_-Kb_m7E4G70/edit?usp=sharing)
 - Open Amateur Contact Log; a shortcut is on the PC desktop
 - Confirm version and record it.
 - Confirm that ACL tracks of frequency changes & mode changes
@@ -46,7 +49,7 @@ The results of the tests are captured in a Google doc.
 #### WSJT-X
 
 - Open WSJT-X
-- Confirm version.
+- Confirm version matches one recorded [here](https://docs.google.com/spreadsheets/d/1NqblEGvrP0aiqWkBTs1G_hA3oWTKcxh_-Kb_m7E4G70/edit?usp=sharing).
 - Select W3YA configuration
 - Test WSJT-X receive
 - Switch to suitable band for antenna from within WSTJ-X application
@@ -56,7 +59,7 @@ The results of the tests are captured in a Google doc.
   - Click Enable Tx button
   - Permit 3 xmit cycles
   - If no one responds to CQ, check <https://pskreporter.info>
-- If not checking JTAlert, Close WSJT-X
+- If not checking JTAlert, Close WSJT-X.
 
 #### JTAlert, <https://hamapps.com/JTAlert/>
 
@@ -77,8 +80,7 @@ TODO: More complete steps
 #### JS8Call
 
 - Open JS8Call
-- Confirm version.
-- Select W3YA configuration
+- Confirm version matches one recorded [here](https://docs.google.com/spreadsheets/d/1NqblEGvrP0aiqWkBTs1G_hA3oWTKcxh_- Select W3YA configuration
 - Test JS8Call receive
 - Switch to suitable band for antenna (most JS8Call activity is on 40 m)
 - Confirm rig follows software band change
@@ -99,11 +101,12 @@ TODO: Complete steps
 
 - Check site and update fldigi, flrig, or other applications, as needed
 - Open fldigi
-- Confirm version.
-- On IC-7610, confirm that flrig opens and shows current operating frequency
+- Confirm versions matche those recorded [here](https://docs.google.com/spreadsheets/d/1NqblEGvrP0aiqWkBTs1G_hA3oWTKcxh_- On IC-7610, confirm that flrig opens and shows current operating frequency
 
 ::: {.callout-tip}
 ### Operating parameters for IC-7610:
+
+These parameters are for flrig control of the IC-7610.
 
 *Rig*: IC-7610</br>
 *COM3*</br>
@@ -187,7 +190,6 @@ TODO: Finish test suite
   - Set amplifier back to stand-by (short press on MODE/PF1)
 - Power down amplifier
 - Return rig to SSB mode (press mode indicator on touch screen, select SSB)
-
 
 
 ## Contest/Field Day
