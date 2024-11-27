@@ -1,0 +1,242 @@
+---
+title: "Icom IC-7610"
+---
+
+## IC-7610 operating guide
+
+![Icom IC-7610](include/img/ic-7610.jpg){#fig-ic-7610}
+
+This transceiver is currently connected to the NARC1 station computer.
+
+### Icom manuals
+
+Here are links to the IC-7610 manuals:
+
+- [Basic manual](include/pdf/IC-7610_basic.pdf)
+- [Advanced manual](include/pdf/IC-7610-advanced.pdf)
+
+### Starting up
+
+- The IC-7610/NARC1 is located closest to the main door off the porch.
+
+#### Connect equipment and power-up
+
+::: {.callout-note}
+
+We have been experimenting with remote control of some station operations, including powering on the rig power supplies.
+As a result, the next set of actions may or may not be required.
+
+:::
+
+1. Connect to the power mains.
+    - Power cables are located between the wooden shelf and the east wall.
+    - Plug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet.
+    - Plug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet.
+    
+2. Connect the radio to a suitable antenna.
+
+::: {.callout-warning}
+
+**Before you power up the radio, connect it to a suitable antenna**.
+
+:::
+
+**The antenna connections are located on the north wall, near the repeater cabinet**.
+Choose the PL-259 connector with the <span color="yellow">yellow</span> IC-7610 tag.
+Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.
+
+![Antenna connections](include/img/antenna-connections.jpeg){#fig-antenna-connection-panel}
+
+::: {.callout-warning}
+
+**Please do not remove the N/PL-259 connectors from the antenna feedlines.**
+    
+:::
+
+3. Power up the UPS by pushing the front button. The green power light should illuminate.
+
+4. Power up the Astron RS-35A power supply that powers the IC-7610/NARC1. The power supply is located to the right of the Elecraft KPA1500 amplifier.
+
+![Astron RS-35A power supply](include/img/astron-rs-35a.png){#fig-astron-rs-35a}
+
+5. Power up the IC-7610/NARC1 by pressing and briefly holding the power button highlighted in @fig-ic-7610-power-switch.
+
+![IC-7610 power switch](include/img/ic-7610-power-switch.png){#fig-ic-7610-power-switch}
+
+6. Power up the Elecraft KPA1500 amplifier
+
+The IC-7610/NARC1 is connected to the Elecraft [KPA1500](KPA1500.qmd){#fig-elecraft-kpa-1500} amplifier. 
+The power supply for the KPA1500 is under the desk on a small footstool. 
+Check that the KPA1500 power supply is on. 
+If necessary, power-up the power supply by hitting the power switch on the upper rear left side of the power supply. When the amplifier power switch is on, you will see 3 green lights: AC on, High V supply, Low V supply.
+Power up the KPA1500 by pressing the `on` switch on the lower right hand side of the KPA1500 front panel as shown in @fig-kpa1500-power-switch.
+
+::: {.callout-note}
+
+If you are not operating with more than 100 W or do not need the KPA1500's built in antenna tuner, then leave the KPA1500 powered off.
+
+:::
+
+![KPA1500 Power Switch](include/img/kpa1500-power-switch.png){#fig-kpa1500-power-switch}
+
+#### Log-in to the computer
+
+1. Power up the PC by pressing the power button on the right rear panel.
+
+2. Log-in using the appropriate password
+
+The IC-7610/NARC1 is connected via USB2 to the NARC1 PC.
+Open your logging program of choice. 
+NARC has licenses for N1MM and N3FJP's Amateur Contact Log.
+
+To operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. 
+See instructions for operating these modes in separate sections below.
+
+### Basic controls
+
+- Audio levels for the two VFOs are controlled via separate knobs on the left side of the front panel as shown in @fig-ic-7610-af.
+
+![IC-7610 audio gain controls](include/img/ic-7610-af.png){#fig-ic-7610-af}
+
+- As shown in @fig-ic-7610-chg-band You may switch operating bands in one of two ways:
+    - Buttons located on the right side of the front panel
+    - Pressing the frequency on the touch screen.
+    
+![IC-7610 band change controls](include/img/ic-7610-chg-band.png){#fig-ic-7610-chg-band}
+
+
+- Switch operating modes by pressing the mode button on the touch panel as shown in @fig-ic-7610-chg-mode. 
+
+![IC-7610 mode change control](include/img/ic-7610-chg-mode.png){#fig-ic-7610-chg-mode}
+
+This opens a window where you can choose the mode of operation.
+    - Hit the arrow button to close the window and save your choice.
+    
+- Turn digital noise reduction on or off by pressing the NR button on the left side of the front panel highlighted in @fig-ic-7610-left-touch-buttons. 
+When NR is on, the NR button will be illuminated.
+    - To adjust the amount of noise reduction, press and hold the NR button to open a window on the upper right corner of the touch panel display.
+    - Turn the MULTI key to adjust the level of noise reduction.
+    - Close the NR window by pressing the MULTI key or by pressing the NR button.
+- Adjust preamplifier (`P.AMP`) settings, automatic gain control (`AGC`), Intercept Point (`IP+`), `VOX`, and compression (`COMP`) settings by pressing the corresponding button on the left side of the touch/display screen.
+
+![IC-7610 left panel controls](include/img/ic-7610-left-touch-buttons.png){#fig-ic-7610-left-touch-buttons}
+
+- Adjust touch/display screen settings via the MENU1/MENU2 buttons at the bottom of the touch/display screen illustrated in @fig-ic-7610-menu-touch-buttons.
+
+![IC-7610 bottom menu touch screen buttons](include/img/ic-7610-menu-touch-buttons.png){#fig-ic-7610-menu-touch-buttons}
+
+- Select receive filter settings via the `FILTER` button on the right side of the front panel, below the `TWIN PBT` knob as highlighted in @ic-7610-filter.
+
+![IC-7610 filter control](include/img/ic-7610-filter.png){#ic-7610-filter}
+
+- Set RF power by pressing the MULTI button to open a window on the display/touch screen. Press the RF POWER panel to select it, and adjust the output power by turning the MULTI knob as shown in @fig-ic-7610-multi.
+
+![IC-7610 multifunction control](include/img/ic-7610-multi.png){#fig-ic-7610-multi}
+
+### Settings
+
+The rig and computer settings are tested on a regular basis, approximately monthly. 
+If you would like to help W3TM test the rigs or improve and update the documentation, let him know.
+
+::: {.callout-warning}
+
+Please do not change any software or rig settings without:
+
+1. Contacting W3TM 814-777-3298 first OR
+2. Documenting your changes in detail 
+
+:::
+
+The following setting parameters are provided for reference:
+
+- A single USB A/B cable connects the rig to the PC.
+- COM3 is used for most CAT control. The IC-7610 creates a second COM port that is currently unused.
+- 8-N-1 at 38400 baud is used for serial control.
+- Audio in/out are via USB Audio CODEC. The ICOM driver has been installed.
+
+## Phone operations
+
+### On the PC
+
+You do not need to use the PC to operate phone, but you may want to use the PC for logging.
+
+1. Power up the NARC-1 PC by pressing the power button on the front panel.
+
+2. Log-in using the appropriate password
+
+Open your logging program of choice. 
+NARC has licenses for N1MM and N3FJP's Amateur Contact Log.
+
+#### N1MM
+
+::: {.callout-warning}
+
+**Please do not update N1MM without asking Mike N3LI, Rick W3TM, or Eric W3EDP first.**
+
+:::
+
+#### Amateur Contact Log (ACL a.k.a. N3FJP)
+
+You may need to download the specific log for the contest you want to work.
+The club has paid N3FJP for a license under the W3YA callsign.
+Ask W3TM for information about the license codes for contests that are are not already installed.
+
+1. Open Amateur Contact Log
+2. Confirm that the program tracks frequency & mode.
+
+### On the IC-7610
+
+1. Confirm the rig is in SSB mode.
+
+To change the mode, press the mode indicator on the touch screen to open a window to toggle the mode (USB/LSB) appropriate for your band.
+
+![IC-7610 mode control](include/img/ic-7610-chg-mode.png)
+
+Remember, the convention is to use LSB below 10 MHz except for 60 m.
+
+2. Set your receive bandwidth by pressing the FILTER button located on the right side of the front panel.
+
+You may adjust the filter settings by pressing and holding the filter button on the right side of the rig control panel. Press and hold the FILTER button on to save and apply the filter settings.
+
+![](include/img/ic-7610-filter.png)
+
+2. Check audio output levels.
+
+3. Set desired RF power output using MULTI knob.
+
+![](include/img/ic-7610-multi.png)
+
+Press and hold the MULTI button to open a window on the touch/display screen.
+Press the RF POWER panel and rotate the MULTI button to set RF power.
+
+### On KPA1500
+
+1. For < 100W output, set amplifier to STBY mode (yellow light) by pressing MODE button to toggle between STBY and OPER. 
+
+For higher power output, follow [these instructions](KPA1500-tuning.qmd) for tuning the KPA1500 amplifier.
+
+2. Confirm ANT1 is output (press ANTENNA to toggle).
+
+3. Confirm ATU is IN (not BYP) by pressing and holding ATU TUNE button. 
+
+## Digital mode operations
+
+The setup for each digital mode is slightly different, so we have created separate sections to describe those operations.
+
+```{r, results='asis', echo=FALSE}
+a <- knitr::knit_child('fldigi-IC-7610.qmd', quiet=T)
+cat(a, sep="\n")
+```
+
+```{r, results='asis', echo=FALSE}
+a <- knitr::knit_child('WSJT-X-IC-7610.qmd', quiet=T)
+cat(a, sep="\n")
+```
+
+## CW operations
+
+::: {.callout-note}
+
+Coming soon!
+
+:::

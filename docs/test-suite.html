@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Test Suites – Nittany ARC Station Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./software.html" rel="next">
+<link href="./remote-operations.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./antennas.html">Other resources</a></li><li class="breadcrumb-item"><a href="./test-suite.html"><span class="chapter-title">Test Suites</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Nittany ARC Station Guide</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/nittany-amateur-radio-club/station/tree/main/src/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./NARC-Clubhouse-Guide.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./logistics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Logistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./stations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./narc1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NARC-1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./narc2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NARC-2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./narc3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NARC-3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./packet_aprs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NARC-4 Packet/APRS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./rigs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rigs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./icom-ic-7610.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Icom IC-7610</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./flex-6400M.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">FlexRadio Flex 6400M</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ic-718.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Icom IC-718</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kenwood-D710.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kenwood TM-D710</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Other resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./antennas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Antennas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wifi-internet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Wifi &amp; internet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./remote-operations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Remote operations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./test-suite.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Test Suites</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./logging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Logging</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#monthly" id="toc-monthly" class="nav-link active" data-scroll-target="#monthly">Monthly</a>
+  <ul class="collapse">
+  <li><a href="#power-up" id="toc-power-up" class="nav-link" data-scroll-target="#power-up">Power-up</a></li>
+  <li><a href="#phone-operations" id="toc-phone-operations" class="nav-link" data-scroll-target="#phone-operations">Phone operations</a></li>
+  <li><a href="#logging-programs" id="toc-logging-programs" class="nav-link" data-scroll-target="#logging-programs">Logging programs</a></li>
+  <li><a href="#digital-mode-operations" id="toc-digital-mode-operations" class="nav-link" data-scroll-target="#digital-mode-operations">Digital mode operations</a></li>
+  <li><a href="#win4icomsuite" id="toc-win4icomsuite" class="nav-link" data-scroll-target="#win4icomsuite">Win4IcomSuite</a></li>
+  <li><a href="#kpa1500-amplifier" id="toc-kpa1500-amplifier" class="nav-link" data-scroll-target="#kpa1500-amplifier">KPA1500 Amplifier</a></li>
+  </ul></li>
+  <li><a href="#contestfield-day" id="toc-contestfield-day" class="nav-link" data-scroll-target="#contestfield-day">Contest/Field Day</a>
+  <ul class="collapse">
+  <li><a href="#test-networked-logging" id="toc-test-networked-logging" class="nav-link" data-scroll-target="#test-networked-logging">Test networked logging</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/nittany-amateur-radio-club/station/edit/main/src/test-suite.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nittany-amateur-radio-club/station/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./antennas.html">Other resources</a></li><li class="breadcrumb-item"><a href="./test-suite.html"><span class="chapter-title">Test Suites</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Test Suites</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">November 25, 2024</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This chapter describes the suite of tests that we use to make sure that our stations remain in good operating condition.</p>
+<section id="monthly" class="level2">
+<h2 class="anchored" data-anchor-id="monthly">Monthly</h2>
+<p>W3TM tries and usually succeeds in running these steps on both NARC1 and NARC2 once a month. The results of the tests are captured in a Google doc.</p>
+<section id="power-up" class="level3">
+<h3 class="anchored" data-anchor-id="power-up">Power-up</h3>
+<ul>
+<li>Connect rig to a suitable antenna or dummy load</li>
+<li>Power-up the Astron power supply</li>
+<li>Power-up the rig</li>
+<li>Log-on to the computer using the appropriate user name and password</li>
+</ul>
+</section>
+<section id="phone-operations" class="level3">
+<h3 class="anchored" data-anchor-id="phone-operations">Phone operations</h3>
+<ul>
+<li>Set power to 100 W or less</li>
+<li>Call CQ or answer a CQ
+<ul>
+<li>On the IC-7610, use Icom SM-30 desk mic with embedded push-to-talk (PTT) switch or the footswitch.</li>
+<li>On the Flex 6400M, use the Yaesu mic or headset with the footswitch for PTT.</li>
+</ul></li>
+</ul>
+</section>
+<section id="logging-programs" class="level3">
+<h3 class="anchored" data-anchor-id="logging-programs">Logging programs</h3>
+<section id="amateur-contact-log-n3fjp" class="level4">
+<h4 class="anchored" data-anchor-id="amateur-contact-log-n3fjp">Amateur Contact Log (N3FJP)</h4>
+<ul>
+<li>Check <a href="https://www.n3fjp.com/" class="uri">https://www.n3fjp.com/</a> to determine latest version of software.</li>
+<li>Download and install if there is an update.</li>
+<li>Open Amateur Contact Log; a shortcut is on the PC desktop</li>
+<li>Confirm version and record it.</li>
+<li>Confirm that ACL tracks of frequency changes &amp; mode changes</li>
+<li>Close application</li>
+</ul>
+</section>
+<section id="n1mm" class="level4">
+<h4 class="anchored" data-anchor-id="n1mm">N1MM+</h4>
+<ul>
+<li>Start-up N1MM+; update if prompted</li>
+<li>Confirm version</li>
+<li>Confirm that N1MM+ follows frequency changes.</li>
+<li>Close N1MM+.</li>
+</ul>
+</section>
+</section>
+<section id="digital-mode-operations" class="level3">
+<h3 class="anchored" data-anchor-id="digital-mode-operations">Digital mode operations</h3>
+<section id="wsjt-x" class="level4">
+<h4 class="anchored" data-anchor-id="wsjt-x">WSJT-X</h4>
+<ul>
+<li>Open WSJT-X</li>
+<li>Confirm version.</li>
+<li>Select W3YA configuration</li>
+<li>Test WSJT-X receive</li>
+<li>Switch to suitable band for antenna from within WSTJ-X application</li>
+<li>Confirm that rig follows software band change</li>
+<li>Turn RF power to 10 W</li>
+<li>Test WSJT-X CQ transmit
+<ul>
+<li>Click Enable Tx button</li>
+<li>Permit 3 xmit cycles</li>
+<li>If no one responds to CQ, check <a href="https://pskreporter.info" class="uri">https://pskreporter.info</a></li>
+</ul></li>
+<li>If not checking JTAlert, Close WSJT-X</li>
+</ul>
+</section>
+<section id="jtalert-httpshamapps.comjtalert" class="level4">
+<h4 class="anchored" data-anchor-id="jtalert-httpshamapps.comjtalert">JTAlert, <a href="https://hamapps.com/JTAlert/" class="uri">https://hamapps.com/JTAlert/</a></h4>
+<ul>
+<li>Check application site, update as needed.</li>
+<li>Open JTAlert</li>
+<li>Confirm version.</li>
+<li>Confirm that received CQs appear in green in JTAlert window</li>
+<li>Test xmit from JTAlert
+<ul>
+<li>Click on green CQ button to initiate QSO</li>
+</ul></li>
+<li>Close JTAlert</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>TODO: More complete steps</p>
+</div>
+</div>
+</section>
+<section id="js8call" class="level4">
+<h4 class="anchored" data-anchor-id="js8call">JS8Call</h4>
+<ul>
+<li>Open JS8Call</li>
+<li>Confirm version.</li>
+<li>Select W3YA configuration</li>
+<li>Test JS8Call receive</li>
+<li>Switch to suitable band for antenna (most JS8Call activity is on 40 m)</li>
+<li>Confirm rig follows software band change</li>
+<li>Confirm RF power is 10 W</li>
+<li>Test JS8Call heartbeat transmit</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>TODO: Complete steps</p>
+</div>
+</div>
+<ul>
+<li>If stations respond to heartbeat, all is well.</li>
+<li>Check pskreporter.info to confirm: W3YA _____ was/______ was not heard.</li>
+<li>Close JS8Call</li>
+</ul>
+</section>
+<section id="fldigi-httpwww.w1hkj.com" class="level4">
+<h4 class="anchored" data-anchor-id="fldigi-httpwww.w1hkj.com">Fldigi, <a href="http://www.w1hkj.com/" class="uri">http://www.w1hkj.com/</a></h4>
+<ul>
+<li>Check site and update fldigi, flrig, or other applications, as needed</li>
+<li>Open fldigi</li>
+<li>Confirm version.</li>
+<li>On IC-7610, confirm that flrig opens and shows current operating frequency</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Operating parameters for IC-7610:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Rig</em>: IC-7610<br> <em>COM3</em><br> <em>Baud</em>: 38400<br> <em>Stop bits</em>: 1 stop bit<br> <em>CI-V</em>: 0x98</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Operating parameters for Flex-6400M
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>TODO: Add these.</p>
+</div>
+</div>
+<ul>
+<li>7.070 MHz is a watering hole for PSK31 activity on 40m. You might look there to test receive and transmit.</li>
+<li>Check transmit
+<ul>
+<li>Create test message (e.g., “de w3ya w3ya testing testing”)</li>
+<li>Transmit message</li>
+</ul></li>
+<li>Wait 1-2 mins and check pskreporter.info: W3YA _____ was/______ was not heard.</li>
+<li>Close flrig and fldigi.</li>
+</ul>
+</section>
+<section id="winlink-expressvara" class="level4">
+<h4 class="anchored" data-anchor-id="winlink-expressvara">Winlink Express/VARA</h4>
+<ul>
+<li>Open Winlink Express</li>
+<li>Update forms and software if prompted</li>
+<li>Confirm Winlink (not forms) version.</li>
+<li>Select Telnet Winlink session and open session, then start the session to retrieve any messages.</li>
+<li>If connection succeeds, send test message to W3TM@winlink.org.</li>
+<li>Select Vara HF Winlink session</li>
+<li>If prompted, update VARA HF
+<ul>
+<li>Download</li>
+<li>Install (as administrator)</li>
+</ul></li>
+<li>Confirm VARA HF version.</li>
+<li>Select an HF target station</li>
+<li>When the channel is clear, start the session</li>
+<li>Close Winlink Express/VARA</li>
+</ul>
+</section>
+<section id="varac" class="level4">
+<h4 class="anchored" data-anchor-id="varac">VarAC</h4>
+<ul>
+<li>Open VarAC</li>
+<li>Confirm that VARA HF opens along with VarAC window.</li>
+<li>Confirm verson.</li>
+<li>Use VarAC window to confirm that rig follows band/freq changes.</li>
+<li>Test transmit</li>
+<li>Confirm rig RF power is 10 W</li>
+<li>Transmit beacon</li>
+<li>Wait 1-2 mins then check pskreporter.info: W3YA _____ was/______ was not heard</li>
+</ul>
+</section>
+<section id="yoniq-sstv" class="level4">
+<h4 class="anchored" data-anchor-id="yoniq-sstv">YONIQ (SSTV)</h4>
+<ul>
+<li>Open YONIQ</li>
+<li>Tune to SSTV frequency (e.g., 14.230 MHz)</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>TODO: Finish test suite</p>
+</div>
+</div>
+</section>
+</section>
+<section id="win4icomsuite" class="level3">
+<h3 class="anchored" data-anchor-id="win4icomsuite">Win4IcomSuite</h3>
+<ul>
+<li>NARC1/IC-7610 station only</li>
+<li>Open Win4Icom</li>
+<li>Confirm program tracks frequency and mode</li>
+<li>Close Win4Icom</li>
+</ul>
+</section>
+<section id="kpa1500-amplifier" class="level3">
+<h3 class="anchored" data-anchor-id="kpa1500-amplifier">KPA1500 Amplifier</h3>
+<ul>
+<li>Power on amplifier</li>
+<li>Test ATU
+<ul>
+<li>Rig to 10% power (~10W). Press MULTI knob(press RF POWER and rotate MULTI knob to read HF 10%)</li>
+<li>Rig mode to RTTY (touch mode on touchscreen, select RTTY)</li>
+<li>Amp in standby mode (short press on MODE/PF1) button until yellow STDBY indicator illuminates</li>
+<li>Amp to ATU mode (short press on ATU TUNE button)</li>
+<li>Transmit (press TRANSMIT on rig or PTT on mic to send RF)</li>
+<li>When ATU cycle ends (after a few seconds), Press TRANSMIT again to end test transmission.</li>
+</ul></li>
+<li>Test amplification
+<ul>
+<li>Set amp to operate (short press on OPER/STDBY)</li>
+<li>Transmit (press TRANSMIT or PTT on mic) on rig</li>
+<li><strong>NOTE</strong> ~10 W drive should generate about 4-500 W out)</li>
+<li>Press TRANSMIT again to end test transmission</li>
+<li>Set amplifier back to stand-by (short press on MODE/PF1)</li>
+</ul></li>
+<li>Power down amplifier</li>
+<li>Return rig to SSB mode (press mode indicator on touch screen, select SSB)</li>
+</ul>
+</section>
+</section>
+<section id="contestfield-day" class="level2">
+<h2 class="anchored" data-anchor-id="contestfield-day">Contest/Field Day</h2>
+<section id="test-networked-logging" class="level3">
+<h3 class="anchored" data-anchor-id="test-networked-logging">Test networked logging</h3>
+<ul>
+<li>Rig1 in phone mode, log contact</li>
+<li>Rig2 in phone mode, log contact</li>
+<li>Change Rig1 band</li>
+<li>Change Rig2 band</li>
+<li>Change Rig1 to CW, log contact</li>
+<li>Change Rig2 to CW, log contact</li>
+<li>For each digital mode that will be used…
+<ul>
+<li>On Rig1, open digital app, attempt to make contact and log it</li>
+<li>On Rig2, open digital app, attempt to make contact and log it</li>
+</ul></li>
+<li>Close all apps</li>
+<li>Check log file</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./remote-operations.html" class="pagination-link" aria-label="Remote operations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Remote operations</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./software.html" class="pagination-link" aria-label="Software">
+        <span class="nav-page-text"><span class="chapter-title">Software</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nittany-amateur-radio-club/station/edit/main/src/test-suite.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nittany-amateur-radio-club/station/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

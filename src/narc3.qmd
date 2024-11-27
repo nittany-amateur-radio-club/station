@@ -1,0 +1,29 @@
+---
+title: "NARC-3"
+format: html
+---
+
+## Overview
+
+NARC-3 is the HF station on the far (north) wall of the station.
+It is located to the right of NARC-2, and immediately to the left of the [packet station](packet_aprs.qmd).
+
+### Equipment summary
+
+- Icom IC-718 (HF + 6m) transceiver
+    - Astron RS-35A power supply
+
+- Dell PC, dual monitor set-up
+
+### Software summary
+
+- Windows 10
+- Digital modes
+  - WSTJ-X
+  - JS8Call
+  - fldigi suite
+  - VarAC
+- Logging
+  - N1MM
+  - Amateur Contact Log (ACLog) by N3FJP
+

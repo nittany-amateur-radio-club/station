@@ -1,0 +1,4 @@
+# Rigs
+
+The next chapters describe the three main HF+6m rigs the club supports: the Icom IC-7610, FlexRadio Flex-6400M, and the Icom IC-718.
+

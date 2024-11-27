@@ -1,0 +1,40 @@
+---
+title: "Elecraft KPA1500"
+---
+
+![Elecraft KPA1500 Amplifier](include/img/kpa1500.png){fig-kpa1500}
+
+## Summary
+
+The Elecraft KPA1500 is a solid state 1500 W amplifier.
+
+## Operating the KPA1500
+
+### Confirm connections.
+
+1. The amplifier should be connected via the ANT 1 input to an antenna. 
+The feedlines hang from hooks near the North wall of the station and each has label indicating which radio station (NARC-1/IC-7610, NARC-2/Flex 6400M, or NARC-3/IC-718) the feedline services.
+
+2. If the amplifier is connected to an antenna, you may power-up by pressing the button on the front of the amplifier.
+
+3. Confirm that the antenna input selector is set to ANT 1.
+
+4. The amplifier should be connected to the IC-7610 or Flex 6400M via a short coax patch cable. 
+The default configuration is from the amplifier to the transceiver's ANT 1 port.
+  
+### Ensure that antenna tuner is in-line
+
+NARC offers a variety of resonant antennas for your use, but it is prudent to use the automatic antenna tuner that the KPA1500 provides.
+
+On the KPA1500 front panel, press the ATU TUNE/ATU MODE button to select the ATU IN mode (green light).
+
+### Determine the band and power needs for your mode of operation
+
+#### < 100 W operation
+
+Most digital modes (FT8/FT4, JS8Call, fldigi) are also conventionally low power (< 100 W) modes. 
+For these modes, you will want to operate the amplifier in standby (STBY) mode, but with the antenna tuner in-line.
+
+#### > 100 W operation
+
+For modes where power > 100 W is desired (e.g., phone, CW, RTTY), you will need to tune-up the amplifier.

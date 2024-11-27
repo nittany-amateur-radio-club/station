@@ -1,0 +1,535 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Preface",
+    "section": "",
+    "text": "About\nWelcome to the Nittany Amateur Radio Club’s (NARC) station guide. The radio station is one of the best benefits of joining the club.\nRick Gilmore W3TM manages the station with the help of Mike Coslo N3LI, Eric Prescott W3EDP, and Woody Brem K3YV. Mark Wharton K0LO provides computer networking support.\nThis site provides information about how to gain access to the mountaintop station and how to use the equipment.\nThe mountaintop station has been a focal point of activity for the club. We operated Field Day 2023 and 2024 from the station, and we have held W3M special event operations, Pennsylvania QSO Party activities, and other contesting events.\nFor a PDF version of this guide, click here.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preface</span>"
+    ]
+  },
+  {
+    "objectID": "logistics.html",
+    "href": "logistics.html",
+    "title": "Logistics",
+    "section": "",
+    "text": "Location\nThe station is located in the Rothrock State Forest. The club pays a nominal fee to rent the property. The location on top of a mountain means that our HF antennas have excellent take-off angles, especially to the north and north-northwest.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Logistics</span>"
+    ]
+  },
+  {
+    "objectID": "logistics.html#keys",
+    "href": "logistics.html#keys",
+    "title": "Logistics",
+    "section": "Keys",
+    "text": "Keys\nMembers who wish to access the station must get two keys from W3TM. One key opens the padlock that secures the yellow access road gate. This key also opens the portable toilet. A second key opens the station door.\nW3TM prefers to give new members an in-person tour of the station. So, please schedule that tour at your convenience. You’ll receive your keys during the tour.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Logistics</span>"
+    ]
+  },
+  {
+    "objectID": "logistics.html#arrival-procedures",
+    "href": "logistics.html#arrival-procedures",
+    "title": "Logistics",
+    "section": "Arrival procedures",
+    "text": "Arrival procedures\nHere is the sequence we prefer all members use when accessing the mountaintop station.\n\nUnlock the yellow gate. Use the small key to unlock the padlock. The larger key opens the clubhouse itself. Take the padlock and locking bolt with you to the shack.\n\n\n\n\nHow to lock the gate\n\n\n\nClose the gate and replace the lock bar, but do not re-lock the gate.\nIf you know that others will be joining you soon, you may leave the gate open, but make sure to park cross-wise, blocking the past the shack. This ensures that no other driver can inadvertently drive past you and get locked behind the gate when you leave.\n\n\n\n\nNARC Clubhouse looking North\n\n\n\nUnlock door of the shack using the larger of the two keys. There is one lock above the door handle. Turn the key to the left (counterclockwise) to unlock the door.\nThere are light switches on the left just inside the door.\nPut the padlock and locking bar on the desk near the door.\nTurn up the heat, if needed.\n\nGo to the breaker box near the southeast corner of the shack (on your right as you enter the shack). By default, we leave breakers 7-14 – the baseboard and north wall 240 V heaters – off, and the remainder on. There is a label on the breaker panel to remind you.\nTurn breakers 7-14 on by pushing the breaker lever to the left to align with the others.\n\nThe porta potty key is on a hook to the right of the door. Note: The small key that opens the State Forest gate also opens the porta potty.\n\nThe toilet is serviced periodically. If it needs to be serviced, please let Rick W3TM know. The porta potty is on the South side of the shack.\n\nPlease text W3TM (814-777-3298), Eric W3EDP (814-867-3393), or Mike N3LI (814-404-3991) when you leave. Please report any issues that need to be addressed.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Logistics</span>"
+    ]
+  },
+  {
+    "objectID": "narc1.html",
+    "href": "narc1.html",
+    "title": "NARC-1",
+    "section": "",
+    "text": "Overview\nNARC-1 is the first HF station on your left as you enter the station.",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>NARC-1</span>"
+    ]
+  },
+  {
+    "objectID": "narc1.html#overview",
+    "href": "narc1.html#overview",
+    "title": "NARC-1",
+    "section": "",
+    "text": "NARC-1 operating position\n\n\n\nEquipment summary\n\nIcom IC-7610 (HF + 6m) transceiver\n\nAstron RS-35A power supply\n\nIcom SM-50 desk mic\nClipper PTT footswitch\nHeil Pro-7 headset\nNifty mini-manual and other manuals\n\nCheck the right side of the operating position and the drawer under the radio.\n\nHP PC, dual monitor set-up\nElecraft KPA1500 amplifier\n\nElecraft power supply\n\n\n\n\nConnection scheme\n\n\n\n\n\nflowchart TD\n  A[IC-7610] ---|Coax-Ant1|B[KPA-1500 Ant 1]\n  A ---|RCA ALC|B\n  A ---|RCA Send|B\n  A --&gt; M(Morse Paddles)\n  A ---|USB|C[NARC1 PC]\n  A ---|Power Cable|E(Astron RS-35A)\n  K[Halibut Electronics Radio Pro] ---|ICOM Mic/PTT Cable|A\n\n\n Connection diagram for NARC1 IC-7610 \n\n\n\n\n\n\n\n\nflowchart TD\n  A[IC-7610] ---|USB|C[NARC1 PC]\n  C ---|USB|F(Keyboard)\n  C ---|Bluetooth|G(Mouse)\n  C ---|HDMI|H(Monitor)\n  C ---|CAT6|L(Network Switch)\n  J[Astron RS-35A] ---|AC Power|C\n\n\n Connection diagram for NARC1 PC \n\n\n\n\n\n\n\n\nflowchart TD\n  K[Halibut Electronics Radio Pro] ---|ICOM Cable|A[IC-7610]\n  K ---|Cat5|J[Halibut Electronics Contest Console]\n  K ---|PowerPole|J\n  J ---|PowerPole|E(Astron RS-35A)\n  L[Heil Pro-7] --&gt; M[Halibut Electronics User Pro]\n  N[Other headset] --&gt; O[Halibut Electronics User Pro]\n  M ---|Cat5|J\n  O ---|Cat5|J\n  P[Ext Speaker] --- K\n  Q[Clipper footwitch] --- K\n\n\n Connection diagram for NARC1 Halibut Electronics Audio \n\n\n\n\n\nSoftware summary\n\n\n\n\n\n\nNote\n\n\n\nThese sections are generated by parsing a CSV data file in include/csv/software_versions.csv.\nThe code is hidden in the output for aesthetic reasons, but may be revealed by examining the source code file.\n\n\n\nOperating System\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nMS Windows\n10\n2024-05-22\n\n\n\n\n\n\n\n\n\nDigital modes\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nWSTJ-X\n2.6.1\n2024-11-24\n\n\nJTAlert\n2.50.0\n2024-05-22\n\n\nGridTracker2\n2.241124\n2024-11-24\n\n\nJS8Call\n2.2.0\n2024-05-22\n\n\nWinlink Express\n1.7.20\n2024-11-24\n\n\nVARA HF\n4.8.9\n2024-11-24\n\n\nVarAC\n10.2.1\n2024-11-24\n\n\nYoniq (SSTV)\n1.13\n2024-05-22\n\n\nfldigi\n4.206\n2024-11-24\n\n\nflrig\n2.0.05\n2024-11-24\n\n\nflmsg\n4.0.23\n2024-11-24\n\n\nflamp\n2.2.14\n2024-11-24\n\n\n\n\n\n\n\n\n\nLogging\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nACLog\n7.0.10\n2024-05-22\n\n\nN1MM+\n1.3.10316.0\n2024-06-14\n\n\nN3FJP Field Day Contest Log\n6.6.8\n2024-06-14\n\n\n\n\n\n\n\n\n\nRemote Control\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nWin4Icom\n1.506\n2024-11-24\n\n\nSmartSDR\n3.8.19\n2024-11-02\n\n\nwfview\nNA\nNA\n\n\n\n\n\n\n\n\n\n\nOperating Guide\nThe operating guide is found under rigs/IC-7610 section.",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>NARC-1</span>"
+    ]
+  },
+  {
+    "objectID": "narc2.html",
+    "href": "narc2.html",
+    "title": "NARC-2",
+    "section": "",
+    "text": "Overview\nNARC 2 is the second HF station on your left as you enter the station.",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NARC-2</span>"
+    ]
+  },
+  {
+    "objectID": "narc2.html#overview",
+    "href": "narc2.html#overview",
+    "title": "NARC-2",
+    "section": "",
+    "text": "Equipment summary\n\nFlexRadio Flex 6400M (HF + 6m) transceiver\n\nAstron RS-35A power supply\n\nClipper PTT footswitch\nDell PC, dual monitor set-up\nElecraft KPA1500 amplifier\n\nElecraft power supply\n\n\n\n\nConnection scheme\n\n\n\n\n\nflowchart TD\n  A[Flex 6400M] ---|Coax-Ant1|B[KPA-1500 Ant 1]\n  B ---|50A PowerPole|T[Elecraft Power Supply]\n  T ---|220V AC|U(220V outlet)\n  J ---|120V AC|V(110V outlet)\n  A ---|Cat 6|L\n  A ---|Tx1 RCA Rem|B\n  A --&gt; N(Clipper footswitch)\n  A ---|RCA|Q(Relay)\n  Q --- R(Kasa Switch)\n  R --- J\n  A ---|USB|C[NARC2 PC]\n  C ---|USB|F(Keyboard)\n  C ---|Bluetooth|G(Mouse)\n  C ---|HDMI|H(Monitor)\n  C ---|CAT 6|L(Network Switch)\n  C ---|USB|P(FlexControl Knob)\n  J ---|AC Power|C\n  E ---|120V AC|I(Kasa Switch)\n  I ---|AC Power|J[Surge Protector]\n  I ---|Wifi|K(NARC wifi)\n  A ---|Power Cable|E[Astron RS-35A]\n  B ---|Coax Ant1|D(Antenna Connectors)\n  H ---|AC Power|J\n\n\n Connection diagram for NARC2 \n\n\n\n\n\nSoftware summary\n\n\n\n\n\n\nNote\n\n\n\nThese sections are generated by parsing a CSV data file in include/csv/software_versions.csv.\nThe code is hidden in the output for aesthetic reasons, but may be revealed by examining the source code file.\n\n\n\nOperating System\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nMS Windows\n10\n2024-06-08\n\n\n\n\n\n\n\n\n\nDigital modes\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nflrig\n2.0.01\n2024-06-14\n\n\nWSJT-X\n2.5.4\n2024-06-08\n\n\nJTAlert\n2.60.2\n2024-06-08\n\n\nJS8Call\n2.2.0\n2024-06-08\n\n\nfldigi\n4.1.26\n2024-06-14\n\n\nWinlink Express\n1.7.16.0\n2024-06-08\n\n\nVARA HF\n4.8.7\n2024-06-08\n\n\nVarAC\n9.1.0\n2024-06-08\n\n\nMTTY\n1.71K\n2024-06-14\n\n\n\n\n\n\n\n\n\nLogging\n\n\n\n\n\nsoftware\nversion\n\n\n\n\nACLog\n7.0.10\n\n\n\n\n\n\n\n\n\nRemote Control\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nSmartSDR\n3.8.19\n2024-11-02\n\n\n\n\n\n\n\n\n\n\nOperating Guide\nThe operating guide for the Flex 6400M is here",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NARC-2</span>"
+    ]
+  },
+  {
+    "objectID": "narc3.html",
+    "href": "narc3.html",
+    "title": "NARC-3",
+    "section": "",
+    "text": "Overview\nNARC-3 is the HF station on the far (north) wall of the station. It is located to the right of NARC-2, and immediately to the left of the packet station.",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>NARC-3</span>"
+    ]
+  },
+  {
+    "objectID": "narc3.html#overview",
+    "href": "narc3.html#overview",
+    "title": "NARC-3",
+    "section": "",
+    "text": "Equipment summary\n\nIcom IC-718 (HF + 6m) transceiver\n\nAstron RS-35A power supply\n\nDell PC, dual monitor set-up\n\n\n\nSoftware summary\n\nWindows 10\nDigital modes\n\nWSTJ-X\nJS8Call\nfldigi suite\nVarAC\n\nLogging\n\nN1MM\nAmateur Contact Log (ACLog) by N3FJP",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>NARC-3</span>"
+    ]
+  },
+  {
+    "objectID": "packet_aprs.html",
+    "href": "packet_aprs.html",
+    "title": "NARC-4 Packet/APRS",
+    "section": "",
+    "text": "Packet station\nThe packet station is located along the North wall of the shack near the HF antenna feedlines.",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>NARC-4 Packet/APRS</span>"
+    ]
+  },
+  {
+    "objectID": "packet_aprs.html#packet-station",
+    "href": "packet_aprs.html#packet-station",
+    "title": "NARC-4 Packet/APRS",
+    "section": "",
+    "text": "Icom IC-2710 Dual Band Transceiver set to 145.030 MHz\nHP Computer\nAstron power supply\n\n\n\n\nIC-2710 Packet Transceiver",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>NARC-4 Packet/APRS</span>"
+    ]
+  },
+  {
+    "objectID": "packet_aprs.html#aprs-station",
+    "href": "packet_aprs.html#aprs-station",
+    "title": "NARC-4 Packet/APRS",
+    "section": "APRS station",
+    "text": "APRS station\nThe station and TNC are located in the cabinet near the back door of the shack.\nThe W3YA-1 digipeater operates on 144.390 MHz. Here is link to data about the stations recently heard by W3YA-1, according to APRS.fi site.",
+    "crumbs": [
+      "Stations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>NARC-4 Packet/APRS</span>"
+    ]
+  },
+  {
+    "objectID": "icom-ic-7610.html",
+    "href": "icom-ic-7610.html",
+    "title": "Icom IC-7610",
+    "section": "",
+    "text": "IC-7610 operating guide\nThis transceiver is currently connected to the NARC1 station computer.",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Icom IC-7610</span>"
+    ]
+  },
+  {
+    "objectID": "icom-ic-7610.html#ic-7610-operating-guide",
+    "href": "icom-ic-7610.html#ic-7610-operating-guide",
+    "title": "Icom IC-7610",
+    "section": "",
+    "text": "Figure 7.1: Icom IC-7610\n\n\n\n\n\nIcom manuals\nHere are links to the IC-7610 manuals:\n\nBasic manual\nAdvanced manual\n\n\n\nStarting up\n\nThe IC-7610/NARC1 is located closest to the main door off the porch.\n\n\nConnect equipment and power-up\n\n\n\n\n\n\nNote\n\n\n\nWe have been experimenting with remote control of some station operations, including powering on the rig power supplies. As a result, the next set of actions may or may not be required.\n\n\n\nConnect to the power mains.\n\nPower cables are located between the wooden shelf and the east wall.\nPlug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet.\nPlug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet.\n\nConnect the radio to a suitable antenna.\n\n\n\n\n\n\n\nWarning\n\n\n\nBefore you power up the radio, connect it to a suitable antenna.\n\n\nThe antenna connections are located on the north wall, near the repeater cabinet. Choose the PL-259 connector with the yellow IC-7610 tag. Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.\n\n\n\n\n\n\nFigure 7.2: Antenna connections\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPlease do not remove the N/PL-259 connectors from the antenna feedlines.\n\n\n\nPower up the UPS by pushing the front button. The green power light should illuminate.\nPower up the Astron RS-35A power supply that powers the IC-7610/NARC1. The power supply is located to the right of the Elecraft KPA1500 amplifier.\n\n\n\n\n\n\n\nFigure 7.3: Astron RS-35A power supply\n\n\n\n\nPower up the IC-7610/NARC1 by pressing and briefly holding the power button highlighted in Figure 7.4.\n\n\n\n\n\n\n\nFigure 7.4: IC-7610 power switch\n\n\n\n\nPower up the Elecraft KPA1500 amplifier\n\nThe IC-7610/NARC1 is connected to the Elecraft KPA1500 amplifier. The power supply for the KPA1500 is under the desk on a small footstool. Check that the KPA1500 power supply is on. If necessary, power-up the power supply by hitting the power switch on the upper rear left side of the power supply. When the amplifier power switch is on, you will see 3 green lights: AC on, High V supply, Low V supply. Power up the KPA1500 by pressing the on switch on the lower right hand side of the KPA1500 front panel as shown in Figure 7.5.\n\n\n\n\n\n\nNote\n\n\n\nIf you are not operating with more than 100 W or do not need the KPA1500’s built in antenna tuner, then leave the KPA1500 powered off.\n\n\n\n\n\n\n\n\nFigure 7.5: KPA1500 Power Switch\n\n\n\n\n\nLog-in to the computer\n\nPower up the PC by pressing the power button on the right rear panel.\nLog-in using the appropriate password\n\nThe IC-7610/NARC1 is connected via USB2 to the NARC1 PC. Open your logging program of choice. NARC has licenses for N1MM and N3FJP’s Amateur Contact Log.\nTo operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. See instructions for operating these modes in separate sections below.\n\n\n\nBasic controls\n\nAudio levels for the two VFOs are controlled via separate knobs on the left side of the front panel as shown in Figure 7.6.\n\n\n\n\n\n\n\nFigure 7.6: IC-7610 audio gain controls\n\n\n\n\nAs shown in Figure 7.7 You may switch operating bands in one of two ways:\n\nButtons located on the right side of the front panel\nPressing the frequency on the touch screen.\n\n\n\n\n\n\n\n\nFigure 7.7: IC-7610 band change controls\n\n\n\n\nSwitch operating modes by pressing the mode button on the touch panel as shown in Figure 7.8.\n\n\n\n\n\n\n\nFigure 7.8: IC-7610 mode change control\n\n\n\nThis opens a window where you can choose the mode of operation. - Hit the arrow button to close the window and save your choice.\n\nTurn digital noise reduction on or off by pressing the NR button on the left side of the front panel highlighted in Figure 7.9. When NR is on, the NR button will be illuminated.\n\nTo adjust the amount of noise reduction, press and hold the NR button to open a window on the upper right corner of the touch panel display.\nTurn the MULTI key to adjust the level of noise reduction.\nClose the NR window by pressing the MULTI key or by pressing the NR button.\n\nAdjust preamplifier (P.AMP) settings, automatic gain control (AGC), Intercept Point (IP+), VOX, and compression (COMP) settings by pressing the corresponding button on the left side of the touch/display screen.\n\n\n\n\n\n\n\nFigure 7.9: IC-7610 left panel controls\n\n\n\n\nAdjust touch/display screen settings via the MENU1/MENU2 buttons at the bottom of the touch/display screen illustrated in Figure 7.10.\n\n\n\n\n\n\n\nFigure 7.10: IC-7610 bottom menu touch screen buttons\n\n\n\n\nSelect receive filter settings via the FILTER button on the right side of the front panel, below the TWIN PBT knob as highlighted in @ic-7610-filter.\n\n\n\n\nIC-7610 filter control\n\n\n\nSet RF power by pressing the MULTI button to open a window on the display/touch screen. Press the RF POWER panel to select it, and adjust the output power by turning the MULTI knob as shown in Figure 7.11.\n\n\n\n\n\n\n\nFigure 7.11: IC-7610 multifunction control\n\n\n\n\n\nSettings\nThe rig and computer settings are tested on a regular basis, approximately monthly. If you would like to help W3TM test the rigs or improve and update the documentation, let him know.\n\n\n\n\n\n\nWarning\n\n\n\nPlease do not change any software or rig settings without:\n\nContacting W3TM 814-777-3298 first OR\nDocumenting your changes in detail\n\n\n\nThe following setting parameters are provided for reference:\n\nA single USB A/B cable connects the rig to the PC.\nCOM3 is used for most CAT control. The IC-7610 creates a second COM port that is currently unused.\n8-N-1 at 38400 baud is used for serial control.\nAudio in/out are via USB Audio CODEC. The ICOM driver has been installed.",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Icom IC-7610</span>"
+    ]
+  },
+  {
+    "objectID": "icom-ic-7610.html#phone-operations",
+    "href": "icom-ic-7610.html#phone-operations",
+    "title": "Icom IC-7610",
+    "section": "Phone operations",
+    "text": "Phone operations\n\nOn the PC\nYou do not need to use the PC to operate phone, but you may want to use the PC for logging.\n\nPower up the NARC-1 PC by pressing the power button on the front panel.\nLog-in using the appropriate password\n\nOpen your logging program of choice. NARC has licenses for N1MM and N3FJP’s Amateur Contact Log.\n\nN1MM\n\n\n\n\n\n\nWarning\n\n\n\nPlease do not update N1MM without asking Mike N3LI, Rick W3TM, or Eric W3EDP first.\n\n\n\n\nAmateur Contact Log (ACL a.k.a. N3FJP)\nYou may need to download the specific log for the contest you want to work. The club has paid N3FJP for a license under the W3YA callsign. Ask W3TM for information about the license codes for contests that are are not already installed.\n\nOpen Amateur Contact Log\nConfirm that the program tracks frequency & mode.\n\n\n\n\nOn the IC-7610\n\nConfirm the rig is in SSB mode.\n\nTo change the mode, press the mode indicator on the touch screen to open a window to toggle the mode (USB/LSB) appropriate for your band.\n\n\n\nIC-7610 mode control\n\n\nRemember, the convention is to use LSB below 10 MHz except for 60 m.\n\nSet your receive bandwidth by pressing the FILTER button located on the right side of the front panel.\n\nYou may adjust the filter settings by pressing and holding the filter button on the right side of the rig control panel. Press and hold the FILTER button on to save and apply the filter settings.\n\n\nCheck audio output levels.\nSet desired RF power output using MULTI knob.\n\n\nPress and hold the MULTI button to open a window on the touch/display screen. Press the RF POWER panel and rotate the MULTI button to set RF power.\n\n\nOn KPA1500\n\nFor &lt; 100W output, set amplifier to STBY mode (yellow light) by pressing MODE button to toggle between STBY and OPER.\n\nFor higher power output, follow these instructions for tuning the KPA1500 amplifier.\n\nConfirm ANT1 is output (press ANTENNA to toggle).\nConfirm ATU is IN (not BYP) by pressing and holding ATU TUNE button.",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Icom IC-7610</span>"
+    ]
+  },
+  {
+    "objectID": "icom-ic-7610.html#digital-mode-operations",
+    "href": "icom-ic-7610.html#digital-mode-operations",
+    "title": "Icom IC-7610",
+    "section": "Digital mode operations",
+    "text": "Digital mode operations\nThe setup for each digital mode is slightly different, so we have created separate sections to describe those operations.\n\nFldigi suite\nAs of 2023-12-19, the installed version of fldigi is 4.1.26.\n\nOn the PC\n\nOpen fldigi. (Icon is on desktop.)\n\nFldigi is configured to use the flrig program to interface between the radio and the computer. Flrig should open automatically a few seconds after fldigi opens. If flrig shows the current VFO frequency and so does fldigi, the two devices are talking to one another.\n\nConfirm Settings\n\nIt’s not essential to confirm the settings each time you start up, but doing so will make sure that you are able to operate without difficulty.\nIn flrig, open the Config menu and select Setup &gt; Transceiver. This opens a separate window.\n\n\n\nParameter\nValue\nComments\n\n\n\n\nRig\nIC-7610\n\n\n\nSer Port\nCOM3\n\n\n\nBaud\n38400\n\n\n\nParity\nN or none\n\n\n\n(Stop bits)\n1\n\n\n\nPTT via CAT\n\\(\\checkmark\\)\n\n\n\nCI-V adr\n0x98\n\n\n\n\nYou may now close the Configuration window by pressing the CLOSE button or close window (X) button.\n\nCheck receive operations\n\n\nTurn to a known PSK31 frequency, for example, 14.070 MHz in the 20 m band.\nFrom the fldigi Op Mode menu, select PSK &gt; BPSK-31\n\nIf all is well, you should see decodes in the left hand window and signals in the waterfall below.\n\nConfigure your operational settings.\n\n\nFrom the Configure menu, select UI &gt; Operator to open a window.\nUnder the Operator tab set Station Callsign, Operator Callsign, Operator Name, Antenna, Station QTH, Station Locator and other items.\n\n\n\nOn the IC-7610\n\nConfirm rig is in USB Data 2 (USB-D2) mode.\n\n\n\n\nIC-7610 mode select button\n\n\nTo change the mode, press the mode indicator on the touch screen to open a window to toggle the mode (USB/LSB) to USB. Unless you are sure that your digital mode uses LSB, select USB. Press and hold the DATA button to switch between D1, D2, and D3 data mode connectors. D2 is configured for use via USB.\n\nSet your bandwidth to filter 1 (wide) by pressing the FILTER button located on the right side of the front panel.\n\n\n\n\nIC-7610 filter control\n\n\nYou may adjust the filter settings by pressing and holding the filter button on the right side of the rig control panel. Press the arrow/return button on the display/touch screen to save and apply the filter settings.\n\nSet other settings\n\nThe following settings can be changed via buttons on the left side of the touch/display screen.\n\n\n\nIC-7610 left panel controls\n\n\n\nPreamp (P.AMP) off\n\nPress the P.AMP button to cycle through the settings (OFF, P.AMP 1, P.AMP 2)\n\nAttenuator (ATT) off\n\nPress the ATT button to cycle through the attenuator settings (OFF, 6 dB, 12 dB, 18 dB)\n\nIP+ off\n\nPress the IP+ button to select ON or OFF\n\nTurn Automatic Gain Control (AGC) off\n\nPress and hold the AGC button on the display/touch screen. This opens a panel. Under the SSB column, select the SLOW setting. Adjust the AGC level downward until the indicator says OFF. Press the arrow/return button on the display/touch screen to enter the setting.\n\nVOX off\nNoise reduction (NR) off\n\nPress the NR button on the left side of the front panel to turn off the illuminator.\n\nNoise blanker (NB) off\n\nPress the NB button on the left side of the front panel to turn off the illuminator.\n\nSet desired RF power output using MULTI knob.\n\n\n\n\nIC-7610 MULTI knob\n\n\nPress and hold the MULTI button to open a window on the touch/display screen. Press the RF POWER panel and rotate the MULTI button to set RF power.\n\n\n\n\n\n\nNote\n\n\n\nGenerally speaking, 40-50 W RF output is more than sufficient for successful operation using fldigi-supported modes.\n\n\n\n\nOn KPA1500\nIt’s possible to use the amplifier for fldigi-supported modes, but we do not recommend it. These modes involve high duty cycles and put a lot of stress on the amplifier.\n\n\n\nWSJT-X\nThe current installed version as of 2023-12-19 is v2.5.4.\n\nOn the PC\n\nOpen WSJT-X (Icon is on desktop.)\n\nWSTJ-X opens to the same operating frequency as the rig is on when you start.\n\nConfirm Settings\n\nIt’s not essential to confirm the settings each time you start up, but doing so will make sure that you are able to operate without difficulty.\n\nOpen the Configurations menu and select a configurations set. Standard Ops is a good place to start.\nOpen Settings from the File menu\n\nGeneral tab:\nSet My Call to your personal callsign unless you have permission to use the club callsign (W3YA). Set any Display or Behavior settings per your personal preferences.\nRadio tab:\nChange these at your own risk.\n\n\n\nParameter\nValue\nComments\n\n\n\n\nRig\nIcom IC-7610\n\n\n\nSer Port\nCOM3\n\n\n\nBaud\n38400\n\n\n\nData Bits\n8 bits\n\n\n\nParity\nnone\n\n\n\n(Stop bits)\n1\n\n\n\nHandshake\nnone\n\n\n\nForce Control Lines:\nunset\n\n\n\nPTT method\nCAT (port should be COM3)\n\n\n\nMode\nData/pkt\n\n\n\nSplit operation\nRig or Fake It\n\n\n\n\nYou may want to check/confirm that rig control is working by pushing the Test CAT button in this panel. If the button turns green, then the rig and computer are communicating.\nYou may also want to check that PTT is working. Adjusted the rig’s power output to a low level (1-5 W) before testing. On the IC-7610, press the MULTI button, touch the RF Power panel on the touch screen, and turn the MULTI button to set desired output power.\nPress the Test PTT button and observe whether the transmitter keys up. If so, all is well.\nAudio tab:\n\n\n\nParameter\nValue\nComments\n\n\n\n\nInput\nUSB Audio Codec\n\n\n\nOutput\nUSB Audio Codec\n\n\n\n\nReporting tab\nYou may want to set the Op Call to your own callsign.\nAdvanced tab:\nCheck or uncheck Special Operating Activity per situation, for example ARRL Field Day or the NA VHF Contest.\nYou may now close the Settings window by pressing the OK button.\nSwitch to the desired mode (e.g., FT8) from the Mode menu. Select the desired operating band and default frequency from the dropdown menu on the lower left side of the main WSJT-X application panel.\n\nCheck computer clock accuracy\n\nOpen a browser; visit https://time.is\nIf your time synch is within .5s of the correct time, you may proceed.\nIf you are decoding signals in the waterfall, then all is well.\n\n\nOn the IC-7610\n\nConfirm rig is in USB Data 2 (USB-D2) mode.\n\n\n\n\nIC-7610 mode select button\n\n\nTo change the mode, press the mode indicator on the touch screen to open a window to toggle the mode (USB/LSB) to USB. Unless you are sure that your digital mode uses LSB, select USB. Press and hold the DATA button to switch between D1, D2, and D3 data mode connectors. D2 is configured for use via USB.\n\nSet your bandwidth to filter 1 (wide) by pressing the FILTER button located on the right side of the front panel.\n\n\n\n\nIC-7610 filter control\n\n\nYou may adjust the filter settings by pressing and holding the filter button on the right side of the rig control panel. Press the arrow/return button on the display/touch screen to save and apply the filter settings.\n\nSet other settings\n\n\n\n\nIC-7610 left panel controls\n\n\nThe following settings can be changed via buttons on the left side of the touch/display screen.\n\n\n\n\n\n\nNote\n\n\n\nThe following settings let the software do the heavy-lifting.\n\n\n\nPreamp (P.AMP) off\n\nPress the P.AMP button to cycle through the settings (OFF, P.AMP 1, P.AMP 2)\n\nAttenuator (ATT): off\n\nPress the ATT button to cycle through the attenuator settings (OFF, 6 dB, 12 dB, 18 dB)\n\nIP+: off\n\nPress the IP+ button to select ON or OFF\n\nAutomatic Gain Control (AGC): off\n\nPress and hold the AGC button on the display/touch screen. This opens a panel. Under the SSB column, select the SLOW setting. Adjust the AGC level downward until the indicator says OFF. Press the arrow/return button on the display/touch screen to enter the setting.\n\nVOX: off\nNoise reduction (NR): off\n\nPress the NR button on the left side of the front panel to turn off the illuminator.\n\nNoise blanker (NB) off\n\nPress the NB button on the left side of the front panel to turn off the illuminator.\n\nSet desired RF power output using MULTI knob.\n\n\n\n\nIC-7610 MULTI knob\n\n\nPress and hold the MULTI button to open a window on the touch/display screen. Press the RF POWER panel and rotate the MULTI button to set RF power.\nRemember, WSJT-X is a weak signal mode. Less than 50 W is plenty, especially if you are using one of our “gain” antennas (Yagis).\n\n\nOn KPA1500\nIt’s possible to use the amplifier for fldigi-supported modes, but we do not recommend it. These modes involve high duty cycles and put a lot of stress on the amplifier.\n\n\nOperating hints\n\nMake sure that your audio input level is not too high.\n\nThere are several ways to adjust this: - Adjust the RF/SQL button on the rig - Adjust the mic levels on the PC (open the Audio control panel)",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Icom IC-7610</span>"
+    ]
+  },
+  {
+    "objectID": "icom-ic-7610.html#cw-operations",
+    "href": "icom-ic-7610.html#cw-operations",
+    "title": "Icom IC-7610",
+    "section": "CW operations",
+    "text": "CW operations\n\n\n\n\n\n\nNote\n\n\n\nComing soon!",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Icom IC-7610</span>"
+    ]
+  },
+  {
+    "objectID": "flex-6400M.html",
+    "href": "flex-6400M.html",
+    "title": "FlexRadio Flex 6400M",
+    "section": "",
+    "text": "Flex 6400M HF Transceiver\nThis transceiver is currently connected to the NARC-2 computer.",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>FlexRadio Flex 6400M</span>"
+    ]
+  },
+  {
+    "objectID": "flex-6400M.html#flex-6400m-hf-transceiver",
+    "href": "flex-6400M.html#flex-6400m-hf-transceiver",
+    "title": "FlexRadio Flex 6400M",
+    "section": "",
+    "text": "Manuals\nHere are links to some useful FlexRadio manuals:\n\nSmartSDR software user guide\nFlex-6400M user guide\n\n\n\nConnect and power-up\n\nConnect the Flex 6400M to an antenna.\n\nBefore you power up the radio, connect it to a suitable antenna. The antenna connections are located on the north wall, near the repeater cabinet. Choose the PL-259 connector with the yellow FlexRadio tag. Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m. Please do not remove the N/PL-259 connectors from the antenna feedlines.\n\n\n\n\n\n\nNote\n\n\n\nWe have been experimenting with remote control of some station operations, including powering on the rig power supplies. As a result, the next set of actions may or may not be required.\n\n\n\nConnect radio to the power mains.\n\nPower cables are located between the wooden shelf and the east wall.\nPlug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet.\nPlug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet.\n\nPower up the UPS by pushing the front button. The green power light should illuminate.\n\n\n\n\n\n\n\nNote\n\n\n\nCheck to see if the Astron RS-35A power supply is on before carrying out the next step.\n\n\n\nPower-up the Astron RS-35A power supply that powers the Flex 6400M/NARC2. The power supply is located to the right of the Elecraft KPA1500 amplifier.\n\n\n\n\nAstron RS-35A power supply\n\n\n\nPower up the Flex/NARC-2 by pressing and briefly holding the power button.\n\n\n\n\n\n\n\nNote\n\n\n\nIf you do not plan to use the amplifier or the built-in antenna tuner, you may skip step 6.\n\n\n\nPower up the Elecraft KPA1500 amplifier\n\nThe Flex/NARC-2 is connected to the Elecraft KPA1500 amplifier. The power supply for the KPA1500 is under the desk on a small footstool. Check that the KPA1500 power supply is on. If necessary, power-up the power supply by hitting the power switch on the upper rear left side of the power supply. When the amplifier power switch is on, you will see 3 green lights: AC on, High V supply, Low V supply. Power up the KPA1500 by pressing the on switch on the lower right hand side of the KPA1500 front panel.\n\n\n\nKPA1500 Power Switch\n\n\n\nLog-in to the computer\n\nPower up the PC by pressing the power button on the right rear of the computer/display.\nLog-in using the appropriate password.\n\nThe Flex 6400M is connected via USB to the NARC-2 PC.\nOpen your logging program of choice. NARC has licenses for N1MM and N3FJP’s Amateur Contact Log.\nTo operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. See instructions for operating these modes in separate documents.\n\n\n\nBasic controls",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>FlexRadio Flex 6400M</span>"
+    ]
+  },
+  {
+    "objectID": "ic-718.html",
+    "href": "ic-718.html",
+    "title": "Icom IC-718",
+    "section": "",
+    "text": "Icom IC-718\nThis transceiver is currently connected to the NARC-3 computer.",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Icom IC-718</span>"
+    ]
+  },
+  {
+    "objectID": "ic-718.html#icom-ic-718",
+    "href": "ic-718.html#icom-ic-718",
+    "title": "Icom IC-718",
+    "section": "",
+    "text": "Connect equipment and power-up\n\nConnect to the power mains.\nConnect the radio to a suitable antenna.\n\n\n\n\n\n\n\nWarning\n\n\n\nBefore you power up the radio, connect it to a suitable antenna. The antenna connections are located on the north wall, near the repeater cabinet.\n\n\nChoose the PL-259 connector with the yellow FlexRadio tag. Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.\n\n\n\n\n\n\nWarning\n\n\n\nPlease do not remove the N/PL-259 connectors from the antenna feedlines.\n\n\n\nPower up the UPS by pushing the front button. The green power light should illuminate.\nPower up the Astron RS-35A power supply that powers the IC-718/NARC3.\nPower up the IC-718.\nPower up the Elecraft KPA1500 amplifier\n\n\nLog-in to the computer\n\nPower up the PC by pressing the power button on the right rear panel.\nLog-in using the appropriate password\n\nThe IC-718 is connected via USB2 to the NARC-3 PC.\nTo operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. See instructions for operating these modes in separate documents.\n\n\n\nBasic controls\n\nAudio levels\n\n\nFilter settings\n\n\nOperating modes\n\n\nBands\n\n\nRF Power\n\n\n\nMore information\nHere’s a helpful video from KB9VBR’s YouTube channel.",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Icom IC-718</span>"
+    ]
+  },
+  {
+    "objectID": "kenwood-D710.html",
+    "href": "kenwood-D710.html",
+    "title": "Kenwood TM-D710",
+    "section": "",
+    "text": "Overview\nThe Kenwood TM-D710 is available for members who want to monitor the 146.86 and 146.76 repeaters while they are at the clubhouse.",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Kenwood TM-D710</span>"
+    ]
+  },
+  {
+    "objectID": "kenwood-D710.html#overview",
+    "href": "kenwood-D710.html#overview",
+    "title": "Kenwood TM-D710",
+    "section": "",
+    "text": "Kenwood TM-D710",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Kenwood TM-D710</span>"
+    ]
+  },
+  {
+    "objectID": "kenwood-D710.html#manuals",
+    "href": "kenwood-D710.html#manuals",
+    "title": "Kenwood TM-D710",
+    "section": "Manuals",
+    "text": "Manuals\n\nBasic manual\nAPRS manual",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Kenwood TM-D710</span>"
+    ]
+  },
+  {
+    "objectID": "kenwood-D710.html#operating-instructions",
+    "href": "kenwood-D710.html#operating-instructions",
+    "title": "Kenwood TM-D710",
+    "section": "Operating instructions",
+    "text": "Operating instructions\nThe radio is located along the north wall, above the NARC-4 packet station.\n\nPress the power button on upper right corner of the radio.\nAdjust the audio gain for either the left or right VFO via the small “inner” knobs.\nSelect the operating band by pressing and holding the lower left or right small buttons.\nWhen you leave the shack, please power-down the rig. Press and hold the power button in the upper right.",
+    "crumbs": [
+      "Rigs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Kenwood TM-D710</span>"
+    ]
+  },
+  {
+    "objectID": "antennas.html",
+    "href": "antennas.html",
+    "title": "Antennas",
+    "section": "",
+    "text": "Towers\nWith the help of K3ARL’s team from Centre Communications, the club maintains four towers.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Antennas</span>"
+    ]
+  },
+  {
+    "objectID": "antennas.html#towers",
+    "href": "antennas.html#towers",
+    "title": "Antennas",
+    "section": "",
+    "text": "60 foot tower\n\n4 element Mosley triband (10, 15, 20m + WARC bands - 12 and 17m) Yagi\n40m dipole\n\n\n\n\n\n\n\nFigure 11.1: 60 foot tower\n\n\n\n\n\n100 foot tower\n\nVHF 4 element vertical orientation Yagi + rotator\n2 VHF fixed direction vertical orientation 6 element Yagis (W3YA system)\nVHF 2m vertical polarization\n20m dipole\n\n\n\n\n100 foot tower\n\n\n\n\n80 foot tower\n\n4 element triband (10, 15, 20m + WARC) Yagi\n\nRotor\n\n160m dipole\n40m dipole\n\n\n\n\n80 foot tower\n\n\n\n\n60 foot tower\n\nVHF vertical\n80m dipole oriented N/S\n\n\n\n\n60 foot tower",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Antennas</span>"
+    ]
+  },
+  {
+    "objectID": "antennas.html#antennas-by-band",
+    "href": "antennas.html#antennas-by-band",
+    "title": "Antennas",
+    "section": "Antennas by band",
+    "text": "Antennas by band\n\n10, 12, 15, 17, 20m\n\n4 element triband (10, 15, 20m + WARC bands - 12 and 17m) Yagi (on 60 foot tower)\n4 element Mosley Classic triband (10, 15, 20m + WARC bands - 12 and 17m) Yagi (on 80 foot tower) (new in 2023)\n\n\nRotator and Controller\nBoth Mosley triband antennas are moved by (new in 2023) Yaesu G-2800 rotators.\n\n\n\n\n\n\nFigure 11.2: Yaesu G-2800 rotator\n\n\n\nA Green Heron RT-21 Rotator Controller controls each Yaesu rotator.\n\n\n\n\n\n\nFigure 11.3: Green Heron RT-21\n\n\n\n\nManuals\n\nYaesu G-2800 rotator manual and calibration procedure.\nGreen Heron RT-21 Rotator Controller manual and version 4 revision notes.\n\n\n\n\n\n\n\nComing soon…\n\n\n\nMark K0LO is configuring a PC server so that all of the NARC computers can control the rotators.\n\n\n\n\n\n\n40m\n\nDipole (on 100 foot tower )\n\nCurrent out of service.\n\nDipole (on 80 foot tower)\n\n\n\n\n\n\n\nNote\n\n\n\nThe 40m dipole on the 100 foot tower has been replaced with a 20m dipole. A replacement 40m/80m fan dipole has been ordered. We hope to install the dipole soon.\n\n\n\n\n80m\n\nDipole, CW cut, on 60 foot tower.\nDipole, Phone (75m) on other 60 foot tower.\n\n\n\n160m\n\nDipole on 80’ north tower.\n\n\n\n\n\n\n\nNote\n\n\n\nThe 160m dipole is out of service. A replacement has been acquired. The club hopes to install the replacement in Fall 2023.\n\n\n\n\nVHF/UHF\n\nThe club has acquired a 6m yagi for future installation on the 100 foot tower.\nThe K3YV UHF repeater has its transmit and receive antenna on the 60 foot tower.\nThe club does not have resonant antennas for 30 or 60m.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Antennas</span>"
+    ]
+  },
+  {
+    "objectID": "antennas.html#future-plans",
+    "href": "antennas.html#future-plans",
+    "title": "Antennas",
+    "section": "Future plans",
+    "text": "Future plans\n\nThe club has plans to replace some of our 40m and 80m single band dipoles with 40m/80m fan dipoles. Those antennas are on-hand, but have not yet been installed.\nThe club has acquired a 6m Yagi. We plan to install that antenna on the 100 foot tower at a future date.\nThere is a vertically polarized 2m Yagi on top of the 100 foot tower. The 6m antenna may replace the 2m antenna, or we may service or replace the 2m antenna.\nThere has been some discussion about installing an HF receive antenna, and about building or installing antennas for 60m and 30m.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Antennas</span>"
+    ]
+  },
+  {
+    "objectID": "antennas.html#antenna-use",
+    "href": "antennas.html#antenna-use",
+    "title": "Antennas",
+    "section": "Antenna use",
+    "text": "Antenna use\n\n\n\nAntenna connections in clubhouse interior\n\n\n\nConfirm that it is impossible for your transceiver to transmit while you are connecting your transceiver’s (color-tagged) feedline to one of the antenna connectors.\nSwitch antennas manually by connecting your radio feedline from array of antenna connectors on the north wall.\nWhen you leave the shack, disconnect the transceiver feedline from the antenna you were using and hang it on one of the hooks on the wall using the attached paracord.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Antennas</span>"
+    ]
+  },
+  {
+    "objectID": "wifi-internet.html",
+    "href": "wifi-internet.html",
+    "title": "Wifi & internet",
+    "section": "",
+    "text": "Background\nThanks to the work of Mark K0LO and Eric Brooks N3EB (SK), the clubhouse got internet service in the fall of 2020.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Wifi & internet</span>"
+    ]
+  },
+  {
+    "objectID": "wifi-internet.html#connecting-to-wifi",
+    "href": "wifi-internet.html#connecting-to-wifi",
+    "title": "Wifi & internet",
+    "section": "Connecting to wifi",
+    "text": "Connecting to wifi\nThe wifi is for club members only. The ssid is NARC Members.\nAsk Mike N3LI, Rick W3TM, or Eric W3EDP for the password.\n\n\n\nThe Ubiquiti wifi router",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Wifi & internet</span>"
+    ]
+  },
+  {
+    "objectID": "wifi-internet.html#connecting-to-the-internet-via-an-ethernet-cable",
+    "href": "wifi-internet.html#connecting-to-the-internet-via-an-ethernet-cable",
+    "title": "Wifi & internet",
+    "section": "Connecting to the internet via an Ethernet cable",
+    "text": "Connecting to the internet via an Ethernet cable\nThe TP Link bridge/router has ethernet ports you may plug in to.\n\n\n\n\n\n\nNote\n\n\n\nTODO: Add a photo of the bridge/router here.\nTODO: We might also consider having some ethernet cables connected to the bridge/router.\n\n\nNote that NARC1, NARC2, and NARC3 use ports 1, 3, and 5. Please leave these connections alone. The system runs a DHCP server, so you should be able to plug in your computer and acquire an IP address after a few moments.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Wifi & internet</span>"
+    ]
+  },
+  {
+    "objectID": "remote-operations.html",
+    "href": "remote-operations.html",
+    "title": "Remote operations",
+    "section": "",
+    "text": "Overview\nSince the winter of 2022-23, several club members have been experimenting with remote operations at the mountaintop. The experiments have been conducted during the time of the year when lightning is not a meaningful risk, essentially December through February.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Remote operations</span>"
+    ]
+  },
+  {
+    "objectID": "remote-operations.html#remote-access-to-narc-1",
+    "href": "remote-operations.html#remote-access-to-narc-1",
+    "title": "Remote operations",
+    "section": "Remote access to NARC-1",
+    "text": "Remote access to NARC-1\nThe steps are as follows:\n\nConnect to the VPN.\nPower up the radio via the Kasa app or the NARC Node Red server.\n\n\n\n\nNodeRed Dashboard\n\n\n\nConnect to the radio\n\nW3TM uses the SDR-Control application. It works on MacOS and iOS (both iPhone and iPad) and has an interface similar to the MacOS and iOS SmartSDR application for FlexRadios (see below). The following screenshots depict SDR-Control operations from a Mac.\nWhen the application opens, the following screen appears.\n\n\n\nSDR-Control connection screen\n\n\nClicking on the panel opens a window with available radios.\n\n\n\nSDR-Control available radios\n\n\nClicking on the “NARC1-IC-7610” line connects to the radio.\n\n\n\nSDR-Control screen of remote access to NARC-1 IC-7610\n\n\n\nShutting down\nThe steps to shut down are as follows:\n\nPress the white “Disconnect” button in the upper panel.\nDisconnect from the NARC VPN.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Remote operations</span>"
+    ]
+  },
+  {
+    "objectID": "remote-operations.html#remote-access-to-narc2",
+    "href": "remote-operations.html#remote-access-to-narc2",
+    "title": "Remote operations",
+    "section": "Remote access to NARC2",
+    "text": "Remote access to NARC2\nThere are two ways to access the NARC-2/Flex 6400M station. One way involves use of the SmartSDR application to connect to the radio directly. The other way involves accessing the NARC-2 PC and using the local copy of SmartSDR.\n\nAccess directly via SmartSDR\nThe (paid) MacOS and iOS SmartSDR applications written by Marcus Roskosch and the (free) Windows-only SmartSDR application provided by FlexRadio can be used to connect to the Flex 6400M using SmartLink.\nThe steps to access the Flex 6400M are as follows.\n\nConnect to the VPN\nPower up the radio via the NARC Node Red server (https://10.10.2.18:1880/ui).\n\n\n\n\nNodeRed Dashboard\n\n\nThe ‘Flex Power’ button powers up the Astron power supply. ‘Flex On/Off’ button powers up the radio.\n\nDisconnect from the VPN\n\n\nOn iOS or MacOS SmartSDR\n\nOpen SmartSDR\n\n\n\n\nConnection screen from SmartSDR for MacOS\n\n\nClick on the main window to open a list of available radios.\n Note the blue “SmartLink” indicator and the NARCFlex radio. Click on the “SmartLink” line and press the “Connect…” button.\nAfter a few moments, the following window may appear.\n\n\n\nWindow to connect to Flex 6400M as a second client or disconnect the local Maestro client\n\n\nPress the “Connect” button.\nAfter a moment or two, the radio control panel appears.\n #### Shutting down\nThe steps to shut down are as follows:\n\nPress the white “Disconnect” button in the upper panel of SmartSDR.\nConnect to the NARC VPN.\nPower down via the NARC Node Red server (https://10.10.2.18:1880/ui).\n\n\n\n\nNodeRed Dashboard\n\n\nPower-down the Flex first: Press “Flex On/Off”.\nWait about 15 seconds.\nThen power-down the power supply by pressing “Flex Power”.\n\nDisconnect from the NARC VPN.\n\n\n\n\nAccess via NARC-2 computer\n\n\n\n\n\n\nNote\n\n\n\nTODO: Complete this section",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Remote operations</span>"
+    ]
+  },
+  {
+    "objectID": "test-suite.html",
+    "href": "test-suite.html",
+    "title": "Test Suites",
+    "section": "",
+    "text": "Monthly\nW3TM tries and usually succeeds in running these steps on both NARC1 and NARC2 once a month. The results of the tests are captured in a Google doc.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Test Suites</span>"
+    ]
+  },
+  {
+    "objectID": "test-suite.html#monthly",
+    "href": "test-suite.html#monthly",
+    "title": "Test Suites",
+    "section": "",
+    "text": "Power-up\n\nConnect rig to a suitable antenna or dummy load\nPower-up the Astron power supply\nPower-up the rig\nLog-on to the computer using the appropriate user name and password\n\n\n\nPhone operations\n\nSet power to 100 W or less\nCall CQ or answer a CQ\n\nOn the IC-7610, use Icom SM-30 desk mic with embedded push-to-talk (PTT) switch or the footswitch.\nOn the Flex 6400M, use the Yaesu mic or headset with the footswitch for PTT.\n\n\n\n\nLogging programs\n\nAmateur Contact Log (N3FJP)\n\nCheck https://www.n3fjp.com/ to determine latest version of software.\nDownload and install if there is an update.\nOpen Amateur Contact Log; a shortcut is on the PC desktop\nConfirm version and record it.\nConfirm that ACL tracks of frequency changes & mode changes\nClose application\n\n\n\nN1MM+\n\nStart-up N1MM+; update if prompted\nConfirm version\nConfirm that N1MM+ follows frequency changes.\nClose N1MM+.\n\n\n\n\nDigital mode operations\n\nWSJT-X\n\nOpen WSJT-X\nConfirm version.\nSelect W3YA configuration\nTest WSJT-X receive\nSwitch to suitable band for antenna from within WSTJ-X application\nConfirm that rig follows software band change\nTurn RF power to 10 W\nTest WSJT-X CQ transmit\n\nClick Enable Tx button\nPermit 3 xmit cycles\nIf no one responds to CQ, check https://pskreporter.info\n\nIf not checking JTAlert, Close WSJT-X\n\n\n\nJTAlert, https://hamapps.com/JTAlert/\n\nCheck application site, update as needed.\nOpen JTAlert\nConfirm version.\nConfirm that received CQs appear in green in JTAlert window\nTest xmit from JTAlert\n\nClick on green CQ button to initiate QSO\n\nClose JTAlert\n\n\n\n\n\n\n\nNote\n\n\n\nTODO: More complete steps\n\n\n\n\nJS8Call\n\nOpen JS8Call\nConfirm version.\nSelect W3YA configuration\nTest JS8Call receive\nSwitch to suitable band for antenna (most JS8Call activity is on 40 m)\nConfirm rig follows software band change\nConfirm RF power is 10 W\nTest JS8Call heartbeat transmit\n\n\n\n\n\n\n\nNote\n\n\n\nTODO: Complete steps\n\n\n\nIf stations respond to heartbeat, all is well.\nCheck pskreporter.info to confirm: W3YA _____ was/______ was not heard.\nClose JS8Call\n\n\n\nFldigi, http://www.w1hkj.com/\n\nCheck site and update fldigi, flrig, or other applications, as needed\nOpen fldigi\nConfirm version.\nOn IC-7610, confirm that flrig opens and shows current operating frequency\n\n\n\n\n\n\n\nOperating parameters for IC-7610:\n\n\n\nRig: IC-7610 COM3 Baud: 38400 Stop bits: 1 stop bit CI-V: 0x98\n\n\n\n\n\n\n\n\nOperating parameters for Flex-6400M\n\n\n\nTODO: Add these.\n\n\n\n7.070 MHz is a watering hole for PSK31 activity on 40m. You might look there to test receive and transmit.\nCheck transmit\n\nCreate test message (e.g., “de w3ya w3ya testing testing”)\nTransmit message\n\nWait 1-2 mins and check pskreporter.info: W3YA _____ was/______ was not heard.\nClose flrig and fldigi.\n\n\n\nWinlink Express/VARA\n\nOpen Winlink Express\nUpdate forms and software if prompted\nConfirm Winlink (not forms) version.\nSelect Telnet Winlink session and open session, then start the session to retrieve any messages.\nIf connection succeeds, send test message to W3TM@winlink.org.\nSelect Vara HF Winlink session\nIf prompted, update VARA HF\n\nDownload\nInstall (as administrator)\n\nConfirm VARA HF version.\nSelect an HF target station\nWhen the channel is clear, start the session\nClose Winlink Express/VARA\n\n\n\nVarAC\n\nOpen VarAC\nConfirm that VARA HF opens along with VarAC window.\nConfirm verson.\nUse VarAC window to confirm that rig follows band/freq changes.\nTest transmit\nConfirm rig RF power is 10 W\nTransmit beacon\nWait 1-2 mins then check pskreporter.info: W3YA _____ was/______ was not heard\n\n\n\nYONIQ (SSTV)\n\nOpen YONIQ\nTune to SSTV frequency (e.g., 14.230 MHz)\n\n\n\n\n\n\n\nNote\n\n\n\nTODO: Finish test suite\n\n\n\n\n\nWin4IcomSuite\n\nNARC1/IC-7610 station only\nOpen Win4Icom\nConfirm program tracks frequency and mode\nClose Win4Icom\n\n\n\nKPA1500 Amplifier\n\nPower on amplifier\nTest ATU\n\nRig to 10% power (~10W). Press MULTI knob(press RF POWER and rotate MULTI knob to read HF 10%)\nRig mode to RTTY (touch mode on touchscreen, select RTTY)\nAmp in standby mode (short press on MODE/PF1) button until yellow STDBY indicator illuminates\nAmp to ATU mode (short press on ATU TUNE button)\nTransmit (press TRANSMIT on rig or PTT on mic to send RF)\nWhen ATU cycle ends (after a few seconds), Press TRANSMIT again to end test transmission.\n\nTest amplification\n\nSet amp to operate (short press on OPER/STDBY)\nTransmit (press TRANSMIT or PTT on mic) on rig\nNOTE ~10 W drive should generate about 4-500 W out)\nPress TRANSMIT again to end test transmission\nSet amplifier back to stand-by (short press on MODE/PF1)\n\nPower down amplifier\nReturn rig to SSB mode (press mode indicator on touch screen, select SSB)",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Test Suites</span>"
+    ]
+  },
+  {
+    "objectID": "test-suite.html#contestfield-day",
+    "href": "test-suite.html#contestfield-day",
+    "title": "Test Suites",
+    "section": "Contest/Field Day",
+    "text": "Contest/Field Day\n\nTest networked logging\n\nRig1 in phone mode, log contact\nRig2 in phone mode, log contact\nChange Rig1 band\nChange Rig2 band\nChange Rig1 to CW, log contact\nChange Rig2 to CW, log contact\nFor each digital mode that will be used…\n\nOn Rig1, open digital app, attempt to make contact and log it\nOn Rig2, open digital app, attempt to make contact and log it\n\nClose all apps\nCheck log file",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Test Suites</span>"
+    ]
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "Set-up\nHere is a link to the Google Sheet that W3TM maintains for tracking software version updates. The following code downloads that file.\nFile downloaded:\n\n\n• 'narc-software-version-tracker'\n  &lt;id: 1NqblEGvrP0aiqWkBTs1G_hA3oWTKcxh_-Kb_m7E4G70&gt;\n\n\nSaved locally as:\n\n\n• 'include/csv/software_versions.csv'\nThen, we import the downloaded data.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"
+    ]
+  },
+  {
+    "objectID": "software.html#operating-system",
+    "href": "software.html#operating-system",
+    "title": "Software",
+    "section": "Operating System",
+    "text": "Operating System\n\n\n\n\n\nstation\nsoftware\nversion\ndate\n\n\n\n\nnarc1\nMS Windows\n10\n2024-05-22\n\n\nnarc2\nMS Windows\n10\n2024-06-08",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"
+    ]
+  },
+  {
+    "objectID": "software.html#digital-modes",
+    "href": "software.html#digital-modes",
+    "title": "Software",
+    "section": "Digital modes",
+    "text": "Digital modes\n\nNARC1\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nGridTracker2\n2.241124\n2024-11-24\n\n\nJS8Call\n2.2.0\n2024-05-22\n\n\nJTAlert\n2.50.0\n2024-05-22\n\n\nVARA HF\n4.8.9\n2024-11-24\n\n\nVarAC\n10.2.1\n2024-11-24\n\n\nWSTJ-X\n2.6.1\n2024-11-24\n\n\nWinlink Express\n1.7.20\n2024-11-24\n\n\nYoniq (SSTV)\n1.13\n2024-05-22\n\n\nflamp\n2.2.14\n2024-11-24\n\n\nfldigi\n4.206\n2024-11-24\n\n\nflmsg\n4.0.23\n2024-11-24\n\n\nflrig\n2.0.05\n2024-11-24\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nJS8Call\n2.2.0\n2024-06-08\n\n\nJTAlert\n2.60.2\n2024-06-08\n\n\nMTTY\n1.71K\n2024-06-14\n\n\nVARA HF\n4.8.7\n2024-06-08\n\n\nVarAC\n9.1.0\n2024-06-08\n\n\nWSJT-X\n2.5.4\n2024-06-08\n\n\nWinlink Express\n1.7.16.0\n2024-06-08\n\n\nfldigi\n4.1.26\n2024-06-14\n\n\nflrig\n2.0.01\n2024-06-14",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"
+    ]
+  },
+  {
+    "objectID": "software.html#logging",
+    "href": "software.html#logging",
+    "title": "Software",
+    "section": "Logging",
+    "text": "Logging\n\nNARC1\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nACLog\n7.0.10\n2024-05-22\n\n\nN1MM+\n1.3.10316.0\n2024-06-14\n\n\nN3FJP Field Day Contest Log\n6.6.8\n2024-06-14\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nACLog\n7.0.10\n2024-06-08\n\n\n\n\n\n\n\nSee the separate chapter on logging for details about how to interface digital logging programs.\n\n\nNetworked logging\nSpecial considerations are required for networked logging of the sort we often do for Field Day. See details in the chapter on logging and specifically Figure 16.1.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"
+    ]
+  },
+  {
+    "objectID": "software.html#remote-control",
+    "href": "software.html#remote-control",
+    "title": "Software",
+    "section": "Remote Control",
+    "text": "Remote Control\n\nNARC1\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nSmartSDR\n3.8.19\n2024-11-02\n\n\nWin4Icom\n1.506\n2024-11-24\n\n\nwfview\nNA\nNA\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nSmartSDR\n3.8.19\n2024-11-02",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"
+    ]
+  },
+  {
+    "objectID": "logging.html",
+    "href": "logging.html",
+    "title": "Logging",
+    "section": "",
+    "text": "About\nThis page describes some settings and procedures specific to using logging software. The information is especially relevant to multi-transmitter/operator settings such as Field Day.",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Logging</span>"
+    ]
+  },
+  {
+    "objectID": "logging.html#amateur-contact-log",
+    "href": "logging.html#amateur-contact-log",
+    "title": "Logging",
+    "section": "Amateur Contact Log",
+    "text": "Amateur Contact Log\nAmateur Contact Log (AClog) by N3FJP is one of the logging packages installed on the NARC PCs.\nAmateur Contact Log has separate programs for general logging and specific contests like Field Day. The club has a license for the software, and this provides access codes for all of the logging programs.\n\nNetworked logging\nFor group contest-style events, it’s useful to have multiple rigs generate a single log file. This is called “networked logging”. Here is some resources useful for getting this to work for Field Day\nhttp://www.n3fjp.com/FDInfoTips.html\nThere are two types of networked logging, file share and TCP, we use TCP in almost all circumstances.\nFor Field Day 2024, we are using TCP. Here is a screenshot of the settings for NARC1:\n\n\n\n\n\n\nFigure 16.1: NARC1 N3FJP Field Day Log network settings\n\n\n\nIn this setup, NARC1 is the log server; NARC2 is a client.\n\n\n\nNARC2 N3FJP Field Day Log network settings\n\n\n\n\n\n\n\n\nKey points for networking N3FJP’s Field Day log via TCP\n\n\n\n\nFirst coded in July 2013, this option piggybacks on the functionality of the Status and Chat functions, to distribute adds, edits and deletes via TCP.\nAll PCs must enable the Status and Chat functions, which connect to the server on port 1000. If you have virus / Internet protection software, you must set your protection software on the server and EVERY client to allow this program to communicate on port 1000.\nDoes NOT require each client to navigate to the log file, so you don’t have to worry about file share permissions.\nThe server should host the file locally on its hard drive, not over the network, to eliminate any possibility of network file access delays. Choose your PC with the fastest processor and most RAM for the server.\nWhile loading the file may take longer via TCP, All Adds, Edits and Deletes should appear within one second on all clients.\nONLY the SERVER will and have the ability to perform many of the File menu options. This can be an advantage or disadvantage, depending on which functions you want the clients to be able to perform.\nIf your Network Status Display Form version reads 1.2 or later, in addition to the server, the TCP clients can also be set to write backups.\nAll PCs must select the same networking method. You can not mix and match! Either use File Share or TCP for every PC.\nWith the TCP method, more will be asked of the server, so processor timed sending of CW may be less precise.\n\n\n\n\n\nDigital mode logging\nTo configure select Settings/Application Program Interface (API) from the AC Log menus.\nINCLUDE_FIGURE_HERE\nAs THE FIGURE indicates, click on TCP API Enabled Server checkbox and use the default port (1100). Under WSTJ-X Interface select **Listen for WSJT-X*\n\nWSTJ-X\nIt’s best to use separate configurations for each use case. Here, we will describe our W3YA-FD (Field Day) configuration.\nUnder the WSJT-X File/Settings… menu there is a multi-tabbed window. Two windows are critical for Field Day logging with AC Log.\n\n\n\n\n\n\nFigure 16.2: NARC1 W3YA-FD Reporting Tab Settings\n\n\n\n\n\n\n\n\n\nFigure 16.3: NARC1 W3YA-FD Reporting Tab Settings\n\n\n\nWith these settings, WSJT-X controls the radio (and the associated COM port), while N3FJP periodically polls the WSTJ-X log and incorporates the data.\n\n\nFldigi\nNARC1 uses flrig for fldigi rig control. Here are some other settings relevant for Field Day logging.\n\n\n\n\n\n\nFigure 16.4: fldigi configuration under Configure/Contests\n\n\n\n\n\n\n\n\n\nFigure 16.5: fldigi configuration under Configure/Logging/N3FJP Logs\n\n\n\nNOTE The figure does not have PTT via  and  checked, but I think it should be.\nAlso, please note that the “Connect” checkbox in the upper right is selected and the “Connected” indicator should be green.\n\n\nMore information\nHere are more resources for connecting N3FJP’s software to various digital mode programs:\nhttp://www.n3fjp.com/help/digitalsetup.html\n\n\n\n\n\n\nTips\n\n\n\n\nStart the N3FJP logging program first, before the digital mode program.\nFrom N3FJP Software’s menu options click Settings &gt; Application Program Interface and check the upper check box that says TCP API Enabled (Server). Leave the lower check box unchecked.\nChoose whether N3FJP or the digital mode program will control the rig interface.\nFollow these steps for WSJT-X.\nFollow these steps for fldigi\nFollow these steps for GridTracker\nFollow these steps for JTAlert",
+    "crumbs": [
+      "Other resources",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Logging</span>"
+    ]
+  },
+  {
+    "objectID": "stations.html",
+    "href": "stations.html",
+    "title": "Stations",
+    "section": "",
+    "text": "The club maintains two full power HF + 6m stations (NARC-1 and NARC-2), plus a 100 W HF + 6m station (NARC-3). In addition, the mountaintop radio station has a dual band VHF/UHF FM radio for monitoring the 146.86 MHz W3YA and 146.76 MHz W3GA repeaters. We have a packet station and bulletin board operating on 145.030 MHz, and the club supports a full-time APRS digipeater active on 144.390 MHz as W3YA-1.",
+    "crumbs": [
+      "Stations"
+    ]
+  },
+  {
+    "objectID": "rigs.html",
+    "href": "rigs.html",
+    "title": "Rigs",
+    "section": "",
+    "text": "The next chapters describe the three main HF+6m rigs the club supports: the Icom IC-7610, FlexRadio Flex-6400M, and the Icom IC-718.",
+    "crumbs": [
+      "Rigs"
+    ]
+  }
+]

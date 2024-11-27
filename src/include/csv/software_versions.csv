@@ -1,0 +1,32 @@
+station,software,version,type,date
+narc1,WSTJ-X,2.6.1,digital,2024-11-24
+narc1,JTAlert,2.50.0,digital,2024-05-22
+narc1,GridTracker2,2.241124,digital,2024-11-24
+narc1,JS8Call,2.2.0,digital,2024-05-22
+narc1,Winlink Express,1.7.20,digital,2024-11-24
+narc1,VARA HF,4.8.9,digital,2024-11-24
+narc1,VarAC,10.2.1,digital,2024-11-24
+narc1,Yoniq (SSTV),1.13,digital,2024-05-22
+narc1,ACLog,7.0.10,logging,2024-05-22
+narc1,N1MM+,1.3.10316.0,logging,2024-06-14
+narc1,MS Windows,10,os,2024-05-22
+narc1,Win4Icom,1.506,remote,2024-11-24
+narc1,fldigi,4.206,digital,2024-11-24
+narc1,flrig,2.0.05,digital,2024-11-24
+narc1,flmsg,4.0.23,digital,2024-11-24
+narc1,flamp,2.2.14,digital,2024-11-24
+narc1,N3FJP Field Day Contest Log,6.6.8,logging,2024-06-14
+narc1,SmartSDR,3.8.19,remote,2024-11-02
+narc1,wfview,,remote,
+narc2,flrig,2.0.01,digital,2024-06-14
+narc2,SmartSDR,3.8.19,remote,2024-11-02
+narc2,ACLog,7.0.10,logging,2024-06-08
+narc2,WSJT-X,2.5.4,digital,2024-06-08
+narc2,JTAlert,2.60.2,digital,2024-06-08
+narc2,JS8Call,2.2.0,digital,2024-06-08
+narc2,fldigi,4.1.26,digital,2024-06-14
+narc2,Winlink Express,1.7.16.0,digital,2024-06-08
+narc2,VARA HF,4.8.7,digital,2024-06-08
+narc2,VarAC,9.1.0,digital,2024-06-08
+narc2,MS Windows,10,os,2024-06-08
+narc2,MTTY,1.71K,digital,2024-06-14

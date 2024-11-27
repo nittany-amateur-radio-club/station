@@ -1,0 +1,207 @@
+---
+title: "Test Suites"
+---
+
+This chapter describes the suite of tests that we use to make sure that our stations remain in good operating condition.
+
+## Monthly
+
+W3TM tries and usually succeeds in running these steps on both NARC1 and NARC2 once a month.
+The results of the tests are captured in a Google doc.
+
+### Power-up
+
+- Connect rig to a suitable antenna or dummy load
+- Power-up the Astron power supply
+- Power-up the rig
+- Log-on to the computer using the appropriate user name and password
+
+### Phone operations
+
+- Set power to 100 W or less
+- Call CQ or answer a CQ
+  - On the IC-7610, use Icom SM-30 desk mic with embedded push-to-talk (PTT) switch or the footswitch.
+  - On the Flex 6400M, use the Yaesu mic or headset with the footswitch for PTT.
+  
+### Logging programs
+
+#### Amateur Contact Log (N3FJP)
+
+- Check <https://www.n3fjp.com/> to determine latest version of software.
+- Download and install if there is an update.
+- Open Amateur Contact Log; a shortcut is on the PC desktop
+- Confirm version and record it.
+- Confirm that ACL tracks of frequency changes & mode changes
+- Close application
+
+#### N1MM+
+
+- Start-up N1MM+; update if prompted
+- Confirm version
+- Confirm that N1MM+ follows frequency changes.
+- Close N1MM+.
+
+### Digital mode operations
+
+#### WSJT-X
+
+- Open WSJT-X
+- Confirm version.
+- Select W3YA configuration
+- Test WSJT-X receive
+- Switch to suitable band for antenna from within WSTJ-X application
+- Confirm that rig follows software band change
+- Turn RF power to 10 W
+- Test WSJT-X CQ transmit
+  - Click Enable Tx button
+  - Permit 3 xmit cycles
+  - If no one responds to CQ, check <https://pskreporter.info>
+- If not checking JTAlert, Close WSJT-X
+
+#### JTAlert, <https://hamapps.com/JTAlert/>
+
+- Check application site, update as needed.
+- Open JTAlert
+- Confirm version.
+- Confirm that received CQs appear in green in JTAlert window
+- Test xmit from JTAlert
+  - Click on green CQ button to initiate QSO
+- Close JTAlert
+
+::: {.callout-note}
+
+TODO: More complete steps
+
+:::
+
+#### JS8Call
+
+- Open JS8Call
+- Confirm version.
+- Select W3YA configuration
+- Test JS8Call receive
+- Switch to suitable band for antenna (most JS8Call activity is on 40 m)
+- Confirm rig follows software band change
+- Confirm RF power is 10 W
+-   Test JS8Call heartbeat transmit
+
+::: {.callout-note}
+
+TODO: Complete steps
+
+:::
+
+- If stations respond to heartbeat, all is well.
+- Check pskreporter.info to confirm: W3YA _____ was/______ was not heard.
+- Close JS8Call
+
+#### Fldigi, <http://www.w1hkj.com/>
+
+- Check site and update fldigi, flrig, or other applications, as needed
+- Open fldigi
+- Confirm version.
+- On IC-7610, confirm that flrig opens and shows current operating frequency
+
+::: {.callout-tip}
+### Operating parameters for IC-7610:
+
+*Rig*: IC-7610</br>
+*COM3*</br>
+*Baud*: 38400</br>
+*Stop bits*: 1 stop bit</br>
+*CI-V*: 0x98
+:::
+
+::: {.callout-tip}
+### Operating parameters for Flex-6400M
+
+TODO: Add these.
+
+:::
+
+- 7.070 MHz is a watering hole for PSK31 activity on 40m. You might look there to test receive and transmit.
+- Check transmit
+    - Create test message (e.g., “de w3ya w3ya testing testing”)
+    - Transmit message
+- Wait 1-2 mins and check pskreporter.info: W3YA _____ was/______ was not heard.
+- Close flrig and fldigi.
+
+#### Winlink Express/VARA
+
+- Open Winlink Express
+- Update forms and software if prompted
+- Confirm Winlink (not forms) version.
+- Select Telnet Winlink session and open session, then start the session to retrieve any messages.
+- If connection succeeds, send test message to W3TM@winlink.org.
+- Select Vara HF Winlink session
+- If prompted, update VARA HF
+  - Download
+  - Install (as administrator)
+- Confirm VARA HF version.
+- Select an HF target station
+- When the channel is clear, start the session
+- Close Winlink Express/VARA
+
+#### VarAC
+
+- Open VarAC
+- Confirm that VARA HF opens along with VarAC window.
+- Confirm verson.
+- Use VarAC window to confirm that rig follows band/freq changes.
+- Test transmit
+- Confirm rig RF power is 10 W
+- Transmit beacon
+- Wait 1-2 mins then check pskreporter.info: W3YA _____ was/______ was not heard
+
+#### YONIQ (SSTV)
+
+- Open YONIQ
+- Tune to SSTV frequency (e.g., 14.230 MHz)
+
+::: {.callout-note}
+TODO: Finish test suite
+:::
+
+### Win4IcomSuite
+
+- NARC1/IC-7610 station only
+- Open Win4Icom
+- Confirm program tracks frequency and mode
+- Close Win4Icom
+
+### KPA1500 Amplifier
+
+- Power on amplifier
+- Test ATU
+  - Rig to 10% power (~10W). Press MULTI knob(press RF POWER and rotate MULTI knob to read HF 10%)
+  - Rig mode to RTTY (touch mode on touchscreen, select RTTY)
+  - Amp in standby mode (short press on MODE/PF1) button until yellow STDBY  indicator illuminates
+  - Amp to ATU mode (short press on ATU TUNE button)
+  - Transmit (press TRANSMIT on rig or PTT on mic to send RF)
+  - When ATU cycle ends (after a few seconds), Press TRANSMIT again to end test transmission.
+- Test amplification
+  - Set amp to operate (short press on OPER/STDBY)
+  - Transmit (press TRANSMIT or PTT on mic) on rig 
+  - **NOTE** ~10 W drive should generate about 4-500 W out)
+  - Press TRANSMIT again to end test transmission
+  - Set amplifier back to stand-by (short press on MODE/PF1)
+- Power down amplifier
+- Return rig to SSB mode (press mode indicator on touch screen, select SSB)
+
+
+
+## Contest/Field Day
+
+### Test networked logging
+
+- Rig1 in phone mode, log contact
+- Rig2 in phone mode, log contact
+- Change Rig1 band
+- Change Rig2 band
+- Change Rig1 to CW, log contact
+- Change Rig2 to CW, log contact
+- For each digital mode that will be used...
+  - On Rig1, open digital app, attempt to make contact and log it
+  - On Rig2, open digital app, attempt to make contact and log it
+- Close all apps
+- Check log file

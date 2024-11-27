@@ -1,0 +1,24 @@
+---
+title: "Preface"
+---
+
+```{r}
+#| include: false
+library(knitr)
+```
+
+## About
+
+Welcome to the Nittany Amateur Radio Club's ([NARC](https://nittany-arc.org)) station guide.
+The radio station is one of the best benefits of joining the club.
+
+Rick Gilmore W3TM manages the station with the help of Mike Coslo N3LI, Eric Prescott W3EDP, and Woody Brem K3YV.
+Mark Wharton K0LO provides computer networking support.
+
+This site provides information about how to gain access to the mountaintop station and how to use the equipment.
+
+The mountaintop station has been a focal point of activity for the club.
+We operated Field Day 2023 and 2024 from the station, and we have held W3M special event operations, Pennsylvania QSO Party activities, and other contesting events.
+
+For a PDF version of this guide, click [here](NARC-Clubhouse-Guide.pdf).
+

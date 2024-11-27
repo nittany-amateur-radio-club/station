@@ -1,0 +1,164 @@
+---
+title: "WSJT-X Operations on IC-7610"
+---
+
+### WSJT-X
+
+The current installed version as of 2023-12-19 is v2.5.4.
+
+#### On the PC
+
+1. Open WSJT-X (Icon is on desktop.)
+
+WSTJ-X opens to the same operating frequency as the rig is on when you start.
+
+2. Confirm Settings
+
+It’s not essential to confirm the settings each time you start up, but doing so will make sure that you are able to operate without difficulty.
+
+a. Open the Configurations menu and select a configurations set. `Standard Ops` is a good place to start.
+
+b. Open Settings from the File menu
+
+*General tab:*
+
+Set My Call to your personal callsign unless you have permission to use the club callsign (W3YA). 
+Set any Display or Behavior settings per your personal preferences.
+
+*Radio tab:*
+
+Change these at your own risk.
+
+| Parameter | Value | Comments |
+|-----------|-------|----------|
+| Rig       | Icom IC-7610 |       |
+| Ser Port    | COM3  |       |
+| Baud        | 38400 |       |
+| Data Bits   | 8 bits |      |
+| Parity     | none   |      |
+| (Stop bits) | 1     |       |
+| Handshake | none | |
+| Force Control Lines: | unset |
+| PTT method | CAT (port should be COM3) | |
+| Mode |  Data/pkt | |
+| Split operation | `Rig` or `Fake It`| |
+
+You may want to check/confirm that rig control is working by pushing the Test CAT button in this panel. 
+If the button turns green, then the rig and computer are communicating.
+
+You may also want to check that PTT is working.
+Adjusted the rig’s power output to a low level (1-5 W) before testing.
+On the IC-7610, press the MULTI button, touch the RF Power panel on the touch screen, and turn the MULTI button to set desired output power.
+
+Press the `Test PTT` button and observe whether the transmitter keys up.
+If so, all is well.
+
+*Audio tab:*
+
+| Parameter | Value | Comments |
+|-----------|-------|----------|
+| Input     | USB Audio Codec | |
+| Output    | USB Audio Codec | |
+
+*Reporting tab*
+
+You may want to set the Op Call to your own callsign. 
+
+*Advanced tab:*
+
+Check or uncheck `Special Operating Activity` per situation, for example ARRL Field Day or the NA VHF Contest.
+
+You may now close the `Settings` window by pressing the OK button.
+
+Switch to the desired mode (e.g., FT8) from the `Mode` menu.
+Select the desired operating band and default frequency from the dropdown menu on the lower left side of the main WSJT-X application panel.
+
+3. Check computer clock accuracy
+
+Open a browser; visit https://time.is
+
+If your time synch is within .5s of the correct time, you may proceed.
+
+If you are decoding signals in the waterfall, then all is well.
+
+#### On the IC-7610
+
+1. Confirm rig is in USB Data 2 (`USB-D2`) mode.
+
+![IC-7610 mode select button](include/img/ic-7610-chg-mode.png)
+
+To change the mode, press the mode indicator on the touch screen to open a window to toggle the mode (USB/LSB) to USB.
+Unless you are sure that your digital mode uses LSB, select USB.
+Press and hold the DATA button to switch between D1, D2, and D3 data mode connectors. 
+D2 is configured for use via USB.
+
+2. Set your bandwidth to filter 1 (wide) by pressing the FILTER button located on the right side of the front panel.
+
+![IC-7610 filter control](include/img/ic-7610-filter.png)
+
+You may adjust the filter settings by pressing and holding the filter button on the right side of the rig control panel. Press the arrow/return button on the display/touch screen to save and apply the filter settings.
+
+3. Set other settings
+
+![IC-7610 left panel controls](include/img/ic-7610-left-touch-buttons.png)
+
+The following settings can be changed via buttons on the left side of the touch/display screen.
+
+::: {.callout-note}
+
+The following settings let the software do the heavy-lifting.
+
+:::
+
+- Preamp (P.AMP) `off`
+
+Press the P.AMP button to cycle through the settings (OFF, P.AMP 1, P.AMP 2)
+
+- Attenuator (ATT): `off`
+
+Press the ATT button to cycle through the attenuator settings (OFF, 6 dB, 12 dB, 18 dB)
+
+- IP+: `off`
+
+Press the IP+ button to select ON or OFF
+
+- Automatic Gain Control (AGC): `off`
+
+Press and hold the AGC button on the display/touch screen.
+This opens a panel.
+Under the SSB column, select the SLOW setting.
+Adjust the AGC level downward until the indicator says OFF.
+Press the arrow/return button on the display/touch screen to enter the setting.
+
+- VOX: `off`
+
+- Noise reduction (NR): `off`
+
+Press the NR button on the left side of the front panel to turn off the illuminator.
+
+- Noise blanker (NB) off
+
+Press the NB button on the left side of the front panel to turn off the illuminator.
+
+4. Set desired RF power output using MULTI knob.
+
+![IC-7610 MULTI knob](include/img/ic-7610-multi.png)
+
+Press and hold the MULTI button to open a window on the touch/display screen.
+Press the RF POWER panel and rotate the MULTI button to set RF power.
+
+Remember, WSJT-X is a weak signal mode. 
+Less than 50 W is plenty, especially if you are using one of our "gain" antennas (Yagis).
+
+#### On KPA1500
+
+It's possible to use the amplifier for fldigi-supported modes, but we do not recommend it.
+These modes involve high duty cycles and put a lot of stress on the amplifier.
+
+#### Operating hints
+
+1. Make sure that your audio input level is not too high.
+
+There are several ways to adjust this:
+    - Adjust the RF/SQL button on the rig
+    - Adjust the mic levels on the PC (open the Audio control panel)

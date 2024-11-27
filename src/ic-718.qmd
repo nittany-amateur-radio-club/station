@@ -1,0 +1,69 @@
+---
+title: "Icom IC-718"
+---
+
+## Icom IC-718
+
+![](include/img/icom-ic-718.jpg)
+
+This transceiver is currently connected to the NARC-3 computer.
+
+### Connect equipment and power-up
+
+1. Connect to the power mains.
+
+2. Connect the radio to a suitable antenna.
+
+::: {.callout-warning}
+
+**Before you power up the radio, connect it to a suitable antenna**.
+**The antenna connections are located on the north wall, near the repeater cabinet**.
+
+:::
+
+Choose the PL-259 connector with the <span color="yellow">yellow</span> FlexRadio tag.
+Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.
+
+::: {.callout-warning}
+
+**Please do not remove the N/PL-259 connectors from the antenna feedlines.**
+
+:::
+
+3. Power up the UPS by pushing the front button. The green power light should illuminate.
+
+4. Power up the Astron RS-35A power supply that powers the IC-718/NARC3. 
+
+5. Power up the IC-718.
+
+6. Power up the Elecraft KPA1500 amplifier
+
+#### Log-in to the computer
+
+1. Power up the PC by pressing the power button on the right rear panel.
+
+2. Log-in using the appropriate password
+
+The IC-718 is connected via USB2 to the NARC-3 PC.
+
+To operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. 
+See instructions for operating these modes in separate documents.
+
+### Basic controls
+
+#### Audio levels
+
+#### Filter settings
+
+#### Operating modes
+
+#### Bands
+
+#### RF Power
+
+### More information
+
+Here's a helpful video from KB9VBR's YouTube channel.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kAh7G-Y6KFM?si=kaaIzoKfeiejRgag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+

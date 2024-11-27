@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Icom IC-7610 – Nittany ARC Station Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./flex-6400M.html" rel="next">
+<link href="./rigs.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rigs.html">Rigs</a></li><li class="breadcrumb-item"><a href="./icom-ic-7610.html"><span class="chapter-title">Icom IC-7610</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Nittany ARC Station Guide</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/nittany-amateur-radio-club/station/tree/main/src/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./NARC-Clubhouse-Guide.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./logistics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Logistics</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./stations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./narc1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NARC-1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./narc2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NARC-2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./narc3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NARC-3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./packet_aprs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">NARC-4 Packet/APRS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./rigs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rigs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./icom-ic-7610.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Icom IC-7610</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./flex-6400M.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">FlexRadio Flex 6400M</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ic-718.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Icom IC-718</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kenwood-D710.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kenwood TM-D710</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Other resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./antennas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Antennas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wifi-internet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Wifi &amp; internet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./remote-operations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Remote operations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./test-suite.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Test Suites</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./logging.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Logging</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#ic-7610-operating-guide" id="toc-ic-7610-operating-guide" class="nav-link active" data-scroll-target="#ic-7610-operating-guide">IC-7610 operating guide</a>
+  <ul class="collapse">
+  <li><a href="#icom-manuals" id="toc-icom-manuals" class="nav-link" data-scroll-target="#icom-manuals">Icom manuals</a></li>
+  <li><a href="#starting-up" id="toc-starting-up" class="nav-link" data-scroll-target="#starting-up">Starting up</a></li>
+  <li><a href="#basic-controls" id="toc-basic-controls" class="nav-link" data-scroll-target="#basic-controls">Basic controls</a></li>
+  <li><a href="#settings" id="toc-settings" class="nav-link" data-scroll-target="#settings">Settings</a></li>
+  </ul></li>
+  <li><a href="#phone-operations" id="toc-phone-operations" class="nav-link" data-scroll-target="#phone-operations">Phone operations</a>
+  <ul class="collapse">
+  <li><a href="#on-the-pc" id="toc-on-the-pc" class="nav-link" data-scroll-target="#on-the-pc">On the PC</a></li>
+  <li><a href="#on-the-ic-7610" id="toc-on-the-ic-7610" class="nav-link" data-scroll-target="#on-the-ic-7610">On the IC-7610</a></li>
+  <li><a href="#on-kpa1500" id="toc-on-kpa1500" class="nav-link" data-scroll-target="#on-kpa1500">On KPA1500</a></li>
+  </ul></li>
+  <li><a href="#digital-mode-operations" id="toc-digital-mode-operations" class="nav-link" data-scroll-target="#digital-mode-operations">Digital mode operations</a>
+  <ul class="collapse">
+  <li><a href="#fldigi-suite" id="toc-fldigi-suite" class="nav-link" data-scroll-target="#fldigi-suite">Fldigi suite</a></li>
+  <li><a href="#wsjt-x" id="toc-wsjt-x" class="nav-link" data-scroll-target="#wsjt-x">WSJT-X</a></li>
+  </ul></li>
+  <li><a href="#cw-operations" id="toc-cw-operations" class="nav-link" data-scroll-target="#cw-operations">CW operations</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/nittany-amateur-radio-club/station/edit/main/src/icom-ic-7610.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nittany-amateur-radio-club/station/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rigs.html">Rigs</a></li><li class="breadcrumb-item"><a href="./icom-ic-7610.html"><span class="chapter-title">Icom IC-7610</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Icom IC-7610</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">November 25, 2024</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ic-7610-operating-guide" class="level2">
+<h2 class="anchored" data-anchor-id="ic-7610-operating-guide">IC-7610 operating guide</h2>
+<div id="fig-ic-7610" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ic-7610-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/ic-7610.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ic-7610-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: Icom IC-7610
+</figcaption>
+</figure>
+</div>
+<p>This transceiver is currently connected to the NARC1 station computer.</p>
+<section id="icom-manuals" class="level3">
+<h3 class="anchored" data-anchor-id="icom-manuals">Icom manuals</h3>
+<p>Here are links to the IC-7610 manuals:</p>
+<ul>
+<li><a href="include/pdf/IC-7610_basic.pdf">Basic manual</a></li>
+<li><a href="include/pdf/IC-7610-advanced.pdf">Advanced manual</a></li>
+</ul>
+</section>
+<section id="starting-up" class="level3">
+<h3 class="anchored" data-anchor-id="starting-up">Starting up</h3>
+<ul>
+<li>The IC-7610/NARC1 is located closest to the main door off the porch.</li>
+</ul>
+<section id="connect-equipment-and-power-up" class="level4">
+<h4 class="anchored" data-anchor-id="connect-equipment-and-power-up">Connect equipment and power-up</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We have been experimenting with remote control of some station operations, including powering on the rig power supplies. As a result, the next set of actions may or may not be required.</p>
+</div>
+</div>
+<ol type="1">
+<li>Connect to the power mains.
+<ul>
+<li>Power cables are located between the wooden shelf and the east wall.</li>
+<li>Plug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet.</li>
+<li>Plug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet.</li>
+</ul></li>
+<li>Connect the radio to a suitable antenna.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Before you power up the radio, connect it to a suitable antenna</strong>.</p>
+</div>
+</div>
+<p><strong>The antenna connections are located on the north wall, near the repeater cabinet</strong>. Choose the PL-259 connector with the <span color="yellow">yellow</span> IC-7610 tag. Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.</p>
+<div id="fig-antenna-connection-panel" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-antenna-connection-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/antenna-connections.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-antenna-connection-panel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: Antenna connections
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Please do not remove the N/PL-259 connectors from the antenna feedlines.</strong></p>
+</div>
+</div>
+<ol start="3" type="1">
+<li><p>Power up the UPS by pushing the front button. The green power light should illuminate.</p></li>
+<li><p>Power up the Astron RS-35A power supply that powers the IC-7610/NARC1. The power supply is located to the right of the Elecraft KPA1500 amplifier.</p></li>
+</ol>
+<div id="fig-astron-rs-35a" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-astron-rs-35a-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/astron-rs-35a.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-astron-rs-35a-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.3: Astron RS-35A power supply
+</figcaption>
+</figure>
+</div>
+<ol start="5" type="1">
+<li>Power up the IC-7610/NARC1 by pressing and briefly holding the power button highlighted in <a href="#fig-ic-7610-power-switch" class="quarto-xref">Figure&nbsp;<span>7.4</span></a>.</li>
+</ol>
+<div id="fig-ic-7610-power-switch" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ic-7610-power-switch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/ic-7610-power-switch.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ic-7610-power-switch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.4: IC-7610 power switch
+</figcaption>
+</figure>
+</div>
+<ol start="6" type="1">
+<li>Power up the Elecraft KPA1500 amplifier</li>
+</ol>
+<p>The IC-7610/NARC1 is connected to the Elecraft <a href="KPA1500.qmd" id="fig-elecraft-kpa-1500">KPA1500</a> amplifier. The power supply for the KPA1500 is under the desk on a small footstool. Check that the KPA1500 power supply is on. If necessary, power-up the power supply by hitting the power switch on the upper rear left side of the power supply. When the amplifier power switch is on, you will see 3 green lights: AC on, High V supply, Low V supply. Power up the KPA1500 by pressing the <code>on</code> switch on the lower right hand side of the KPA1500 front panel as shown in <a href="#fig-kpa1500-power-switch" class="quarto-xref">Figure&nbsp;<span>7.5</span></a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are not operating with more than 100 W or do not need the KPA1500’s built in antenna tuner, then leave the KPA1500 powered off.</p>
+</div>
+</div>
+<div id="fig-kpa1500-power-switch" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kpa1500-power-switch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/kpa1500-power-switch.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kpa1500-power-switch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.5: KPA1500 Power Switch
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="log-in-to-the-computer" class="level4">
+<h4 class="anchored" data-anchor-id="log-in-to-the-computer">Log-in to the computer</h4>
+<ol type="1">
+<li><p>Power up the PC by pressing the power button on the right rear panel.</p></li>
+<li><p>Log-in using the appropriate password</p></li>
+</ol>
+<p>The IC-7610/NARC1 is connected via USB2 to the NARC1 PC. Open your logging program of choice. NARC has licenses for N1MM and N3FJP’s Amateur Contact Log.</p>
+<p>To operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. See instructions for operating these modes in separate sections below.</p>
+</section>
+</section>
+<section id="basic-controls" class="level3">
+<h3 class="anchored" data-anchor-id="basic-controls">Basic controls</h3>
+<ul>
+<li>Audio levels for the two VFOs are controlled via separate knobs on the left side of the front panel as shown in <a href="#fig-ic-7610-af" class="quarto-xref">Figure&nbsp;<span>7.6</span></a>.</li>
+</ul>
+<div id="fig-ic-7610-af" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ic-7610-af-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/ic-7610-af.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ic-7610-af-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.6: IC-7610 audio gain controls
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>As shown in <a href="#fig-ic-7610-chg-band" class="quarto-xref">Figure&nbsp;<span>7.7</span></a> You may switch operating bands in one of two ways:
+<ul>
+<li>Buttons located on the right side of the front panel</li>
+<li>Pressing the frequency on the touch screen.</li>
+</ul></li>
+</ul>
+<div id="fig-ic-7610-chg-band" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ic-7610-chg-band-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/ic-7610-chg-band.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ic-7610-chg-band-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.7: IC-7610 band change controls
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>Switch operating modes by pressing the mode button on the touch panel as shown in <a href="#fig-ic-7610-chg-mode" class="quarto-xref">Figure&nbsp;<span>7.8</span></a>.</li>
+</ul>
+<div id="fig-ic-7610-chg-mode" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ic-7610-chg-mode-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/ic-7610-chg-mode.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ic-7610-chg-mode-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.8: IC-7610 mode change control
+</figcaption>
+</figure>
+</div>
+<p>This opens a window where you can choose the mode of operation. - Hit the arrow button to close the window and save your choice.</p>
+<ul>
+<li>Turn digital noise reduction on or off by pressing the NR button on the left side of the front panel highlighted in <a href="#fig-ic-7610-left-touch-buttons" class="quarto-xref">Figure&nbsp;<span>7.9</span></a>. When NR is on, the NR button will be illuminated.
+<ul>
+<li>To adjust the amount of noise reduction, press and hold the NR button to open a window on the upper right corner of the touch panel display.</li>
+<li>Turn the MULTI key to adjust the level of noise reduction.</li>
+<li>Close the NR window by pressing the MULTI key or by pressing the NR button.</li>
+</ul></li>
+<li>Adjust preamplifier (<code>P.AMP</code>) settings, automatic gain control (<code>AGC</code>), Intercept Point (<code>IP+</code>), <code>VOX</code>, and compression (<code>COMP</code>) settings by pressing the corresponding button on the left side of the touch/display screen.</li>
+</ul>
+<div id="fig-ic-7610-left-touch-buttons" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ic-7610-left-touch-buttons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/ic-7610-left-touch-buttons.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ic-7610-left-touch-buttons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.9: IC-7610 left panel controls
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>Adjust touch/display screen settings via the MENU1/MENU2 buttons at the bottom of the touch/display screen illustrated in <a href="#fig-ic-7610-menu-touch-buttons" class="quarto-xref">Figure&nbsp;<span>7.10</span></a>.</li>
+</ul>
+<div id="fig-ic-7610-menu-touch-buttons" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ic-7610-menu-touch-buttons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/ic-7610-menu-touch-buttons.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ic-7610-menu-touch-buttons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.10: IC-7610 bottom menu touch screen buttons
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>Select receive filter settings via the <code>FILTER</code> button on the right side of the front panel, below the <code>TWIN PBT</code> knob as highlighted in <span class="citation" data-cites="ic-7610-filter">@ic-7610-filter</span>.</li>
+</ul>
+<div id="ic-7610-filter" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="include/img/ic-7610-filter.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 filter control</figcaption>
+</figure>
+</div>
+<ul>
+<li>Set RF power by pressing the MULTI button to open a window on the display/touch screen. Press the RF POWER panel to select it, and adjust the output power by turning the MULTI knob as shown in <a href="#fig-ic-7610-multi" class="quarto-xref">Figure&nbsp;<span>7.11</span></a>.</li>
+</ul>
+<div id="fig-ic-7610-multi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ic-7610-multi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/ic-7610-multi.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ic-7610-multi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.11: IC-7610 multifunction control
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="settings" class="level3">
+<h3 class="anchored" data-anchor-id="settings">Settings</h3>
+<p>The rig and computer settings are tested on a regular basis, approximately monthly. If you would like to help W3TM test the rigs or improve and update the documentation, let him know.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please do not change any software or rig settings without:</p>
+<ol type="1">
+<li>Contacting W3TM 814-777-3298 first OR</li>
+<li>Documenting your changes in detail</li>
+</ol>
+</div>
+</div>
+<p>The following setting parameters are provided for reference:</p>
+<ul>
+<li>A single USB A/B cable connects the rig to the PC.</li>
+<li>COM3 is used for most CAT control. The IC-7610 creates a second COM port that is currently unused.</li>
+<li>8-N-1 at 38400 baud is used for serial control.</li>
+<li>Audio in/out are via USB Audio CODEC. The ICOM driver has been installed.</li>
+</ul>
+</section>
+</section>
+<section id="phone-operations" class="level2">
+<h2 class="anchored" data-anchor-id="phone-operations">Phone operations</h2>
+<section id="on-the-pc" class="level3">
+<h3 class="anchored" data-anchor-id="on-the-pc">On the PC</h3>
+<p>You do not need to use the PC to operate phone, but you may want to use the PC for logging.</p>
+<ol type="1">
+<li><p>Power up the NARC-1 PC by pressing the power button on the front panel.</p></li>
+<li><p>Log-in using the appropriate password</p></li>
+</ol>
+<p>Open your logging program of choice. NARC has licenses for N1MM and N3FJP’s Amateur Contact Log.</p>
+<section id="n1mm" class="level4">
+<h4 class="anchored" data-anchor-id="n1mm">N1MM</h4>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Please do not update N1MM without asking Mike N3LI, Rick W3TM, or Eric W3EDP first.</strong></p>
+</div>
+</div>
+</section>
+<section id="amateur-contact-log-acl-a.k.a.-n3fjp" class="level4">
+<h4 class="anchored" data-anchor-id="amateur-contact-log-acl-a.k.a.-n3fjp">Amateur Contact Log (ACL a.k.a. N3FJP)</h4>
+<p>You may need to download the specific log for the contest you want to work. The club has paid N3FJP for a license under the W3YA callsign. Ask W3TM for information about the license codes for contests that are are not already installed.</p>
+<ol type="1">
+<li>Open Amateur Contact Log</li>
+<li>Confirm that the program tracks frequency &amp; mode.</li>
+</ol>
+</section>
+</section>
+<section id="on-the-ic-7610" class="level3">
+<h3 class="anchored" data-anchor-id="on-the-ic-7610">On the IC-7610</h3>
+<ol type="1">
+<li>Confirm the rig is in SSB mode.</li>
+</ol>
+<p>To change the mode, press the mode indicator on the touch screen to open a window to toggle the mode (USB/LSB) appropriate for your band.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-chg-mode.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 mode control</figcaption>
+</figure>
+</div>
+<p>Remember, the convention is to use LSB below 10 MHz except for 60 m.</p>
+<ol start="2" type="1">
+<li>Set your receive bandwidth by pressing the FILTER button located on the right side of the front panel.</li>
+</ol>
+<p>You may adjust the filter settings by pressing and holding the filter button on the right side of the rig control panel. Press and hold the FILTER button on to save and apply the filter settings.</p>
+<p><img src="include/img/ic-7610-filter.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li><p>Check audio output levels.</p></li>
+<li><p>Set desired RF power output using MULTI knob.</p></li>
+</ol>
+<p><img src="include/img/ic-7610-multi.png" class="img-fluid"></p>
+<p>Press and hold the MULTI button to open a window on the touch/display screen. Press the RF POWER panel and rotate the MULTI button to set RF power.</p>
+</section>
+<section id="on-kpa1500" class="level3">
+<h3 class="anchored" data-anchor-id="on-kpa1500">On KPA1500</h3>
+<ol type="1">
+<li>For &lt; 100W output, set amplifier to STBY mode (yellow light) by pressing MODE button to toggle between STBY and OPER.</li>
+</ol>
+<p>For higher power output, follow <a href="KPA1500-tuning.qmd">these instructions</a> for tuning the KPA1500 amplifier.</p>
+<ol start="2" type="1">
+<li><p>Confirm ANT1 is output (press ANTENNA to toggle).</p></li>
+<li><p>Confirm ATU is IN (not BYP) by pressing and holding ATU TUNE button.</p></li>
+</ol>
+</section>
+</section>
+<section id="digital-mode-operations" class="level2">
+<h2 class="anchored" data-anchor-id="digital-mode-operations">Digital mode operations</h2>
+<p>The setup for each digital mode is slightly different, so we have created separate sections to describe those operations.</p>
+<section id="fldigi-suite" class="level3">
+<h3 class="anchored" data-anchor-id="fldigi-suite">Fldigi suite</h3>
+<p>As of 2023-12-19, the installed version of fldigi is 4.1.26.</p>
+<section id="on-the-pc-1" class="level4">
+<h4 class="anchored" data-anchor-id="on-the-pc-1">On the PC</h4>
+<ol type="1">
+<li>Open fldigi. (Icon is on desktop.)</li>
+</ol>
+<p>Fldigi is configured to use the flrig program to interface between the radio and the computer. Flrig should open automatically a few seconds after fldigi opens. If flrig shows the current VFO frequency and so does fldigi, the two devices are talking to one another.</p>
+<ol start="2" type="1">
+<li>Confirm Settings</li>
+</ol>
+<p>It’s not essential to confirm the settings each time you start up, but doing so will make sure that you are able to operate without difficulty.</p>
+<p>In flrig, open the Config menu and select Setup &gt; Transceiver. This opens a separate window.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rig</td>
+<td>IC-7610</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ser Port</td>
+<td>COM3</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Baud</td>
+<td>38400</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Parity</td>
+<td>N or none</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>(Stop bits)</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>PTT via CAT</td>
+<td><span class="math inline">\(\checkmark\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>CI-V adr</td>
+<td>0x98</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>You may now close the Configuration window by pressing the CLOSE button or close window (X) button.</p>
+<ol start="3" type="1">
+<li>Check receive operations</li>
+</ol>
+<ul>
+<li>Turn to a known PSK31 frequency, for example, 14.070 MHz in the 20 m band.</li>
+<li>From the fldigi Op Mode menu, select PSK &gt; BPSK-31</li>
+</ul>
+<p>If all is well, you should see decodes in the left hand window and signals in the waterfall below.</p>
+<ol start="4" type="1">
+<li>Configure your operational settings.</li>
+</ol>
+<ul>
+<li>From the Configure menu, select UI &gt; Operator to open a window.</li>
+<li>Under the Operator tab set Station Callsign, Operator Callsign, Operator Name, Antenna, Station QTH, Station Locator and other items.</li>
+</ul>
+</section>
+<section id="on-the-ic-7610-1" class="level4">
+<h4 class="anchored" data-anchor-id="on-the-ic-7610-1">On the IC-7610</h4>
+<ol type="1">
+<li>Confirm rig is in USB Data 2 (USB-D2) mode.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-chg-mode.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 mode select button</figcaption>
+</figure>
+</div>
+<p>To change the mode, press the mode indicator on the touch screen to open a window to toggle the mode (USB/LSB) to USB. Unless you are sure that your digital mode uses LSB, select USB. Press and hold the DATA button to switch between D1, D2, and D3 data mode connectors. D2 is configured for use via USB.</p>
+<ol start="2" type="1">
+<li>Set your bandwidth to filter 1 (wide) by pressing the FILTER button located on the right side of the front panel.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-filter.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 filter control</figcaption>
+</figure>
+</div>
+<p>You may adjust the filter settings by pressing and holding the filter button on the right side of the rig control panel. Press the arrow/return button on the display/touch screen to save and apply the filter settings.</p>
+<ol start="3" type="1">
+<li>Set other settings</li>
+</ol>
+<p>The following settings can be changed via buttons on the left side of the touch/display screen.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-left-touch-buttons.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 left panel controls</figcaption>
+</figure>
+</div>
+<ul>
+<li>Preamp (<em>P.AMP</em>) off</li>
+</ul>
+<p>Press the P.AMP button to cycle through the settings (OFF, P.AMP 1, P.AMP 2)</p>
+<ul>
+<li>Attenuator (<em>ATT</em>) off</li>
+</ul>
+<p>Press the ATT button to cycle through the attenuator settings (OFF, 6 dB, 12 dB, 18 dB)</p>
+<ul>
+<li>IP+ off</li>
+</ul>
+<p>Press the IP+ button to select ON or OFF</p>
+<ul>
+<li>Turn Automatic Gain Control (<em>AGC</em>) off</li>
+</ul>
+<p>Press and hold the AGC button on the display/touch screen. This opens a panel. Under the SSB column, select the SLOW setting. Adjust the AGC level downward until the indicator says OFF. Press the arrow/return button on the display/touch screen to enter the setting.</p>
+<ul>
+<li><p><em>VOX</em> off</p></li>
+<li><p>Noise reduction (<em>NR</em>) off</p></li>
+</ul>
+<p>Press the NR button on the left side of the front panel to turn off the illuminator.</p>
+<ul>
+<li>Noise blanker (<em>NB</em>) off</li>
+</ul>
+<p>Press the NB button on the left side of the front panel to turn off the illuminator.</p>
+<ol start="4" type="1">
+<li>Set desired RF power output using MULTI knob.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-multi.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 MULTI knob</figcaption>
+</figure>
+</div>
+<p>Press and hold the MULTI button to open a window on the touch/display screen. Press the RF POWER panel and rotate the MULTI button to set RF power.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Generally speaking, 40-50 W RF output is more than sufficient for successful operation using fldigi-supported modes.</p>
+</div>
+</div>
+</section>
+<section id="on-kpa1500-1" class="level4">
+<h4 class="anchored" data-anchor-id="on-kpa1500-1">On KPA1500</h4>
+<p>It’s possible to use the amplifier for fldigi-supported modes, but we do not recommend it. These modes involve high duty cycles and put a lot of stress on the amplifier.</p>
+</section>
+</section>
+<section id="wsjt-x" class="level3">
+<h3 class="anchored" data-anchor-id="wsjt-x">WSJT-X</h3>
+<p>The current installed version as of 2023-12-19 is v2.5.4.</p>
+<section id="on-the-pc-2" class="level4">
+<h4 class="anchored" data-anchor-id="on-the-pc-2">On the PC</h4>
+<ol type="1">
+<li>Open WSJT-X (Icon is on desktop.)</li>
+</ol>
+<p>WSTJ-X opens to the same operating frequency as the rig is on when you start.</p>
+<ol start="2" type="1">
+<li>Confirm Settings</li>
+</ol>
+<p>It’s not essential to confirm the settings each time you start up, but doing so will make sure that you are able to operate without difficulty.</p>
+<ol type="a">
+<li><p>Open the Configurations menu and select a configurations set. <code>Standard Ops</code> is a good place to start.</p></li>
+<li><p>Open Settings from the File menu</p></li>
+</ol>
+<p><em>General tab:</em></p>
+<p>Set My Call to your personal callsign unless you have permission to use the club callsign (W3YA). Set any Display or Behavior settings per your personal preferences.</p>
+<p><em>Radio tab:</em></p>
+<p>Change these at your own risk.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rig</td>
+<td>Icom IC-7610</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ser Port</td>
+<td>COM3</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Baud</td>
+<td>38400</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Data Bits</td>
+<td>8 bits</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Parity</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>(Stop bits)</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Handshake</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Force Control Lines:</td>
+<td>unset</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>PTT method</td>
+<td>CAT (port should be COM3)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Mode</td>
+<td>Data/pkt</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Split operation</td>
+<td><code>Rig</code> or <code>Fake It</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>You may want to check/confirm that rig control is working by pushing the Test CAT button in this panel. If the button turns green, then the rig and computer are communicating.</p>
+<p>You may also want to check that PTT is working. Adjusted the rig’s power output to a low level (1-5 W) before testing. On the IC-7610, press the MULTI button, touch the RF Power panel on the touch screen, and turn the MULTI button to set desired output power.</p>
+<p>Press the <code>Test PTT</code> button and observe whether the transmitter keys up. If so, all is well.</p>
+<p><em>Audio tab:</em></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Value</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Input</td>
+<td>USB Audio Codec</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Output</td>
+<td>USB Audio Codec</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Reporting tab</em></p>
+<p>You may want to set the Op Call to your own callsign.</p>
+<p><em>Advanced tab:</em></p>
+<p>Check or uncheck <code>Special Operating Activity</code> per situation, for example ARRL Field Day or the NA VHF Contest.</p>
+<p>You may now close the <code>Settings</code> window by pressing the OK button.</p>
+<p>Switch to the desired mode (e.g., FT8) from the <code>Mode</code> menu. Select the desired operating band and default frequency from the dropdown menu on the lower left side of the main WSJT-X application panel.</p>
+<ol start="3" type="1">
+<li>Check computer clock accuracy</li>
+</ol>
+<p>Open a browser; visit https://time.is</p>
+<p>If your time synch is within .5s of the correct time, you may proceed.</p>
+<p>If you are decoding signals in the waterfall, then all is well.</p>
+</section>
+<section id="on-the-ic-7610-2" class="level4">
+<h4 class="anchored" data-anchor-id="on-the-ic-7610-2">On the IC-7610</h4>
+<ol type="1">
+<li>Confirm rig is in USB Data 2 (<code>USB-D2</code>) mode.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-chg-mode.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 mode select button</figcaption>
+</figure>
+</div>
+<p>To change the mode, press the mode indicator on the touch screen to open a window to toggle the mode (USB/LSB) to USB. Unless you are sure that your digital mode uses LSB, select USB. Press and hold the DATA button to switch between D1, D2, and D3 data mode connectors. D2 is configured for use via USB.</p>
+<ol start="2" type="1">
+<li>Set your bandwidth to filter 1 (wide) by pressing the FILTER button located on the right side of the front panel.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-filter.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 filter control</figcaption>
+</figure>
+</div>
+<p>You may adjust the filter settings by pressing and holding the filter button on the right side of the rig control panel. Press the arrow/return button on the display/touch screen to save and apply the filter settings.</p>
+<ol start="3" type="1">
+<li>Set other settings</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-left-touch-buttons.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 left panel controls</figcaption>
+</figure>
+</div>
+<p>The following settings can be changed via buttons on the left side of the touch/display screen.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The following settings let the software do the heavy-lifting.</p>
+</div>
+</div>
+<ul>
+<li>Preamp (P.AMP) <code>off</code></li>
+</ul>
+<p>Press the P.AMP button to cycle through the settings (OFF, P.AMP 1, P.AMP 2)</p>
+<ul>
+<li>Attenuator (ATT): <code>off</code></li>
+</ul>
+<p>Press the ATT button to cycle through the attenuator settings (OFF, 6 dB, 12 dB, 18 dB)</p>
+<ul>
+<li>IP+: <code>off</code></li>
+</ul>
+<p>Press the IP+ button to select ON or OFF</p>
+<ul>
+<li>Automatic Gain Control (AGC): <code>off</code></li>
+</ul>
+<p>Press and hold the AGC button on the display/touch screen. This opens a panel. Under the SSB column, select the SLOW setting. Adjust the AGC level downward until the indicator says OFF. Press the arrow/return button on the display/touch screen to enter the setting.</p>
+<ul>
+<li><p>VOX: <code>off</code></p></li>
+<li><p>Noise reduction (NR): <code>off</code></p></li>
+</ul>
+<p>Press the NR button on the left side of the front panel to turn off the illuminator.</p>
+<ul>
+<li>Noise blanker (NB) off</li>
+</ul>
+<p>Press the NB button on the left side of the front panel to turn off the illuminator.</p>
+<ol start="4" type="1">
+<li>Set desired RF power output using MULTI knob.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/ic-7610-multi.png" class="img-fluid figure-img"></p>
+<figcaption>IC-7610 MULTI knob</figcaption>
+</figure>
+</div>
+<p>Press and hold the MULTI button to open a window on the touch/display screen. Press the RF POWER panel and rotate the MULTI button to set RF power.</p>
+<p>Remember, WSJT-X is a weak signal mode. Less than 50 W is plenty, especially if you are using one of our “gain” antennas (Yagis).</p>
+</section>
+<section id="on-kpa1500-2" class="level4">
+<h4 class="anchored" data-anchor-id="on-kpa1500-2">On KPA1500</h4>
+<p>It’s possible to use the amplifier for fldigi-supported modes, but we do not recommend it. These modes involve high duty cycles and put a lot of stress on the amplifier.</p>
+</section>
+<section id="operating-hints" class="level4">
+<h4 class="anchored" data-anchor-id="operating-hints">Operating hints</h4>
+<ol type="1">
+<li>Make sure that your audio input level is not too high.</li>
+</ol>
+<p>There are several ways to adjust this: - Adjust the RF/SQL button on the rig - Adjust the mic levels on the PC (open the Audio control panel)</p>
+</section>
+</section>
+</section>
+<section id="cw-operations" class="level2">
+<h2 class="anchored" data-anchor-id="cw-operations">CW operations</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Coming soon!</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./rigs.html" class="pagination-link" aria-label="Rigs">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Rigs</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./flex-6400M.html" class="pagination-link" aria-label="FlexRadio Flex 6400M">
+        <span class="nav-page-text"><span class="chapter-title">FlexRadio Flex 6400M</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nittany-amateur-radio-club/station/edit/main/src/icom-ic-7610.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nittany-amateur-radio-club/station/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

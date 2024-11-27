@@ -1,0 +1,72 @@
+---
+title: "Elecraft KPA1500 Tuning"
+---
+
+## Tuning the Elecraft KPA1500
+
+```{r, echo=FALSE}
+knitr::include_graphics("img/kpa1500.png")
+```
+
+### Confirm connections.
+
+1. The amplifier should be connected via the ANT 1 input to an antenna. 
+The feedlines hang from hooks near the North wall of the station and each has label indicating which radio station (NARC-1/IC-7610, NARC-2/K3S, or NARC-3/IC-9100) the feedline services.
+
+2. If the amplifier is connected to an antenna, you may power-up by pressing the button on the front of the amplifier.
+
+3. Confirm that the antenna input selector is set to ANT 1.
+
+```{r, echo=FALSE}
+knitr::include_graphics("include/img/kpa1500-ant.png")
+```
+
+4. The amplifier should be connected to the IC-7610 or K3S via a short coax patch cable. 
+The default configuration is from the amplifier to the transceiver's ANT 1 port.
+  
+### Ensure that antenna tuner is in-line
+
+NARC offers a variety of resonant antennas for your use, but it is prudent to use the automatic antenna tuner that the KPA1500 provides.
+
+On the KPA1500 front panel, press the ATU TUNE/ATU MODE button to select the ATU IN mode (green light).
+
+```{r, echo=FALSE}
+knitr::include_graphics("include/img/kpa1500-atu.png")
+```
+
+### Ensure amplifier and tuner are in-line
+
+The green OPER light needs to be illuminated.
+Press the MODE key if necessary.
+
+
+```{r, echo=FALSE}
+knitr::include_graphics("include/img/kpa1500-mode.png")
+```
+
+### IC-7610 procedure
+
+1. Find an open frequency in the band.
+
+2. The KPA1500 has auto-band-switching capability, but it is a good practice to confirm that the amplifier is on the band you are on.
+Press the appropriate BAND button to switch bands.
+
+3. On the IC-7610
+    a. Select the RTTY mode by pressing the mode indicator on the touchscreen.
+    b. Press the MULTI button to bring up a menu with the RF POWER control. Set the RF power to a low level; 8 W or so is a good place to start.
+    c. Apply RF drive. Press the TRANSMIT button (in the upper right corner of the front panel) to apply RF. Note the output power and SWR on the KPA1500. If the antenna is out of resonance, the ATU will seek a match. When the best match is found, press TRANSMIT again to turn off the RF drive.
+
+4. Increase the RF drive by a small amount, 5-10 W, and repeat 5c. until your desired output power (as indicated on the KPA1500) is reached.
+
+5. Change the mode on the IC-7610 to your desired operating mode, for example SSB.
+
+5. Press the MULTI button to close the menu if needed.
+
+### Flex 6400M procedure
+
+::: {.callout-note}
+
+Coming soon.
+
+:::
+

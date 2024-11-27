@@ -1,0 +1,85 @@
+---
+title: "FlexRadio Flex 6400M"
+---
+
+## Flex 6400M HF Transceiver
+
+![](include/img/flex-6400M.jpg)
+
+This transceiver is currently connected to the NARC-2 computer.
+
+### Manuals
+
+Here are links to some useful FlexRadio manuals:
+
+- [SmartSDR software user guide](include/pdf/SmartSDR-software-user-guide.pdf)
+- [Flex-6400M user guide](include/pdf/FLEX-6400M-and-FLEX-6600M-User-Guide-v3.x.pdf)
+
+### Connect and power-up
+
+1. Connect the Flex 6400M to an antenna.
+
+**Before you power up the radio, connect it to a suitable antenna**.
+**The antenna connections are located on the north wall, near the repeater cabinet**.
+Choose the PL-259 connector with the <span color="yellow">yellow</span> FlexRadio tag.
+Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.
+**Please do not remove the N/PL-259 connectors from the antenna feedlines.**
+
+::: {.callout-note}
+
+We have been experimenting with remote control of some station operations, including powering on the rig power supplies.
+As a result, the next set of actions may or may not be required.
+
+:::
+
+2. Connect radio to the power mains.
+    - Power cables are located between the wooden shelf and the east wall.
+    - Plug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet.
+    - Plug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet.
+
+3. Power up the UPS by pushing the front button. The green power light should illuminate.
+
+::: {.callout-note}
+
+Check to see if the Astron RS-35A power supply is on before carrying out the next step.
+
+:::
+
+4. Power-up the Astron RS-35A power supply that powers the Flex 6400M/NARC2. The power supply is located to the right of the [Elecraft KPA1500](KPA1500.qmd) amplifier.
+
+![Astron RS-35A power supply](include/img/astron-rs-35a.png)
+
+5. Power up the Flex/NARC-2 by pressing and briefly holding the power button.
+
+
+::: {.callout-note}
+
+If you do not plan to use the amplifier or the built-in antenna tuner, you may skip step 6.
+
+:::
+
+6. Power up the Elecraft KPA1500 amplifier
+
+The Flex/NARC-2 is connected to the Elecraft KPA1500 amplifier. 
+The power supply for the KPA1500 is under the desk on a small footstool. 
+Check that the KPA1500 power supply is on. 
+If necessary, power-up the power supply by hitting the power switch on the upper rear left side of the power supply. When the amplifier power switch is on, you will see 3 green lights: AC on, High V supply, Low V supply.
+Power up the KPA1500 by pressing the `on` switch on the lower right hand side of the KPA1500 front panel.
+
+![KPA1500 Power Switch](include/img/kpa1500-power-switch.png)
+
+#### Log-in to the computer
+
+1. Power up the PC by pressing the power button on the right rear of the computer/display.
+
+2. Log-in using the appropriate password.
+
+The Flex 6400M is connected via USB to the NARC-2 PC.
+
+Open your logging program of choice. 
+NARC has licenses for N1MM and N3FJP's Amateur Contact Log.
+
+To operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. 
+See instructions for operating these modes in separate documents.
+
+### Basic controls

@@ -1,0 +1,116 @@
+---
+title: "Remote operations"
+---
+
+## Overview
+
+Since the winter of 2022-23, several club members have been experimenting with remote operations at the mountaintop.
+The experiments have been conducted during the time of the year when lightning is not a meaningful risk, essentially December through February.
+
+## Remote access to NARC-1
+
+The steps are as follows:
+
+1. Connect to the VPN.
+
+2. Power up the radio via the Kasa app or the NARC Node Red server.
+
+![NodeRed Dashboard](include/img/narc-node-red-dashboard.png)
+
+3. Connect to the radio
+
+W3TM uses the [SDR-Control application](https://roskosch.de/sdr-control/).
+It works on MacOS and iOS (both iPhone and iPad) and has an interface similar to the MacOS and iOS SmartSDR application for FlexRadios (see below).
+The following screenshots depict SDR-Control operations from a Mac.
+
+When the application opens, the following screen appears.
+
+![SDR-Control connection screen](include/img/sdr-control-connect-screen-1.png)
+
+Clicking on the panel opens a window with available radios.
+
+![SDR-Control available radios](include/img/sdr-control-connect-screen-2.png)
+
+Clicking on the "NARC1-IC-7610" line connects to the radio.
+
+![SDR-Control screen of remote access to NARC-1 IC-7610](include/img/sdr-control-ic-7610-20m.png)
+
+### Shutting down
+
+The steps to shut down are as follows:
+
+1. Press the white "Disconnect" button in the upper panel.
+
+2. Disconnect from the NARC VPN.
+
+## Remote access to NARC2
+
+There are two ways to access the NARC-2/Flex 6400M station.
+One way involves use of the SmartSDR application to connect to the radio directly.
+The other way involves accessing the NARC-2 PC and using the local copy of SmartSDR.
+
+### Access directly via SmartSDR
+
+The (paid) [MacOS](https://roskosch.de/smartsdr-for-mac/) and [iOS](https://roskosch.de/smartsdr-features/) SmartSDR applications written by Marcus Roskosch and the (free) [Windows-only](https://www.flexradio.com/ssdr/ssdr-for-windows/) SmartSDR application provided by FlexRadio can be used to connect to the Flex 6400M using SmartLink.
+
+The steps to access the Flex 6400M are as follows.
+
+1. Connect to the VPN
+
+2. Power up the radio via the NARC Node Red server (https://10.10.2.18:1880/ui).
+
+![NodeRed Dashboard](include/img/narc-node-red-dashboard.png)
+
+The 'Flex Power' button powers up the Astron power supply. 'Flex On/Off' button powers up the radio.
+
+3. Disconnect from the VPN
+
+#### On iOS or MacOS SmartSDR
+
+1. Open SmartSDR
+
+![Connection screen from SmartSDR for MacOS](include/img/smart-sdr-connect-screen.png)
+
+Click on the main window to open a list of available radios.
+
+![](include/img/smartsdr-available-radios.png)
+Note the blue "SmartLink" indicator and the NARCFlex radio.
+Click on the "SmartLink" line and press the "Connect..." button.
+
+After a few moments, the following window may appear.
+
+![Window to connect to Flex 6400M as a second client or disconnect the local Maestro client](include/img/smart-sdr-connect-panel.png)
+
+Press the "Connect" button.
+
+After a moment or two, the radio control panel appears.
+
+![SmartSDR for MacOS remotely controlling the NARC2 Flex 6400M](include/img/smart-sdr-macos-window-20m.png)
+#### Shutting down
+
+The steps to shut down are as follows:
+
+1. Press the white "Disconnect" button in the upper panel of SmartSDR.
+
+2. Connect to the NARC VPN.
+
+3. Power down via the NARC Node Red server (https://10.10.2.18:1880/ui).
+
+![NodeRed Dashboard](include/img/narc-node-red-dashboard.png)
+
+Power-down the Flex first: Press "Flex On/Off".
+
+Wait about 15 seconds.
+
+Then power-down the power supply by pressing "Flex Power".
+
+4. Disconnect from the NARC VPN.
+
+### Access via NARC-2 computer
+
+::: {.callout-note}
+
+TODO: Complete this section
+
+:::
+
