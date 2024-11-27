@@ -165,12 +165,25 @@ TODO: Add these.
 TODO: Finish test suite
 :::
 
-### Win4IcomSuite
+### Remote
+
+#### Win4IcomSuite
 
 - NARC1/IC-7610 station only
 - Open Win4Icom
 - Confirm program tracks frequency and mode
 - Close Win4Icom
+
+#### wfview
+
+- NARC1/IC-7610 station only
+- Open wfview
+- Confirm program tracks frequency and mode
+- Close wfview
+
+#### SmartSDR
+
+- Open SmartSDR
 
 ### KPA1500 Amplifier
 
@@ -190,6 +203,58 @@ TODO: Finish test suite
   - Set amplifier back to stand-by (short press on MODE/PF1)
 - Power down amplifier
 - Return rig to SSB mode (press mode indicator on touch screen, select SSB)
+
+## Maintenance Log
+
+This section downloads information about the latest maintenance activities.
+W3TM created a new Google sheet to summarize this information on 2024-11-27.
+
+### Set-up
+
+Here is a link to the [Google Sheet](https://docs.google.com/spreadsheets/d/1h4YUfq1UKwzU8MBJOeOxYSXyhnX518sDBoJ3o-CFqYc/edit?usp=sharing) that W3TM maintains for tracking software version updates.
+The following code downloads that file.
+
+```{r}
+#| echo: false
+#| label: download-narc-maintenance-log
+#| message: false
+
+if (!dir.exists('include/csv')) {
+  message("Creating missing `include/csv/`.")
+  dir.create("include/csv")
+}
+
+options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
+googledrive::drive_auth()
+
+googledrive::drive_download(
+  "narc-mountaintop-station-maintenance-log",
+  path = file.path("include/csv", "maintenance_log.csv"),
+  type = "csv",
+  overwrite = TRUE
+  
+)
+```
+
+Then, we import the downloaded data.
+
+```{r}
+#| echo: false
+maintenance_log <- readr::read_csv("include/csv/maintenance_log.csv", show_col_types = FALSE)
+```
+
+### Summarize
+
+```{r}
+#| echo: false
+#| label: tbl-maintenance-log
+maintenance_log |>
+  dplyr::mutate(comment = ifelse(is.na(comment), "", comment)) |>
+  dplyr::select(-callsign) |>
+  dplyr::arrange(desc(date), equipment) |>
+  knitr::kable(format = "html") |>
+  kableExtra::kable_classic()
+```
 
 
 ## Contest/Field Day

@@ -1,0 +1,13 @@
+date,callsign,equipment,action,comment
+2024-11-27,W3TM,EFHW,Checked 20 and 40m SWR on NARC1; Antenna way out of resonance,
+2024-11-27,W3TM,NARC1,Checked wfview version. Currently 1.62.,
+2024-11-27,W3TM,NARC1,Confirmed wfview 1.62 works.,
+2024-11-27,W3TM,NARC2,Updated SmartSDR to 3.8.20,
+2024-11-27,W3TM,Flex 6400M,Updated SmartSDR to 3.8.20,
+2024-11-27,W3TM,NARC2,Update WSJT-X to 2.6.1,
+2024-11-27,W3TM,NARC2,Install GridTracker2 2.241124,
+2024-11-27,W3TM,NARC2,Upgrade fldigi to 4.2.06,
+2024-11-27,W3TM,NARC2,Upgrade flrig to 2.0.05,
+2024-11-27,W3TM,NARC2,Update flamp to 2.2.13,
+2024-11-27,W3TM,NARC2,Tested WSJT-X 2.6.1 with GridTracker2 and JTAlert,New WSJT-X configuration: W3YA-SmartCtrl
+2024-11-27,W3TM,NARC2,Update Winlink to 1.7.20.0,
