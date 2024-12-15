@@ -2,68 +2,96 @@
 title: "Icom IC-7610"
 ---
 
-## IC-7610 operating guide
+# Operating guide
 
 ![Icom IC-7610](include/img/ic-7610.jpg){#fig-ic-7610}
 
 This transceiver is currently connected to the NARC1 station computer.
 
-### Icom manuals
+## Icom manuals
 
 Here are links to the IC-7610 manuals:
 
 - [Basic manual](include/pdf/IC-7610_basic.pdf)
 - [Advanced manual](include/pdf/IC-7610-advanced.pdf)
 
-### Starting up
+## Starting up
 
 - The IC-7610/NARC1 is located closest to the main door off the porch.
 
-#### Connect equipment and power-up
-
-::: {.callout-note}
-
-We have been experimenting with remote control of some station operations, including powering on the rig power supplies.
-As a result, the next set of actions may or may not be required.
-
-:::
-
-1. Connect to the power mains.
-    - Power cables are located between the wooden shelf and the east wall.
-    - Plug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet.
-    - Plug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet.
-    
-2. Connect the radio to a suitable antenna.
+### Connect equipment and power-up
 
 ::: {.callout-warning}
-
-**Before you power up the radio, connect it to a suitable antenna**.
-
+**Before you power up the radio, connect it to a suitable antenna or to a dummy load**.
 :::
 
-**The antenna connections are located on the north wall, near the repeater cabinet**.
-Choose the PL-259 connector with the <span color="yellow">yellow</span> IC-7610 tag.
-Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.
+1. Connect the radio to a 50 Ohm load (usually an antenna)
 
 ![Antenna connections](include/img/antenna-connections.jpeg){#fig-antenna-connection-panel}
 
-::: {.callout-warning}
 
+::: {.callout-warning}
 **Please do not remove the N/PL-259 connectors from the antenna feedlines.**
-    
 :::
 
-3. Power up the UPS by pushing the front button. The green power light should illuminate.
+**The antenna connections are located on the north wall, near the repeater cabinet**.
+Feedlines from each radio hang on hooks below these antenna connectors.
+Choose the PL-259 connector with the [yellow]{.yellow-text} IC-7610 tag.
+Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.
 
-4. Power up the Astron RS-35A power supply that powers the IC-7610/NARC1. The power supply is located to the right of the Elecraft KPA1500 amplifier.
+::: {.callout-tip}
+Make sure that the antenna connection is snug, but not too snug that you can't disconnect it later.
+:::
+
+---
+
+2. Power up the Astron RS-35A power supply.
 
 ![Astron RS-35A power supply](include/img/astron-rs-35a.png){#fig-astron-rs-35a}
 
-5. Power up the IC-7610/NARC1 by pressing and briefly holding the power button highlighted in @fig-ic-7610-power-switch.
+An Astron RS-35A powers the IC-7610/NARC1. 
+The power supply is located next to the Elecraft KPA1500 amplifier.
+
+The unit is connected to a white Kasa smart outlet that allows remote shut-off of the radios.
+The smart outlet is plugged into a power strip under the wooden shelf, behind the PC, and adjacent to the radio.
+Touch the side of the smart switch to power-on the Astron RS-35A.
+
+You should hear the Astron "kerchunk" and see the power switch illuminate.
+
+<!-- 3. Power-up the radio -->
+
+<!-- The IC-7610 -->
+
+<!-- ::: {.callout-note} -->
+
+<!-- We have been experimenting with remote control of some station operations, including powering on the rig power supplies. -->
+<!-- As a result, the next set of actions may or may not be required. -->
+
+<!-- ::: -->
+
+<!-- 1. Connect to the power mains. -->
+<!--     - Power cables are located between the wooden shelf and the east wall. -->
+<!--     - Plug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet. -->
+<!--     - Plug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet. -->
+
+
+<!-- 3. Power up the UPS by pushing the front button. The green power light should illuminate. -->
+
+---
+
+3. Power up the IC-7610 radio.
+
+Press and briefly hold the power button highlighted in @fig-ic-7610-power-switch.
 
 ![IC-7610 power switch](include/img/ic-7610-power-switch.png){#fig-ic-7610-power-switch}
 
-6. Power up the Elecraft KPA1500 amplifier
+---
+
+4. Power up the Elecraft KPA1500 amplifier
+
+::: {.callout-note}
+If you are not operating with more than 100 W or do not need the KPA1500's built in antenna tuner, then leave the KPA1500 powered off.
+:::
 
 The IC-7610/NARC1 is connected to the Elecraft [KPA1500](KPA1500.qmd){#fig-elecraft-kpa-1500} amplifier. 
 The power supply for the KPA1500 is under the desk on a small footstool. 
@@ -71,17 +99,15 @@ Check that the KPA1500 power supply is on.
 If necessary, power-up the power supply by hitting the power switch on the upper rear left side of the power supply. When the amplifier power switch is on, you will see 3 green lights: AC on, High V supply, Low V supply.
 Power up the KPA1500 by pressing the `on` switch on the lower right hand side of the KPA1500 front panel as shown in @fig-kpa1500-power-switch.
 
-::: {.callout-note}
-
-If you are not operating with more than 100 W or do not need the KPA1500's built in antenna tuner, then leave the KPA1500 powered off.
-
-:::
-
 ![KPA1500 Power Switch](include/img/kpa1500-power-switch.png){#fig-kpa1500-power-switch}
 
-#### Log-in to the computer
+### Log-in to the computer
 
-1. Power up the PC by pressing the power button on the right rear panel.
+1. Power up the PC by briefly pressing the power button on the right rear panel.
+
+::: {.callout-tip}
+The PC can be a little slow to wake up.
+:::
 
 2. Log-in using the appropriate password
 
@@ -92,7 +118,7 @@ NARC has licenses for N1MM and N3FJP's Amateur Contact Log.
 To operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. 
 See instructions for operating these modes in separate sections below.
 
-### Basic controls
+## Basic controls
 
 - Audio levels for the two VFOs are controlled via separate knobs on the left side of the front panel as shown in @fig-ic-7610-af.
 
@@ -133,18 +159,16 @@ When NR is on, the NR button will be illuminated.
 
 ![IC-7610 multifunction control](include/img/ic-7610-multi.png){#fig-ic-7610-multi}
 
-### Settings
+## Settings
 
 The rig and computer settings are tested on a regular basis, approximately monthly. 
 If you would like to help W3TM test the rigs or improve and update the documentation, let him know.
 
 ::: {.callout-warning}
-
 Please do not change any software or rig settings without:
 
 1. Contacting W3TM 814-777-3298 first OR
 2. Documenting your changes in detail 
-
 :::
 
 The following setting parameters are provided for reference:
@@ -170,9 +194,7 @@ NARC has licenses for N1MM and N3FJP's Amateur Contact Log.
 #### N1MM
 
 ::: {.callout-warning}
-
 **Please do not update N1MM without asking Mike N3LI, Rick W3TM, or Eric W3EDP first.**
-
 :::
 
 #### Amateur Contact Log (ACL a.k.a. N3FJP)

@@ -66,6 +66,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="include/css/book.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -256,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 27, 2024</p>
+      <p class="date-modified">December 15, 2024</p>
     </div>
   </div>
     
@@ -268,10 +269,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>NARC-1 is the first HF station on your left as you enter the station.</p>
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-narc-1-operating-position" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/narc-1-operating-position.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">NARC-1 operating position</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3.1: NARC-1 operating position</figcaption>
 </figure>
 </div>
 <section id="equipment-summary" class="level3">
@@ -284,6 +285,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Icom SM-50 desk mic</p></li>
 <li><p>Clipper PTT footswitch</p></li>
 <li><p>Heil Pro-7 headset</p></li>
+<li><p>Halibut Electronics Audio Interface equipment, see <a href="#fig-narc1-audio-connections">Figure&nbsp;<span>3.4</span></a>.</p></li>
 <li><p>Nifty mini-manual and other manuals</p>
 <ul>
 <li>Check the right side of the operating position and the drawer under the radio.</li>
@@ -297,11 +299,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="connection-scheme" class="level3">
 <h3 class="anchored" data-anchor-id="connection-scheme">Connection scheme</h3>
-<div class="cell" data-fig-width="6.5" data-fig-label="fig-narc1-connections">
+<div class="cell" data-fig-width="6.5">
 <div class="cell-output-display">
+<div id="fig-narc1-connections" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
 <div>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js" data-label="fig-narc1-connections">flowchart TD
   A[IC-7610] ---|Coax-Ant1|B[KPA-1500 Ant 1]
   A ---|RCA ALC|B
   A ---|RCA Send|B
@@ -311,15 +314,17 @@ ul.task-list li input[type="checkbox"] {
   K[Halibut Electronics Radio Pro] ---|ICOM Mic/PTT Cable|A
 </pre>
 </div>
-<p>Connection diagram for NARC1 IC-7610</p>
+<figcaption class="figure-caption">Figure&nbsp;3.2: Connection diagram for NARC1 IC-7610</figcaption>
+</figure>
 </div>
 </div>
 </div>
-<div class="cell" data-fig-width="6.5" data-fig-label="fig-narc1-connections">
+<div class="cell" data-fig-width="6.5">
 <div class="cell-output-display">
+<div id="fig-narc1-pc-connections" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
 <div>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js" data-label="fig-narc1-pc-connections">flowchart TD
   A[IC-7610] ---|USB|C[NARC1 PC]
   C ---|USB|F(Keyboard)
   C ---|Bluetooth|G(Mouse)
@@ -328,15 +333,17 @@ ul.task-list li input[type="checkbox"] {
   J[Astron RS-35A] ---|AC Power|C
 </pre>
 </div>
-<p>Connection diagram for NARC1 PC</p>
+<figcaption class="figure-caption">Figure&nbsp;3.3: Connection diagram for NARC1 PC</figcaption>
+</figure>
 </div>
 </div>
 </div>
-<div class="cell" data-fig-width="6.5" data-fig-label="fig-narc1-connections">
+<div class="cell" data-fig-width="6.5">
 <div class="cell-output-display">
+<div id="fig-narc1-audio-connections" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
 <div>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js" data-label="fig-narc1-audio-connections">flowchart TD
   K[Halibut Electronics Radio Pro] ---|ICOM Cable|A[IC-7610]
   K ---|Cat5|J[Halibut Electronics Contest Console]
   K ---|PowerPole|J
@@ -349,7 +356,8 @@ ul.task-list li input[type="checkbox"] {
   Q[Clipper footwitch] --- K
 </pre>
 </div>
-<p>Connection diagram for NARC1 Halibut Electronics Audio</p>
+<figcaption class="figure-caption">Figure&nbsp;3.4: Connection diagram for NARC1 Halibut Electronics Audio</figcaption>
+</figure>
 </div>
 </div>
 </div>

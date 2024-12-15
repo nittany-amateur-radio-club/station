@@ -42,3 +42,5 @@ format:
     number-sections: false
     date-modified: last-modified
     fontsize: 1.2em
+    css:
+      - include/css/book.css

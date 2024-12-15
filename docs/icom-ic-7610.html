@@ -65,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<link rel="stylesheet" href="include/css/book.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -228,13 +229,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#ic-7610-operating-guide" id="toc-ic-7610-operating-guide" class="nav-link active" data-scroll-target="#ic-7610-operating-guide">IC-7610 operating guide</a>
+  <li><a href="#operating-guide" id="toc-operating-guide" class="nav-link active" data-scroll-target="#operating-guide">Operating guide</a>
   <ul class="collapse">
   <li><a href="#icom-manuals" id="toc-icom-manuals" class="nav-link" data-scroll-target="#icom-manuals">Icom manuals</a></li>
-  <li><a href="#starting-up" id="toc-starting-up" class="nav-link" data-scroll-target="#starting-up">Starting up</a></li>
+  <li><a href="#starting-up" id="toc-starting-up" class="nav-link" data-scroll-target="#starting-up">Starting up</a>
+  <ul class="collapse">
+  <li><a href="#connect-equipment-and-power-up" id="toc-connect-equipment-and-power-up" class="nav-link" data-scroll-target="#connect-equipment-and-power-up">Connect equipment and power-up</a></li>
+  <li><a href="#log-in-to-the-computer" id="toc-log-in-to-the-computer" class="nav-link" data-scroll-target="#log-in-to-the-computer">Log-in to the computer</a></li>
+  </ul></li>
   <li><a href="#basic-controls" id="toc-basic-controls" class="nav-link" data-scroll-target="#basic-controls">Basic controls</a></li>
   <li><a href="#settings" id="toc-settings" class="nav-link" data-scroll-target="#settings">Settings</a></li>
-  </ul></li>
   <li><a href="#phone-operations" id="toc-phone-operations" class="nav-link" data-scroll-target="#phone-operations">Phone operations</a>
   <ul class="collapse">
   <li><a href="#on-the-pc" id="toc-on-the-pc" class="nav-link" data-scroll-target="#on-the-pc">On the PC</a></li>
@@ -247,6 +251,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#wsjt-x" id="toc-wsjt-x" class="nav-link" data-scroll-target="#wsjt-x">WSJT-X</a></li>
   </ul></li>
   <li><a href="#cw-operations" id="toc-cw-operations" class="nav-link" data-scroll-target="#cw-operations">CW operations</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nittany-amateur-radio-club/station/edit/main/src/icom-ic-7610.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nittany-amateur-radio-club/station/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -267,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 27, 2024</p>
+      <p class="date-modified">December 15, 2024</p>
     </div>
   </div>
     
@@ -276,52 +281,30 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="ic-7610-operating-guide" class="level2">
-<h2 class="anchored" data-anchor-id="ic-7610-operating-guide">IC-7610 operating guide</h2>
+<section id="operating-guide" class="level1">
+<h1>Operating guide</h1>
 <div id="fig-ic-7610" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/ic-7610.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.1: Icom IC-7610</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.1: Icom IC-7610</figcaption>
 </figure>
 </div>
 <p>This transceiver is currently connected to the NARC1 station computer.</p>
-<section id="icom-manuals" class="level3">
-<h3 class="anchored" data-anchor-id="icom-manuals">Icom manuals</h3>
+<section id="icom-manuals" class="level2">
+<h2 class="anchored" data-anchor-id="icom-manuals">Icom manuals</h2>
 <p>Here are links to the IC-7610 manuals:</p>
 <ul>
 <li><a href="include/pdf/IC-7610_basic.pdf">Basic manual</a></li>
 <li><a href="include/pdf/IC-7610-advanced.pdf">Advanced manual</a></li>
 </ul>
 </section>
-<section id="starting-up" class="level3">
-<h3 class="anchored" data-anchor-id="starting-up">Starting up</h3>
+<section id="starting-up" class="level2">
+<h2 class="anchored" data-anchor-id="starting-up">Starting up</h2>
 <ul>
 <li>The IC-7610/NARC1 is located closest to the main door off the porch.</li>
 </ul>
-<section id="connect-equipment-and-power-up" class="level4">
-<h4 class="anchored" data-anchor-id="connect-equipment-and-power-up">Connect equipment and power-up</h4>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We have been experimenting with remote control of some station operations, including powering on the rig power supplies. As a result, the next set of actions may or may not be required.</p>
-</div>
-</div>
-<ol type="1">
-<li>Connect to the power mains.
-<ul>
-<li>Power cables are located between the wooden shelf and the east wall.</li>
-<li>Plug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet.</li>
-<li>Plug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet.</li>
-</ul></li>
-<li>Connect the radio to a suitable antenna.</li>
-</ol>
+<section id="connect-equipment-and-power-up" class="level3">
+<h3 class="anchored" data-anchor-id="connect-equipment-and-power-up">Connect equipment and power-up</h3>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -332,14 +315,16 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Before you power up the radio, connect it to a suitable antenna</strong>.</p>
+<p><strong>Before you power up the radio, connect it to a suitable antenna or to a dummy load</strong>.</p>
 </div>
 </div>
-<p><strong>The antenna connections are located on the north wall, near the repeater cabinet</strong>. Choose the PL-259 connector with the <span color="yellow">yellow</span> IC-7610 tag. Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.</p>
+<ol type="1">
+<li>Connect the radio to a 50 Ohm load (usually an antenna)</li>
+</ol>
 <div id="fig-antenna-connection-panel" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/antenna-connections.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.2: Antenna connections</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.2: Antenna connections</figcaption>
 </figure>
 </div>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -355,29 +340,59 @@ Warning
 <p><strong>Please do not remove the N/PL-259 connectors from the antenna feedlines.</strong></p>
 </div>
 </div>
-<ol start="3" type="1">
-<li><p>Power up the UPS by pushing the front button. The green power light should illuminate.</p></li>
-<li><p>Power up the Astron RS-35A power supply that powers the IC-7610/NARC1. The power supply is located to the right of the Elecraft KPA1500 amplifier.</p></li>
+<p><strong>The antenna connections are located on the north wall, near the repeater cabinet</strong>. Feedlines from each radio hang on hooks below these antenna connectors. Choose the PL-259 connector with the <span class="yellow-text">yellow</span> IC-7610 tag. Plug the cable from the radio into the cable connector for one of the antennas, for example, one of the triband Yagis for 10-20 m.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Make sure that the antenna connection is snug, but not too snug that you can’t disconnect it later.</p>
+</div>
+</div>
+<hr>
+<ol start="2" type="1">
+<li>Power up the Astron RS-35A power supply.</li>
 </ol>
 <div id="fig-astron-rs-35a" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/astron-rs-35a.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.3: Astron RS-35A power supply</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.3: Astron RS-35A power supply</figcaption>
 </figure>
 </div>
-<ol start="5" type="1">
-<li>Power up the IC-7610/NARC1 by pressing and briefly holding the power button highlighted in <a href="#fig-ic-7610-power-switch">Figure&nbsp;<span>7.4</span></a>.</li>
+<p>An Astron RS-35A powers the IC-7610/NARC1. The power supply is located next to the Elecraft KPA1500 amplifier.</p>
+<p>The unit is connected to a white Kasa smart outlet that allows remote shut-off of the radios. The smart outlet is plugged into a power strip under the wooden shelf, behind the PC, and adjacent to the radio. Touch the side of the smart switch to power-on the Astron RS-35A.</p>
+<p>You should hear the Astron “kerchunk” and see the power switch illuminate.</p>
+<!-- 3. Power-up the radio -->
+<!-- The IC-7610 -->
+<!-- ::: {.callout-note} -->
+<!-- We have been experimenting with remote control of some station operations, including powering on the rig power supplies. -->
+<!-- As a result, the next set of actions may or may not be required. -->
+<!-- ::: -->
+<!-- 1. Connect to the power mains. -->
+<!--     - Power cables are located between the wooden shelf and the east wall. -->
+<!--     - Plug the large 240 V cable (green tag) for the amplifier power supply into the 240 V wall outlet. -->
+<!--     - Plug the smaller 120 V cable for the Uninterrupted Power Supply (UPS) into the 120 V wall outlet. -->
+<!-- 3. Power up the UPS by pushing the front button. The green power light should illuminate. -->
+<hr>
+<ol start="3" type="1">
+<li>Power up the IC-7610 radio.</li>
 </ol>
+<p>Press and briefly hold the power button highlighted in <a href="#fig-ic-7610-power-switch">Figure&nbsp;<span>8.4</span></a>.</p>
 <div id="fig-ic-7610-power-switch" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/ic-7610-power-switch.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.4: IC-7610 power switch</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.4: IC-7610 power switch</figcaption>
 </figure>
 </div>
-<ol start="6" type="1">
+<hr>
+<ol start="4" type="1">
 <li>Power up the Elecraft KPA1500 amplifier</li>
 </ol>
-<p>The IC-7610/NARC1 is connected to the Elecraft <a href="KPA1500.qmd" id="fig-elecraft-kpa-1500">KPA1500</a> amplifier. The power supply for the KPA1500 is under the desk on a small footstool. Check that the KPA1500 power supply is on. If necessary, power-up the power supply by hitting the power switch on the upper rear left side of the power supply. When the amplifier power switch is on, you will see 3 green lights: AC on, High V supply, Low V supply. Power up the KPA1500 by pressing the <code>on</code> switch on the lower right hand side of the KPA1500 front panel as shown in <a href="#fig-kpa1500-power-switch">Figure&nbsp;<span>7.5</span></a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -391,36 +406,52 @@ Note
 <p>If you are not operating with more than 100 W or do not need the KPA1500’s built in antenna tuner, then leave the KPA1500 powered off.</p>
 </div>
 </div>
+<p>The IC-7610/NARC1 is connected to the Elecraft <a href="KPA1500.qmd" id="fig-elecraft-kpa-1500">KPA1500</a> amplifier. The power supply for the KPA1500 is under the desk on a small footstool. Check that the KPA1500 power supply is on. If necessary, power-up the power supply by hitting the power switch on the upper rear left side of the power supply. When the amplifier power switch is on, you will see 3 green lights: AC on, High V supply, Low V supply. Power up the KPA1500 by pressing the <code>on</code> switch on the lower right hand side of the KPA1500 front panel as shown in <a href="#fig-kpa1500-power-switch">Figure&nbsp;<span>8.5</span></a>.</p>
 <div id="fig-kpa1500-power-switch" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/kpa1500-power-switch.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.5: KPA1500 Power Switch</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.5: KPA1500 Power Switch</figcaption>
 </figure>
 </div>
 </section>
-<section id="log-in-to-the-computer" class="level4">
-<h4 class="anchored" data-anchor-id="log-in-to-the-computer">Log-in to the computer</h4>
+<section id="log-in-to-the-computer" class="level3">
+<h3 class="anchored" data-anchor-id="log-in-to-the-computer">Log-in to the computer</h3>
 <ol type="1">
-<li><p>Power up the PC by pressing the power button on the right rear panel.</p></li>
-<li><p>Log-in using the appropriate password</p></li>
+<li>Power up the PC by briefly pressing the power button on the right rear panel.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The PC can be a little slow to wake up.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Log-in using the appropriate password</li>
 </ol>
 <p>The IC-7610/NARC1 is connected via USB2 to the NARC1 PC. Open your logging program of choice. NARC has licenses for N1MM and N3FJP’s Amateur Contact Log.</p>
 <p>To operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs. See instructions for operating these modes in separate sections below.</p>
 </section>
 </section>
-<section id="basic-controls" class="level3">
-<h3 class="anchored" data-anchor-id="basic-controls">Basic controls</h3>
+<section id="basic-controls" class="level2">
+<h2 class="anchored" data-anchor-id="basic-controls">Basic controls</h2>
 <ul>
-<li>Audio levels for the two VFOs are controlled via separate knobs on the left side of the front panel as shown in <a href="#fig-ic-7610-af">Figure&nbsp;<span>7.6</span></a>.</li>
+<li>Audio levels for the two VFOs are controlled via separate knobs on the left side of the front panel as shown in <a href="#fig-ic-7610-af">Figure&nbsp;<span>8.6</span></a>.</li>
 </ul>
 <div id="fig-ic-7610-af" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/ic-7610-af.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.6: IC-7610 audio gain controls</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.6: IC-7610 audio gain controls</figcaption>
 </figure>
 </div>
 <ul>
-<li>As shown in <a href="#fig-ic-7610-chg-band">Figure&nbsp;<span>7.7</span></a> You may switch operating bands in one of two ways:
+<li>As shown in <a href="#fig-ic-7610-chg-band">Figure&nbsp;<span>8.7</span></a> You may switch operating bands in one of two ways:
 <ul>
 <li>Buttons located on the right side of the front panel</li>
 <li>Pressing the frequency on the touch screen.</li>
@@ -429,21 +460,21 @@ Note
 <div id="fig-ic-7610-chg-band" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/ic-7610-chg-band.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.7: IC-7610 band change controls</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.7: IC-7610 band change controls</figcaption>
 </figure>
 </div>
 <ul>
-<li>Switch operating modes by pressing the mode button on the touch panel as shown in <a href="#fig-ic-7610-chg-mode">Figure&nbsp;<span>7.8</span></a>.</li>
+<li>Switch operating modes by pressing the mode button on the touch panel as shown in <a href="#fig-ic-7610-chg-mode">Figure&nbsp;<span>8.8</span></a>.</li>
 </ul>
 <div id="fig-ic-7610-chg-mode" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/ic-7610-chg-mode.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.8: IC-7610 mode change control</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.8: IC-7610 mode change control</figcaption>
 </figure>
 </div>
 <p>This opens a window where you can choose the mode of operation. - Hit the arrow button to close the window and save your choice.</p>
 <ul>
-<li>Turn digital noise reduction on or off by pressing the NR button on the left side of the front panel highlighted in <a href="#fig-ic-7610-left-touch-buttons">Figure&nbsp;<span>7.9</span></a>. When NR is on, the NR button will be illuminated.
+<li>Turn digital noise reduction on or off by pressing the NR button on the left side of the front panel highlighted in <a href="#fig-ic-7610-left-touch-buttons">Figure&nbsp;<span>8.9</span></a>. When NR is on, the NR button will be illuminated.
 <ul>
 <li>To adjust the amount of noise reduction, press and hold the NR button to open a window on the upper right corner of the touch panel display.</li>
 <li>Turn the MULTI key to adjust the level of noise reduction.</li>
@@ -454,16 +485,16 @@ Note
 <div id="fig-ic-7610-left-touch-buttons" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/ic-7610-left-touch-buttons.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.9: IC-7610 left panel controls</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.9: IC-7610 left panel controls</figcaption>
 </figure>
 </div>
 <ul>
-<li>Adjust touch/display screen settings via the MENU1/MENU2 buttons at the bottom of the touch/display screen illustrated in <a href="#fig-ic-7610-menu-touch-buttons">Figure&nbsp;<span>7.10</span></a>.</li>
+<li>Adjust touch/display screen settings via the MENU1/MENU2 buttons at the bottom of the touch/display screen illustrated in <a href="#fig-ic-7610-menu-touch-buttons">Figure&nbsp;<span>8.10</span></a>.</li>
 </ul>
 <div id="fig-ic-7610-menu-touch-buttons" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/ic-7610-menu-touch-buttons.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.10: IC-7610 bottom menu touch screen buttons</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.10: IC-7610 bottom menu touch screen buttons</figcaption>
 </figure>
 </div>
 <ul>
@@ -476,17 +507,17 @@ Note
 </figure>
 </div>
 <ul>
-<li>Set RF power by pressing the MULTI button to open a window on the display/touch screen. Press the RF POWER panel to select it, and adjust the output power by turning the MULTI knob as shown in <a href="#fig-ic-7610-multi">Figure&nbsp;<span>7.11</span></a>.</li>
+<li>Set RF power by pressing the MULTI button to open a window on the display/touch screen. Press the RF POWER panel to select it, and adjust the output power by turning the MULTI knob as shown in <a href="#fig-ic-7610-multi">Figure&nbsp;<span>8.11</span></a>.</li>
 </ul>
 <div id="fig-ic-7610-multi" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="include/img/ic-7610-multi.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;7.11: IC-7610 multifunction control</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;8.11: IC-7610 multifunction control</figcaption>
 </figure>
 </div>
 </section>
-<section id="settings" class="level3">
-<h3 class="anchored" data-anchor-id="settings">Settings</h3>
+<section id="settings" class="level2">
+<h2 class="anchored" data-anchor-id="settings">Settings</h2>
 <p>The rig and computer settings are tested on a regular basis, approximately monthly. If you would like to help W3TM test the rigs or improve and update the documentation, let him know.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -512,7 +543,6 @@ Warning
 <li>8-N-1 at 38400 baud is used for serial control.</li>
 <li>Audio in/out are via USB Audio CODEC. The ICOM driver has been installed.</li>
 </ul>
-</section>
 </section>
 <section id="phone-operations" class="level2">
 <h2 class="anchored" data-anchor-id="phone-operations">Phone operations</h2>
@@ -989,6 +1019,7 @@ Note
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
