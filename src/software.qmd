@@ -63,6 +63,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc1-digital
+#| tbl-cap: "NARC1 Installed Digital Mode Apps"
 software_versions |>
   dplyr::filter(type == "digital", station == "narc1") |>
   dplyr::select(software, version, date) |>
@@ -76,6 +77,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc2-digital
+#| tbl-cap: "NARC2 Installed Digital Mode Apps"
 software_versions |>
   dplyr::filter(type == "digital", station == "narc2") |>
   dplyr::select(software, version, date) |>
@@ -91,6 +93,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc1-logging
+#| tbl-cap: "NARC1 Installed Logging Apps"
 software_versions |>
   dplyr::filter(type == "logging", station == "narc1") |>
   dplyr::select(software, version, date) |>
@@ -104,6 +107,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc2-logging
+#| tbl-cap: "NARC2 Installed Logging Apps"
 software_versions |>
   dplyr::filter(type == "logging", station == "narc2") |>
   dplyr::select(software, version, date) |>
@@ -126,6 +130,7 @@ See details in the [chapter on logging](logging.qmd#networked-logging) and speci
 ```{r}
 #| echo: false
 #| label: tbl-narc1-remote
+#| tbl-cap: "NARC1 Installed Remote Control Apps"
 software_versions |>
   dplyr::filter(type == "remote", station == "narc1") |>
   dplyr::select(software, version, date) |>
@@ -139,6 +144,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc2-remote
+#| tbl-cap: "NARC2 Installed Remote Control Apps"
 software_versions |>
   dplyr::filter(type == "remote", station == "narc2") |>
   dplyr::select(software, version, date) |>
