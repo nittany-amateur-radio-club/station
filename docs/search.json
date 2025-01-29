@@ -451,7 +451,7 @@
     "href": "software.html#operating-system",
     "title": "Software",
     "section": "Operating System",
-    "text": "Operating System\n\n\n\n\n\nstation\nsoftware\nversion\ndate\n\n\n\n\nnarc1\nMS Windows\n10\n2024-05-22\n\n\nnarc2\nMS Windows\n10\n2024-06-08",
+    "text": "Operating System\n\n\n\n\nTable 15.1: Operating systems\n\n\n\n\n\n\nstation\nsoftware\nversion\ndate\n\n\n\n\nnarc1\nMS Windows\n10\n2024-05-22\n\n\nnarc2\nMS Windows\n10\n2024-06-08",
     "crumbs": [
       "Other resources",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"
@@ -462,7 +462,7 @@
     "href": "software.html#digital-modes",
     "title": "Software",
     "section": "Digital modes",
-    "text": "Digital modes\n\nNARC1\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nGridTracker2\n2.241124\n2024-11-24\n\n\nJS8Call\n2.2.0\n2024-05-22\n\n\nJTAlert\n2.50.0\n2024-05-22\n\n\nVARA HF\n4.8.9\n2024-11-24\n\n\nVarAC\n10.2.1\n2024-11-24\n\n\nWSTJ-X\n2.6.1\n2024-11-24\n\n\nWinlink Express\n1.7.20\n2024-11-24\n\n\nYoniq (SSTV)\n1.13\n2024-05-22\n\n\nflamp\n2.2.14\n2024-11-24\n\n\nfldigi\n4.206\n2024-11-24\n\n\nflmsg\n4.0.23\n2024-11-24\n\n\nflrig\n2.0.05\n2024-11-24\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nJS8Call\n2.2.0\n2024-06-08\n\n\nJTAlert\n2.60.2\n2024-06-08\n\n\nMTTY\n1.71K\n2024-06-14\n\n\nVARA HF\n4.8.7\n2024-06-08\n\n\nVarAC\n9.1.0\n2024-06-08\n\n\nWSJT-X\n2.5.4\n2024-06-08\n\n\nWinlink Express\n1.7.16.0\n2024-06-08\n\n\nfldigi\n4.1.26\n2024-06-14\n\n\nflrig\n2.0.01\n2024-06-14",
+    "text": "Digital modes\n\nNARC1\n\n\n\n\nTable 15.2: Digital mode software on NARC-1\n\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nGridTracker2\n2.241124\n2024-11-24\n\n\nJS8Call\n2.2.0\n2024-05-22\n\n\nJTAlert\n2.50.0\n2024-05-22\n\n\nVARA HF\n4.8.9\n2024-11-24\n\n\nVarAC\n10.2.1\n2024-11-24\n\n\nWSTJ-X\n2.6.1\n2024-11-24\n\n\nWinlink Express\n1.7.20\n2024-11-24\n\n\nYoniq (SSTV)\n1.13\n2024-05-22\n\n\nflamp\n2.2.13\n2024-11-24\n\n\nfldigi\n4.2.06\n2024-11-24\n\n\nflmsg\n4.0.23\n2024-11-24\n\n\nflrig\n2.0.05\n2024-11-24\n\n\n\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\nTable 15.3: Digital mode software on NARC-2\n\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nGridTracker2\n2.241124\n2024-11-27\n\n\nJS8Call\n2.2.0\n2024-06-08\n\n\nJTAlert\n2.60.2\n2024-06-08\n\n\nMTTY\n1.71K\n2024-06-14\n\n\nVARA HF\n4.8.7\n2024-06-08\n\n\nVarAC\n9.1.0\n2024-06-08\n\n\nWSJT-X\n2.6.1\n2024-11-27\n\n\nWinlink Express\n1.7.20.0\n2024-11.27\n\n\nflamp\n2.2.13\n2024-11-27\n\n\nfldigi\n4.2.06\n2024-11-27\n\n\nflrig\n2.0.05\n2024-11-27",
     "crumbs": [
       "Other resources",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"
@@ -473,7 +473,7 @@
     "href": "software.html#logging",
     "title": "Software",
     "section": "Logging",
-    "text": "Logging\n\nNARC1\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nACLog\n7.0.10\n2024-05-22\n\n\nN1MM+\n1.3.10316.0\n2024-06-14\n\n\nN3FJP Field Day Contest Log\n6.6.8\n2024-06-14\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nACLog\n7.0.10\n2024-06-08\n\n\n\n\n\n\n\nSee the separate chapter on logging for details about how to interface digital logging programs.\n\n\nNetworked logging\nSpecial considerations are required for networked logging of the sort we often do for Field Day. See details in the chapter on logging and specifically Figure 16.1.",
+    "text": "Logging\n\nNARC1\n\n\n\n\nTable 15.4: Logging software on NARC-1\n\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nACLog\n7.0.10\n2024-05-22\n\n\nN1MM+\n1.3.10316.0\n2024-06-14\n\n\nN3FJP Field Day Contest Log\n6.6.8\n2024-06-14\n\n\n\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\nTable 15.5: Logging software on NARC-2\n\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nACLog\n7.0.10\n2024-06-08\n\n\n\n\n\n\n\n\n\n\nSee the separate chapter on logging for details about how to interface digital logging programs.\n\n\nNetworked logging\nSpecial considerations are required for networked logging of the sort we often do for Field Day. See details in the chapter on logging and specifically Figure 16.1.",
     "crumbs": [
       "Other resources",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"
@@ -484,7 +484,7 @@
     "href": "software.html#remote-control",
     "title": "Software",
     "section": "Remote Control",
-    "text": "Remote Control\n\nNARC1\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nSmartSDR\n3.8.19\n2024-11-02\n\n\nWin4Icom\n1.506\n2024-11-24\n\n\nwfview\nNA\nNA\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nSmartSDR\n3.8.19\n2024-11-02",
+    "text": "Remote Control\n\nNARC1\n\n\n\n\nTable 15.6: Remote control software on NARC-1\n\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nGreen Heron Everywhere Client\n2.7.8\n2024-12-30\n\n\nSmartSDR\n3.8.20\n2024-11-27\n\n\nWin4Icom\n1.5.08\n2024-12-30\n\n\nwfview\n1.62\n2024-11-27\n\n\n\n\n\n\n\n\n\n\n\n\nNARC2\n\n\n\n\nTable 15.7: Remote control software on NARC-2\n\n\n\n\n\n\nsoftware\nversion\ndate\n\n\n\n\nSmartSDR\n3.8.20\n2024-11-27",
     "crumbs": [
       "Other resources",
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Software</span>"

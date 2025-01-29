@@ -50,6 +50,8 @@ software_versions <- readr::read_csv("include/csv/software_versions.csv", show_c
 
 ```{r}
 #| echo: false
+#| label: tbl-os
+#| tbl-cap: "Operating systems"
 software_versions |>
   dplyr::filter(type == "os") |>
   dplyr::select(station,software, version, date) |>
@@ -63,6 +65,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc1-digital
+#| tbl-cap: "Digital mode software on NARC-1"
 software_versions |>
   dplyr::filter(type == "digital", station == "narc1") |>
   dplyr::select(software, version, date) |>
@@ -76,6 +79,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc2-digital
+#| tbl-cap: "Digital mode software on NARC-2"
 software_versions |>
   dplyr::filter(type == "digital", station == "narc2") |>
   dplyr::select(software, version, date) |>
@@ -91,6 +95,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc1-logging
+#| tbl-cap: "Logging software on NARC-1"
 software_versions |>
   dplyr::filter(type == "logging", station == "narc1") |>
   dplyr::select(software, version, date) |>
@@ -104,6 +109,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc2-logging
+#| tbl-cap: "Logging software on NARC-2"
 software_versions |>
   dplyr::filter(type == "logging", station == "narc2") |>
   dplyr::select(software, version, date) |>
@@ -126,6 +132,7 @@ See details in the [chapter on logging](logging.qmd#networked-logging) and speci
 ```{r}
 #| echo: false
 #| label: tbl-narc1-remote
+#| tbl-cap: "Remote control software on NARC-1"
 software_versions |>
   dplyr::filter(type == "remote", station == "narc1") |>
   dplyr::select(software, version, date) |>
@@ -139,6 +146,7 @@ software_versions |>
 ```{r}
 #| echo: false
 #| label: tbl-narc2-remote
+#| tbl-cap: "Remote control software on NARC-2"
 software_versions |>
   dplyr::filter(type == "remote", station == "narc2") |>
   dplyr::select(software, version, date) |>
