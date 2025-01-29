@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6a02aba49064f7c2b8495a8e1b3a97c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -73,6 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="include/css/book.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -263,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 25, 2024</p>
+      <p class="date-modified">January 28, 2025</p>
     </div>
   </div>
     
@@ -277,10 +278,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>NARC-1 is the first HF station on your left as you enter the station.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="include/img/narc-1-operating-position.jpeg" class="img-fluid figure-img"></p>
-<figcaption>NARC-1 operating position</figcaption>
+<div id="fig-narc-1-operating-position" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-narc-1-operating-position-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="include/img/narc-1-operating-position.jpeg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-narc-1-operating-position-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: NARC-1 operating position
+</figcaption>
 </figure>
 </div>
 <section id="equipment-summary" class="level3">
@@ -293,6 +298,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Icom SM-50 desk mic</p></li>
 <li><p>Clipper PTT footswitch</p></li>
 <li><p>Heil Pro-7 headset</p></li>
+<li><p>Halibut Electronics Audio Interface equipment, see <a href="#fig-narc1-audio-connections" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>.</p></li>
 <li><p>Nifty mini-manual and other manuals</p>
 <ul>
 <li>Check the right side of the operating position and the drawer under the radio.</li>
@@ -306,12 +312,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="connection-scheme" class="level3">
 <h3 class="anchored" data-anchor-id="connection-scheme">Connection scheme</h3>
-<div class="cell" data-fig-width="6.5" data-fig-label="fig-narc1-connections" data-layout-align="default">
+<div class="cell" data-fig-width="6.5" data-layout-align="default">
 <div class="cell-output-display">
+<div id="fig-narc1-connections" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-narc1-connections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js" data-label="fig-narc1-connections">flowchart TD
   A[IC-7610] ---|Coax-Ant1|B[KPA-1500 Ant 1]
   A ---|RCA ALC|B
   A ---|RCA Send|B
@@ -321,16 +328,21 @@ ul.task-list li input[type="checkbox"] {
   K[Halibut Electronics Radio Pro] ---|ICOM Mic/PTT Cable|A
 </pre>
 </div>
-<p></p><figcaption> Connection diagram for NARC1 IC-7610</figcaption> </figure><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-narc1-connections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Connection diagram for NARC1 IC-7610
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
-<div class="cell" data-fig-width="6.5" data-fig-label="fig-narc1-connections" data-layout-align="default">
+<div class="cell" data-fig-width="6.5" data-layout-align="default">
 <div class="cell-output-display">
+<div id="fig-narc1-pc-connections" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-narc1-pc-connections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js" data-label="fig-narc1-pc-connections">flowchart TD
   A[IC-7610] ---|USB|C[NARC1 PC]
   C ---|USB|F(Keyboard)
   C ---|Bluetooth|G(Mouse)
@@ -339,16 +351,21 @@ ul.task-list li input[type="checkbox"] {
   J[Astron RS-35A] ---|AC Power|C
 </pre>
 </div>
-<p></p><figcaption> Connection diagram for NARC1 PC</figcaption> </figure><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-narc1-pc-connections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Connection diagram for NARC1 PC
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
-<div class="cell" data-fig-width="6.5" data-fig-label="fig-narc1-connections" data-layout-align="default">
+<div class="cell" data-fig-width="6.5" data-layout-align="default">
 <div class="cell-output-display">
+<div id="fig-narc1-audio-connections" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-narc1-audio-connections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js" data-label="fig-narc1-audio-connections">flowchart TD
   K[Halibut Electronics Radio Pro] ---|ICOM Cable|A[IC-7610]
   K ---|Cat5|J[Halibut Electronics Contest Console]
   K ---|PowerPole|J
@@ -361,7 +378,11 @@ ul.task-list li input[type="checkbox"] {
   Q[Clipper footwitch] --- K
 </pre>
 </div>
-<p></p><figcaption> Connection diagram for NARC1 Halibut Electronics Audio</figcaption> </figure><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-narc1-audio-connections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Connection diagram for NARC1 Halibut Electronics Audio
+</figcaption>
+</figure>
 </div>
 </div>
 </div>
@@ -462,7 +483,7 @@ Note
 </tr>
 <tr class="odd">
 <td style="text-align: left;">fldigi</td>
-<td style="text-align: left;">4.206</td>
+<td style="text-align: left;">4.2.06</td>
 <td style="text-align: left;">2024-11-24</td>
 </tr>
 <tr class="even">
@@ -477,7 +498,7 @@ Note
 </tr>
 <tr class="even">
 <td style="text-align: left;">flamp</td>
-<td style="text-align: left;">2.2.14</td>
+<td style="text-align: left;">2.2.13</td>
 <td style="text-align: left;">2024-11-24</td>
 </tr>
 </tbody>
@@ -537,18 +558,23 @@ Note
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Win4Icom</td>
-<td style="text-align: left;">1.506</td>
-<td style="text-align: left;">2024-11-24</td>
+<td style="text-align: left;">1.5.08</td>
+<td style="text-align: left;">2024-12-30</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SmartSDR</td>
-<td style="text-align: left;">3.8.19</td>
-<td style="text-align: left;">2024-11-02</td>
+<td style="text-align: left;">3.8.20</td>
+<td style="text-align: left;">2024-11-27</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">wfview</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">1.62</td>
+<td style="text-align: left;">2024-11-27</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Green Heron Everywhere Client</td>
+<td style="text-align: left;">2.7.8</td>
+<td style="text-align: left;">2024-12-30</td>
 </tr>
 </tbody>
 </table>
@@ -649,8 +675,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -761,7 +785,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

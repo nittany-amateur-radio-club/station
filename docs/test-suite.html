@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -37,10 +71,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6a02aba49064f7c2b8495a8e1b3a97c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,8 +102,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="include/css/book.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -239,8 +276,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#phone-operations" id="toc-phone-operations" class="nav-link" data-scroll-target="#phone-operations">Phone operations</a></li>
   <li><a href="#logging-programs" id="toc-logging-programs" class="nav-link" data-scroll-target="#logging-programs">Logging programs</a></li>
   <li><a href="#digital-mode-operations" id="toc-digital-mode-operations" class="nav-link" data-scroll-target="#digital-mode-operations">Digital mode operations</a></li>
-  <li><a href="#win4icomsuite" id="toc-win4icomsuite" class="nav-link" data-scroll-target="#win4icomsuite">Win4IcomSuite</a></li>
+  <li><a href="#remote" id="toc-remote" class="nav-link" data-scroll-target="#remote">Remote</a></li>
   <li><a href="#kpa1500-amplifier" id="toc-kpa1500-amplifier" class="nav-link" data-scroll-target="#kpa1500-amplifier">KPA1500 Amplifier</a></li>
+  </ul></li>
+  <li><a href="#maintenance-log" id="toc-maintenance-log" class="nav-link" data-scroll-target="#maintenance-log">Maintenance Log</a>
+  <ul class="collapse">
+  <li><a href="#set-up" id="toc-set-up" class="nav-link" data-scroll-target="#set-up">Set-up</a></li>
+  <li><a href="#recent-tests" id="toc-recent-tests" class="nav-link" data-scroll-target="#recent-tests">Recent tests</a></li>
   </ul></li>
   <li><a href="#contestfield-day" id="toc-contestfield-day" class="nav-link" data-scroll-target="#contestfield-day">Contest/Field Day</a>
   <ul class="collapse">
@@ -266,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 27, 2024</p>
+      <p class="date-modified">January 28, 2025</p>
     </div>
   </div>
     
@@ -280,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This chapter describes the suite of tests that we use to make sure that our stations remain in good operating condition.</p>
 <section id="monthly" class="level2">
 <h2 class="anchored" data-anchor-id="monthly">Monthly</h2>
-<p>W3TM tries and usually succeeds in running these steps on both NARC1 and NARC2 once a month. The results of the tests are captured in a Google doc located <a href="https://docs.google.com/document/d/1yz_meW9ClsBc88PyoOBWdVERrryEH91LUFfP03dS5sA/edit?usp=sharing">here</a>. When software versions change, these get updated in <a href="https://docs.google.com/spreadsheets/d/1NqblEGvrP0aiqWkBTs1G_hA3oWTKcxh_-Kb_m7E4G70/edit?usp=sharing">this</a> Google sheet. Data from the Google sheet are imported when this site is updated.</p>
+<p>W3TM tries and usually succeeds in running these steps on both NARC1 and NARC2 once a month. The results of the tests are captured in a Google <del>doc</del> sheet located <a href="https://docs.google.com/spreadsheets/d/1h4YUfq1UKwzU8MBJOeOxYSXyhnX518sDBoJ3o-CFqYc/edit?gid=0#gid=0">here</a>. Data from the Google sheet are imported when this page is updated.</p>
 <section id="power-up" class="level3">
 <h3 class="anchored" data-anchor-id="power-up">Power-up</h3>
 <ul>
@@ -502,14 +544,32 @@ Note
 </div>
 </section>
 </section>
-<section id="win4icomsuite" class="level3">
-<h3 class="anchored" data-anchor-id="win4icomsuite">Win4IcomSuite</h3>
+<section id="remote" class="level3">
+<h3 class="anchored" data-anchor-id="remote">Remote</h3>
+<section id="win4icomsuite" class="level4">
+<h4 class="anchored" data-anchor-id="win4icomsuite">Win4IcomSuite</h4>
 <ul>
 <li>NARC1/IC-7610 station only</li>
 <li>Open Win4Icom</li>
 <li>Confirm program tracks frequency and mode</li>
 <li>Close Win4Icom</li>
 </ul>
+</section>
+<section id="wfview" class="level4">
+<h4 class="anchored" data-anchor-id="wfview">wfview</h4>
+<ul>
+<li>NARC1/IC-7610 station only</li>
+<li>Open wfview</li>
+<li>Confirm program tracks frequency and mode</li>
+<li>Close wfview</li>
+</ul>
+</section>
+<section id="smartsdr" class="level4">
+<h4 class="anchored" data-anchor-id="smartsdr">SmartSDR</h4>
+<ul>
+<li>Open SmartSDR</li>
+</ul>
+</section>
 </section>
 <section id="kpa1500-amplifier" class="level3">
 <h3 class="anchored" data-anchor-id="kpa1500-amplifier">KPA1500 Amplifier</h3>
@@ -535,6 +595,119 @@ Note
 <li>Power down amplifier</li>
 <li>Return rig to SSB mode (press mode indicator on touch screen, select SSB)</li>
 </ul>
+</section>
+</section>
+<section id="maintenance-log" class="level2">
+<h2 class="anchored" data-anchor-id="maintenance-log">Maintenance Log</h2>
+<p>This section downloads information about the latest maintenance activities.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These following sections are generated by the following steps:</p>
+<ol type="1">
+<li>Download a database (Google Sheet located <a href="https://docs.google.com/spreadsheets/d/1h4YUfq1UKwzU8MBJOeOxYSXyhnX518sDBoJ3o-CFqYc/edit?gid=0#gid=0">here</a> with the latest versions of the software packages installed on the NARC1 and NARC2 PCs. This is downloaded as a CSV.</li>
+<li>Parsing the downloaded CSV data file in <code>include/csv/station-maintenance-log.csv</code>.</li>
+</ol>
+</div>
+</div>
+<section id="set-up" class="level3">
+<h3 class="anchored" data-anchor-id="set-up">Set-up</h3>
+<p>The following code downloads the maintenance log file.</p>
+<p>Then, we import the downloaded data.</p>
+</section>
+<section id="recent-tests" class="level3">
+<h3 class="anchored" data-anchor-id="recent-tests">Recent tests</h3>
+<p>The most recent test activity occurred on 2024-12-30.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>latest_date <span class="ot">&lt;-</span> <span class="fu">max</span>(log_entries<span class="sc">$</span>date)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>log_entries <span class="sc">|&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(date <span class="sc">==</span> latest_date) <span class="sc">|&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(<span class="fu">desc</span>(date), equipment) <span class="sc">|&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(date, equipment, action) <span class="sc">|&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">'html'</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_material</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-recent-test-results" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-recent-test-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;14.1: Recent station test results
+</figcaption>
+<div aria-describedby="tbl-recent-test-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="lightable-material do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">date</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">equipment</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">EFHW</td>
+<td style="text-align: left;">Has reasonable SWR on 80, 40, 20, 15, &amp; 10m</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">GH RT-21 60ft</td>
+<td style="text-align: left;">Successful test with NARC1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">KPA 1500</td>
+<td style="text-align: left;">Successful test 10W/362W</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">NARC1</td>
+<td style="text-align: left;">Update Win4Icom to 1.5.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">NARC1</td>
+<td style="text-align: left;">Successful test of Win4Icom</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">NARC1</td>
+<td style="text-align: left;">Successful test of WSJT-X, JTAlert</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">NARC1</td>
+<td style="text-align: left;">Successful test of Winlink, VARA HF</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">NARC1</td>
+<td style="text-align: left;">Successful test of fldigi, flrig</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">NARC1</td>
+<td style="text-align: left;">Successful test of VarAC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-12-30</td>
+<td style="text-align: left;">NARC1</td>
+<td style="text-align: left;">Successful test GHE Client</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</figure>
+</div>
+</div>
 </section>
 </section>
 <section id="contestfield-day" class="level2">
@@ -644,8 +817,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -756,7 +927,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

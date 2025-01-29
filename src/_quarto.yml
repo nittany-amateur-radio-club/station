@@ -4,7 +4,6 @@ project:
   
 book:
   title: "Nittany ARC Station Guide"
-  subtitle: "Version 2024-11-17"
   author: "Rick Gilmore W3TM"
   output-file: "NARC-Clubhouse-Guide"
   cover-image: "include/img/60-ft-tower-west.jpg"
@@ -40,5 +39,7 @@ format:
   html:
     theme: cosmo
     number-sections: false
-    date-modified: last-modified
+    date-modified: now
     fontsize: 1.2em
+    css:
+      - include/css/book.css

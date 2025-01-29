@@ -9,7 +9,7 @@ format:
 
 NARC-1 is the first HF station on your left as you enter the station.
 
-![NARC-1 operating position](include/img/narc-1-operating-position.jpeg)
+![NARC-1 operating position](include/img/narc-1-operating-position.jpeg){#fig-narc-1-operating-position}
 
 ### Equipment summary
 
@@ -18,6 +18,7 @@ NARC-1 is the first HF station on your left as you enter the station.
 - Icom SM-50 desk mic
 - Clipper PTT footswitch
 - Heil Pro-7 headset
+- Halibut Electronics Audio Interface equipment, see @fig-narc1-audio-connections.
 - Nifty mini-manual and other manuals
   - Check the right side of the operating position and the drawer under the radio.
 
@@ -30,7 +31,7 @@ NARC-1 is the first HF station on your left as you enter the station.
 
 ```{mermaid}
 %%| fig-width: 6.5
-%%| fig-label: fig-narc1-connections
+%%| label: fig-narc1-connections
 %%| fig-cap: "Connection diagram for NARC1 IC-7610"
 flowchart TD
   A[IC-7610] ---|Coax-Ant1|B[KPA-1500 Ant 1]
@@ -44,7 +45,7 @@ flowchart TD
 
 ```{mermaid}
 %%| fig-width: 6.5
-%%| fig-label: fig-narc1-connections
+%%| label: fig-narc1-pc-connections
 %%| fig-cap: "Connection diagram for NARC1 PC"
 flowchart TD
   A[IC-7610] ---|USB|C[NARC1 PC]
@@ -57,7 +58,7 @@ flowchart TD
 
 ```{mermaid}
 %%| fig-width: 6.5
-%%| fig-label: fig-narc1-connections
+%%| label: fig-narc1-audio-connections
 %%| fig-cap: "Connection diagram for NARC1 Halibut Electronics Audio"
 flowchart TD
   K[Halibut Electronics Radio Pro] ---|ICOM Cable|A[IC-7610]
