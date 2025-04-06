@@ -32,7 +32,7 @@ The control box is located between NARC-2 and NARC-3.
 
 Before powering-up the controller boxes, connect the controller cables located near the antenna panel on the North side of the station.
 
-![Connection point for the rotator controllers. Note that the green rotator has a green label and that two SAE-style connectors have green tags.](include/img/ narc-rotator-green-60ft.jpeg){#fig-narc-rotator-green-60ft}
+![Connection point for the rotator controllers. Note that the green rotator has a green label and that two SAE-style connectors have green tags.](include/img/narc-rotator-green-60ft.jpeg){#fig-narc-rotator-green-60ft}
 
 :::
 
