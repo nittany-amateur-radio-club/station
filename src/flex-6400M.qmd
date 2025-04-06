@@ -2,6 +2,13 @@
 title: "FlexRadio Flex 6400M"
 ---
 
+::: {.callout-warning}
+## Under construction
+
+This page is under construction.
+Many components are missing.
+:::
+
 ## Flex 6400M HF Transceiver
 
 ![](include/img/flex-6400M.jpg)
@@ -68,7 +75,7 @@ Power up the KPA1500 by pressing the `on` switch on the lower right hand side of
 
 ![KPA1500 Power Switch](include/img/kpa1500-power-switch.png)
 
-#### Log-in to the computer
+### Log-in to the computer
 
 1. Power up the PC by pressing the power button on the right rear of the computer/display.
 
@@ -83,3 +90,6 @@ To operate digital modes (e.g., FT8/FT4, JS8Call, fldigi), open those programs.
 See instructions for operating these modes in separate documents.
 
 ### Basic controls
+
+{{< include _gh-controllers.qmd >}}
+

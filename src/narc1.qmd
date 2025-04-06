@@ -9,7 +9,7 @@ format:
 
 NARC-1 is the first HF station on your left as you enter the station.
 
-![NARC-1 operating position](include/img/narc-1-operating-position.jpeg){#fig-narc-1-operating-position}
+![NARC-1 operating position](include/img/narc-1-2025.jpeg){#fig-narc-1-operating-position}
 
 ### Equipment summary
 

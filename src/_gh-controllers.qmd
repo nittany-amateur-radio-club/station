@@ -1,0 +1,38 @@
+
+## Rotator controllers
+
+The 60' and 80' towers have Mosley Yagi's with Yaesu rotators and Green Heron Rotator Controllers.
+
+### Yellow controller
+
+The yellow controller moves the antenna on top of the 80' tower.
+
+The control box is located between NARC-1 and NARC-2.
+
+![](include/img/narc-1-rotator-controller-yellow-80ft.jpeg){#fig-narc-1-rotator-controller-yellow-80ft}
+
+::: {.callout-warning}
+
+Before powering-up the controller boxes, connect the controller cables located near the antenna panel on the North side of the station.
+
+![Connection point for the rotator controllers. Note that the yellow rotator has a yellow label and that two SAE-style connectors have yellow tags.](include/img/narc-rotator-yellow-80ft.jpeg){#fig-narc-rotator-yellow-80ft}
+
+:::
+
+
+### Green controller
+
+The green controller moves the antenna on top of the 60' tower.
+
+The control box is located between NARC-2 and NARC-3.
+
+![](include/img/narc-2-rotator-controller-green-60ft.jpeg)
+
+::: {.callout-warning}
+
+Before powering-up the controller boxes, connect the controller cables located near the antenna panel on the North side of the station.
+
+![Connection point for the rotator controllers. Note that the green rotator has a green label and that two SAE-style connectors have green tags.](include/img/ narc-rotator-green-60ft.jpeg){#fig-narc-rotator-green-60ft}
+
+:::
+

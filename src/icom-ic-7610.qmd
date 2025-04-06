@@ -17,7 +17,7 @@ Here are links to the IC-7610 manuals:
 
 ## Starting up
 
-- The IC-7610/NARC1 is located closest to the main door off the porch.
+- The IC-7610/NARC1 station is located closest to the main door off the porch.
 
 ### Connect equipment and power-up
 
@@ -47,7 +47,17 @@ Make sure that the antenna connection is snug, but not too snug that you can't d
 ## Dummy loads
 For testing, you may connect the rig feedline to one of the two dummy loads located on the floor near the antenna connectors.
 
-TO-DO: Add photos.
+![High power 50 Ohm dummy loads located near the antenna connection panel.](include/img/narc-dummy-loads.jpeg){#fig-narc-dummy-loads.jpeg}
+:::
+
+::: {.callout-note}
+## 2nd feedline
+
+As of 2025-04-06 the IC-7610 has a second feedline that connects to the radio's second VFO and receiver.
+The feedline uses green coax.
+It has a label tag indicating it connects to the IC-7610 sub receiver.
+
+This feedline connects directly to the radio, so it only supports up to 100 W output power.
 :::
 
 ---
@@ -63,14 +73,7 @@ The unit is connected to a white Kasa smart outlet that allows remote shut-off o
 The smart outlet is plugged into a power strip under the wooden shelf, behind the PC, and adjacent to the radio.
 Touch the side of the smart switch to power-on the Astron RS-35A.
 
-::: {.callout-important}
-## TO-DO
-
-Add photo of Kasa switch here.
-
-Affix label to the Kasa switch.
-
-:::
+![](include/img/narc-1-kasa-switch.jpeg){#fig-narc-1-kasa-switch}
 
 You should hear the Astron "kerchunk" and see the power switch illuminate.
 
@@ -193,6 +196,8 @@ The following setting parameters are provided for reference:
 - COM3 is used for most CAT control. The IC-7610 creates a second COM port that is currently unused.
 - 8-N-1 at 38400 baud is used for serial control.
 - Audio in/out are via USB Audio CODEC. The ICOM driver has been installed.
+
+{{< include _gh-controllers.qmd >}}
 
 ## Phone operations
 
