@@ -43,6 +43,13 @@ Plug the cable from the radio into the cable connector for one of the antennas, 
 Make sure that the antenna connection is snug, but not too snug that you can't disconnect it later.
 :::
 
+::: {.callout-note}
+## Dummy loads
+For testing, you may connect the rig feedline to one of the two dummy loads located on the floor near the antenna connectors.
+
+TO-DO: Add photos.
+:::
+
 ---
 
 2. Power up the Astron RS-35A power supply.
@@ -55,6 +62,15 @@ The power supply is located next to the Elecraft KPA1500 amplifier.
 The unit is connected to a white Kasa smart outlet that allows remote shut-off of the radios.
 The smart outlet is plugged into a power strip under the wooden shelf, behind the PC, and adjacent to the radio.
 Touch the side of the smart switch to power-on the Astron RS-35A.
+
+::: {.callout-important}
+## TO-DO
+
+Add photo of Kasa switch here.
+
+Affix label to the Kasa switch.
+
+:::
 
 You should hear the Astron "kerchunk" and see the power switch illuminate.
 

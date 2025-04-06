@@ -4,7 +4,15 @@ title: "WSJT-X Operations on IC-7610"
 
 ### WSJT-X
 
-The current installed version as of 2023-12-19 is v2.5.4.
+```{r}
+#| echo: false
+software_versions <- readr::read_csv("include/csv/software_versions.csv", show_col_types = FALSE)
+wsjtx_ver <- software_versions |>
+  dplyr::filter(software == "WSTJ-X", station == "narc1") |>
+  dplyr::select(software, version, date)
+```
+
+The current installed version as of `r wsjtx_ver$date` is `r wsjtx_ver$version`.
 
 #### On the PC
 

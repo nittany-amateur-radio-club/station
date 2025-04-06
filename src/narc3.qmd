@@ -8,22 +8,37 @@ format: html
 NARC-3 is the HF station on the far (north) wall of the station.
 It is located to the right of NARC-2, and immediately to the left of the [packet station](packet_aprs.qmd).
 
-### Equipment summary
+::: {.callout-warning}
+## Under construction
 
-- Icom IC-718 (HF + 6m) transceiver
-    - Astron RS-35A power supply
+The NARC-3 station is no longer in service.
 
-- Dell PC, dual monitor set-up
+The club is likely to sell the [ICOM IC-718](ic-718.qmd) transceiver.
 
-### Software summary
+We are evaluating what to do with that station next.
 
-- Windows 10
-- Digital modes
-  - WSTJ-X
-  - JS8Call
-  - fldigi suite
-  - VarAC
-- Logging
-  - N1MM
-  - Amateur Contact Log (ACLog) by N3FJP
+It will likely become a place for members to bring their own rigs and connect them to our power supply, computer, and antenna systems.
+
+Stay tuned!
+
+:::
+
+<!-- ### Equipment summary -->
+
+<!-- - Icom IC-718 (HF + 6m) transceiver -->
+<!--     - Astron RS-35A power supply -->
+
+<!-- - Dell PC, dual monitor set-up -->
+
+<!-- ### Software summary -->
+
+<!-- - Windows 10 -->
+<!-- - Digital modes -->
+<!--   - WSTJ-X -->
+<!--   - JS8Call -->
+<!--   - fldigi suite -->
+<!--   - VarAC -->
+<!-- - Logging -->
+<!--   - N1MM -->
+<!--   - Amateur Contact Log (ACLog) by N3FJP -->
 
