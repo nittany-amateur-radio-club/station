@@ -1,5 +1,5 @@
 # Stations
 
-The club maintains two full power HF + 6m stations ([NARC-1](narc1.qmd) and [NARC-2](narc2.qmd)), plus a 100 W HF + 6m station ([NARC-3](narc3.qmd)).
+The club maintains two full power HF + 6m stations ([NARC-1](narc1.qmd) and [NARC-2](narc2.qmd)).
 In addition, the mountaintop radio station has a [dual band VHF/UHF FM radio](kenwood-D710.qmd) for monitoring the 146.86 MHz W3YA and 146.76 MHz W3GA repeaters.
 We have a [packet station](packet_aprs.qmd#packet-station) and bulletin board operating on 145.030 MHz, and the club supports a full-time [APRS digipeater](packet_aprs.qmd#aprs-station) active on 144.390 MHz as W3YA-1.
