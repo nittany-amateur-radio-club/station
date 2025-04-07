@@ -22,3 +22,9 @@ We operated Field Day 2023 and 2024 from the station, and we have held W3M speci
 
 For a PDF version of this guide, click [here](NARC-Clubhouse-Guide.pdf).
 
+## Calendar
+
+The following events are sponsored by the club:
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showCalendars=0&showTabs=0&mode=AGENDA&src=bml0dGFueS5hbWF0ZXVyLnJhZGlvLmNsdWJAZ21haWwuY29t&color=%230B8043" style="border:solid 1px #777" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+
